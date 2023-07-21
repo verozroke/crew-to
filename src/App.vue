@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import HeaderVue from './components/header/HeaderVue.vue';
+import FooterSection from '@/components/footer/FooterSection.vue';
 </script>
 
 <template>
@@ -16,31 +17,25 @@ import HeaderVue from './components/header/HeaderVue.vue';
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .main {
   flex: 1 1 auto;
 }
 
 .wrapper {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #fff;
+  background-color: #f7f7f7;
 }
 
 [class*="__container"] {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 16px;
-  color: #000;
-  font-weight: 400;
-  font-style: normal;
 }
 
-body {
-  overflow: overlay;
-}
+
 
 .routering {
   &-enter-from {
@@ -59,6 +54,31 @@ body {
 
   &-leave-active {
     transition: all 0.3s ease-in;
+  }
+}
+
+
+::-webkit-scrollbar {
+  width: 13px;
+
+  background-color: $white;
+
+  &-track {
+    background-color: $white;
+    margin-block: 0.5em;
+  }
+
+  &-thumb {
+    background-color: rgba(47, 47, 47, 0.836);
+    border-radius: 100vw;
+    transition: 0.4s;
+    border: 4px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+
+    &:hover {
+      background-color: rgb(28, 28, 28);
+      transition: 0.4s;
+    }
   }
 }
 </style>
