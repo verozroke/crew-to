@@ -1,12 +1,10 @@
 <template>
   <div class="icon">
-    <img src="@img/kaznet-icon.png" alt="">
+    <img src="@img/kaznet-icon.png" alt="" />
   </div>
 </template>
 
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <style lang="scss" scoped>
 .icon {

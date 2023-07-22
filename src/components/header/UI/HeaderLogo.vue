@@ -1,12 +1,10 @@
 <template>
   <RouterLink :to="{ name: 'Home' }" class="logo">
-    <img src="@img/header/header-logo.jpeg" alt="">
+    <img src="@img/header/header-logo.jpeg" alt="" />
   </RouterLink>
 </template>
 
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <style lang="scss" scoped>
 .logo {

@@ -5,10 +5,8 @@
 </template>
 
 <script setup lang="ts">
-import GalleryBlock from './GalleryBlock.vue';
-import { ref } from 'vue';
-
-
+import GalleryBlock from './GalleryBlock.vue'
+import { ref } from 'vue'
 
 const blocks = ref([
   {
@@ -34,14 +32,12 @@ const blocks = ref([
   {
     id: 6,
     src: '1.png'
-  },
+  }
 ])
-
 </script>
 
 <style lang="scss" scoped>
 .blocks {
-  margin-top: 5em;
   display: flex;
   width: 100vw;
   flex-wrap: wrap;

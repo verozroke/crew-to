@@ -1,16 +1,13 @@
 <template>
   <div class="block">
-    <img :src="`/gallery/${src}`" alt="">
+    <img :src="`/gallery/${src}`" alt="" />
   </div>
 </template>
 
 <script setup lang="ts">
-
-
 defineProps({
   src: String
 })
-
 </script>
 
 <style lang="scss" scoped>
@@ -24,7 +21,7 @@ defineProps({
     & img {
       filter: brightness(100%);
       transform: scale(1.1);
-      transition: .4s;
+      transition: 0.4s;
     }
   }
 
@@ -33,7 +30,7 @@ defineProps({
     width: 100%;
     object-position: center;
     object-fit: cover;
-    transition: .4s;
+    transition: 0.4s;
     transform: scale(1);
   }
 }

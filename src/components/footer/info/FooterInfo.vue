@@ -1,13 +1,19 @@
 <template>
   <div class="info">
-    <InfoItem v-for="item in items" :key="item.id" :icon="item.icon" :link="item.link" :text="item.text"
-      :type="item.type" />
+    <InfoItem
+      v-for="item in items"
+      :key="item.id"
+      :icon="item.icon"
+      :link="item.link"
+      :text="item.text"
+      :type="item.type"
+    />
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-import InfoItem from './item/InfoItem.vue';
+import { ref } from 'vue'
+import InfoItem from './item/InfoItem.vue'
 
 const items = ref([
   {
@@ -32,7 +38,6 @@ const items = ref([
     type: 'link'
   }
 ])
-
 </script>
 
 <style lang="scss" scoped>
@@ -40,6 +45,6 @@ const items = ref([
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: .5em;
+  gap: 0.5em;
 }
 </style>

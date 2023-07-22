@@ -12,7 +12,6 @@
 import HeaderLogo from './UI/HeaderLogo.vue'
 import HeaderNavbar from './navbar/HeaderNavbar.vue'
 import HeaderButton from './UI/HeaderButton.vue'
-
 </script>
 
 <style lang="scss" scoped>
@@ -21,7 +20,7 @@ import HeaderButton from './UI/HeaderButton.vue'
   background-color: white;
   font-family: 'Noto Sans', sans-serif;
 
-  filter: drop-shadow(.5em 0em .5em rgba(110, 110, 110, 0.349));
+  filter: drop-shadow(0.5em 0em 0.5em rgba(110, 110, 110, 0.349));
 
   &__container {
     gap: 2em;

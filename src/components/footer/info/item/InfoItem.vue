@@ -10,16 +10,14 @@
 </template>
 
 <script setup lang="ts">
-
-import KaznetIcon from '../../../UI/KaznetIcon.vue';
+import KaznetIcon from '../../../UI/KaznetIcon.vue'
 
 defineProps({
   icon: String,
   type: String,
   link: String,
-  text: String,
+  text: String
 })
-
 </script>
 
 <style lang="scss" scoped>
@@ -38,8 +36,7 @@ defineProps({
 
     &:visited {
       color: rgb(183, 183, 183);
-
     }
   }
 }
-</style>  
+</style>

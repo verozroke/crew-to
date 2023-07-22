@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import HeaderVue from './components/header/HeaderVue.vue';
-import FooterSection from '@/components/footer/FooterSection.vue';
+import HeaderVue from './components/header/HeaderVue.vue'
+import FooterSection from '@/components/footer/FooterSection.vue'
 </script>
 
 <template>
@@ -30,33 +30,28 @@ import FooterSection from '@/components/footer/FooterSection.vue';
   background-color: #f7f7f7;
 }
 
-[class*="__container"] {
+[class*='__container'] {
   max-width: 1400px;
   margin: 0 auto;
 }
 
-
-
 .routering {
   &-enter-from {
     opacity: 0;
-    transform: translateX(1000px);
   }
 
   &-enter-active {
-    transition: all 0.3s ease-out;
+    transition: all 0.5s ease-out;
   }
 
   &-leave-to {
     opacity: 0;
-    transform: translateX(-1000px);
   }
 
   &-leave-active {
-    transition: all 0.3s ease-in;
+    transition: all 0.5s ease-in;
   }
 }
-
 
 ::-webkit-scrollbar {
   width: 13px;

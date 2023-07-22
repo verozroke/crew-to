@@ -10,14 +10,12 @@
         <v-icon>mdi-email</v-icon>
         <div>{{ contact.email }}</div>
       </div>
-
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-
+import { ref } from 'vue'
 
 const contacts = ref([
   {
@@ -37,10 +35,8 @@ const contacts = ref([
     name: 'Бека с района',
     phone: '8-747-446-19-66',
     email: 'Verozroke450@gmail.com'
-  },
-
+  }
 ])
-
 </script>
 
 <style lang="scss" scoped>

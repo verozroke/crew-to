@@ -3,12 +3,10 @@
 </template>
 
 <script setup lang="ts">
-
 defineProps({
   icon: String,
-  color: String,
+  color: String
 })
-
 </script>
 
 <style scoped></style>
