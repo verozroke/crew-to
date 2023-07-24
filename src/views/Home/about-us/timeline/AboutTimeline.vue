@@ -3,10 +3,10 @@
     <v-timeline-item v-for="year in years" :key="year.color" :dot-color="year.color" size="small">
       <template v-slot:opposite>
         <div :class="`pt-1 headline font-weight-bold text-${year.color}`"
-          style="font-family: 'Noto Sans', sans-serif; font-weight: 900; font-size: 16px;" v-text="year.year"></div>
+          style="font-family: 'Exo 2', sans-serif; font-weight: 900; font-size: 32px; " v-text="year.year"></div>
       </template>
       <h2 :class="`headline  text-${year.color}`"
-        style="font-family: 'Noto Sans', sans-serif; font-weight: 500; font-size: 16px;">
+        style="font-family: 'Exo 2', sans-serif; font-weight: 500; font-size: 20px; padding: 30px 0;">
         {{ year.text }}
       </h2>
     </v-timeline-item>

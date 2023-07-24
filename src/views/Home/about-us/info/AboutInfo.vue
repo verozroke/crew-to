@@ -32,7 +32,7 @@
   &__text {
     font-size: 18px;
     letter-spacing: 1px;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Exo 2', sans-serif;
     width: 100%;
     text-align: justify;
     color: $black;

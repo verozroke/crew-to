@@ -1,5 +1,22 @@
 <template>
-  <div class="jury">
+  <div v-if="reverse" class="jury">
+    <div class="jury__info">
+      <div class="jury__name-box">
+        <div class="jury__name" style="padding-bottom: 5px;">{{ name }}</div>
+        <v-chip color="#32cc98" prepend-icon="mdi-briefcase" class="jury__occupation">{{
+          occupation
+        }}</v-chip>
+      </div>
+      <div class="jury__company">{{ company }}</div>
+      <div class="jury__text" style="flex: 1 1 auto;">{{ text }}</div>
+      <div class="jury__button"><v-btn color="#284240" style="color: #ffdd1b; justify-content: start !important;">Узнать
+          более</v-btn></div>
+    </div>
+    <div class="jury__image">
+      <img :src="img" alt="">
+    </div>
+  </div>
+  <div v-if="!reverse" class="jury">
     <div class="jury__image">
       <img :src="img" alt="">
     </div>
@@ -25,7 +42,8 @@ defineProps({
   occupation: String,
   company: String,
   text: String,
-  img: String
+  img: String,
+  reverse: Boolean,
 })
 
 </script>
@@ -36,7 +54,7 @@ defineProps({
   display: flex;
   gap: 2em;
   justify-content: center;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   color: $black;
 
   &__image {
@@ -90,7 +108,6 @@ defineProps({
   &__button {
     width: 100%;
     display: flex;
-    justify-content: end;
   }
 }
 </style>

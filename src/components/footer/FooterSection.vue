@@ -26,7 +26,7 @@ import FooterMedias from './contacts/FooterMedias.vue'
 
 <style lang="scss" scoped>
 .footer {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   font-weight: 500;
   padding: 40px 0 20px 0;
   background-color: $black;

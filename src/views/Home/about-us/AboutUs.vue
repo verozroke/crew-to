@@ -1,8 +1,8 @@
 <template>
   <div class="about">
     <div class="about__container">
-      <AboutTimeline />
       <AboutInfo />
+      <AboutTimeline />
     </div>
   </div>
 </template>
@@ -17,10 +17,9 @@ import AboutInfo from './info/AboutInfo.vue'
   padding: 40px 0;
 
   &__container {
-    gap: 5em;
+    gap: 15em;
     display: flex;
     align-items: center;
-    justify-content: center;
   }
 }
 </style>

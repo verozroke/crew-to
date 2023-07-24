@@ -22,13 +22,13 @@ import TextButton from './TextButton.vue';
   text-align: end;
   font-weight: 700;
   line-height: 1.2em;
-  font-family: 'Lora', serif;
+  font-family: 'Exo 2', sans-serif;
 
 }
 
 .text {
   width: 400px;
-  font-family: 'Lora', serif;
+  font-family: 'Exo 2', sans-serif;
 
 
 

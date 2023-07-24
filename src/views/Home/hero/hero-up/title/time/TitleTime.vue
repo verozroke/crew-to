@@ -30,7 +30,7 @@
 
   &__numbers {
     // font-family: 'Lora', serif;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Exo 2', sans-serif;
     font-weight: 900;
     letter-spacing: 10px;
     font-size: 64px;

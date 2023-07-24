@@ -32,7 +32,7 @@ import TitleTime from './time/TitleTime.vue'
     line-height: 1.2em;
     font-size: 120px;
     letter-spacing: 10px;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Exo 2', sans-serif;
     font-weight: 900;
     color: $black;
   }

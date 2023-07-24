@@ -42,7 +42,7 @@
     font-weight: 500;
     color: $gold;
     letter-spacing: 1px;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Exo 2', sans-serif;
   }
 
   &__digit {
