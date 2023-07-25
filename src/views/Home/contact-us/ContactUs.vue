@@ -20,7 +20,7 @@
       </div>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.542814564375!2d76.92666527595853!3d43.219077671125966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836f307c71953f%3A0x3a7913cb3982fc67!2sRitz-Carlton!5e0!3m2!1sru!2skz!4v1690191312632!5m2!1sru!2skz"
-        width="600" height="450" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy"
+        width="600" height="450" style="border:0; border-radius: 20px;" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
