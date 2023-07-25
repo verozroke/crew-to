@@ -1,6 +1,6 @@
 <template>
   <div class="block">
-    <img :src="`/gallery/${src}`" alt="" />
+    <img :src="`/crew-to/gallery/${src}`" alt="" />
   </div>
 </template>
 
