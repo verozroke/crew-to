@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import HeaderVue from './components/header/HeaderVue.vue'
 import FooterSection from '@/components/footer/FooterSection.vue'
+import PartDialog from './components/PartDialog.vue';
 </script>
 
 <template>
   <header-vue />
+  <PartDialog />
   <div class="wrapper">
     <div class="main">
       <router-view v-slot="{ Component }">
@@ -41,7 +43,7 @@ import FooterSection from '@/components/footer/FooterSection.vue'
   }
 
   &-enter-active {
-    transition: all 0.5s ease-out;
+    transition: all 0.3s ease-out;
   }
 
   &-leave-to {
@@ -49,7 +51,7 @@ import FooterSection from '@/components/footer/FooterSection.vue'
   }
 
   &-leave-active {
-    transition: all 0.5s ease-in;
+    transition: all 0.3s ease-in;
   }
 }
 

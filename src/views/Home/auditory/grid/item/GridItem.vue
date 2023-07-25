@@ -1,8 +1,8 @@
 <template>
   <div class="row">
-    <div class="image">
+    <!-- <div class="image">
       <img src="https://kaznetpartners.com/wp-content/uploads/2021/12/dffa10eb63fedd525340ac52b609cdee-small.jpg" alt="">
-    </div>
+    </div> -->
     <div class="item">
       <div class="item__box">
         <v-icon>{{ icon }}</v-icon>

@@ -9,7 +9,7 @@
       </div>
       <div class="jury__company">{{ company }}</div>
       <div class="jury__text" style="flex: 1 1 auto;">{{ text }}</div>
-      <div class="jury__button"><v-btn color="#284240" style="color: #ffdd1b; justify-content: start !important;">Узнать
+      <div class="jury__button"><v-btn color="#284240" style="color: #ffc14d; justify-content: start !important;">Узнать
           более</v-btn></div>
     </div>
     <div class="jury__image">
@@ -29,7 +29,7 @@
       </div>
       <div class="jury__company">{{ company }}</div>
       <div class="jury__text" style="flex: 1 1 auto;">{{ text }}</div>
-      <div class="jury__button"><v-btn color="#284240" style="color: #ffdd1b ;">Узнать
+      <div class="jury__button"><v-btn color="#284240" style="color: #ffc14d ;">Узнать
           более</v-btn></div>
     </div>
   </div>
