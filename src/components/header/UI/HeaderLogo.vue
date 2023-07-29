@@ -1,10 +1,23 @@
 <template>
   <RouterLink :to="{ name: 'Home' }" class="logo">
-    <img src="@img/header/header-logo.jpeg" alt="" />
+    <img :src="headerStore.isCrewAwards ? '/header/header-gold-logo.png' : '/header/header-logo.jpeg'" alt="" />
   </RouterLink>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useHeaderStore } from '@/stores/headerStore';
+import { onMounted, ref } from 'vue';
+import { useRoute } from 'vue-router';
+
+
+const headerStore = useHeaderStore()
+
+
+
+
+
+
+</script>
 
 <style lang="scss" scoped>
 .logo {
@@ -13,7 +26,7 @@
   flex: 1 1 auto;
 
   & img {
-    object-fit: cover;
+    object-fit: contain;
     width: 85.21px;
     height: 50px;
   }

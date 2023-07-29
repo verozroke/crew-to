@@ -63,7 +63,7 @@
     font-weight: 600;
     align-items: center;
     gap: 1em;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
 
   &__info {

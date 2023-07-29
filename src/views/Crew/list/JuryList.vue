@@ -1,9 +1,11 @@
 <template>
-  <div class="list">
-    <div class="list__container">
-      <JuryItem v-for="jury in juries" :key="jury.id" :name="jury.name" :occupation="jury.occupation"
-        :company="jury.company" :text="jury.text" :img="jury.img" :reverse="jury.reverse" />
-
+  <div class="jury">
+    <div class="jury__container">
+      <div class="jury__title">Жюри мероприятия</div>
+      <div class="jury__list">
+        <JuryItem v-for="jury in juries" :key="jury.id" :name="jury.name" :occupation="jury.occupation"
+          :company="jury.company" :text="jury.text" :img="jury.img" :reverse="jury.reverse" />
+      </div>
     </div>
   </div>
 </template>
@@ -47,11 +49,33 @@ const juries = ref([
 
 <style lang="scss" scoped>
 .list {
+
+
+  &__container {}
+}
+
+
+.jury {
+  padding: 40px 0;
+  background-color: #000;
+
   &__container {
-    padding: 4em 0;
     display: flex;
     flex-direction: column;
+    gap: 4em;
+  }
+
+  &__title {
+    font-size: 64px;
+    font-weight: 900;
+    font-family: 'Lora', serif;
+    color: $gold;
+  }
+
+  &__list {
+    display: flex;
     align-items: center;
+    justify-content: center;
     gap: 4em;
   }
 }

@@ -50,7 +50,7 @@ defineProps({
     color: $white;
     font-weight: 500;
     font-size: 24px;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px;
   }
 

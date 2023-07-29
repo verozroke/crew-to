@@ -1,6 +1,6 @@
 <template>
-  <v-btn color="#284240" rounded="0" size="x-large"
-    style="font-family: 'Exo 2', sans-serif; font-weight: 700; margin-bottom: 0.5em; color: #ffc14d; ;text-transform: none;"
+  <v-btn color="#32cc98" rounded="0" size="x-large"
+    style="font-family: 'Montserrat', sans-serif; font-weight: 700; margin-bottom: 0.5em; color: #f7f7f7; ;text-transform: none;"
     @click="partStore.dialog = true">Подать
     заявку</v-btn>
 </template>

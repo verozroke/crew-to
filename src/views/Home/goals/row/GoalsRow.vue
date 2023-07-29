@@ -58,7 +58,7 @@ const tab = ref('')
   display: flex;
   flex-direction: column;
   height: 400px;
-  font-family: 'Exo 2', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin-right: 20px;
 }
 </style>

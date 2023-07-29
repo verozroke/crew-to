@@ -2,7 +2,9 @@
   <div class="about">
     <div class="about__container">
       <AboutInfo />
-      <AboutTimeline />
+      <div class="timeline">
+        <AboutTimeline />
+      </div>
     </div>
   </div>
 </template>
@@ -17,9 +19,16 @@ import AboutInfo from './info/AboutInfo.vue'
   padding: 40px 0;
 
   &__container {
-    gap: 15em;
     display: flex;
     align-items: center;
   }
+}
+
+
+.timeline {
+  width: 50%;
+  height: 410px;
+  overflow: hidden;
+
 }
 </style>

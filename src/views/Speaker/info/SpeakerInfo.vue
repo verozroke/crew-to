@@ -1,7 +1,7 @@
 <template>
   <div class="speaker-info">
     <div class="speaker-info__container">
-      <v-tabs v-model="tab" color="#32cc98" style="font-family: 'Exo 2', sans-serif;" align-tabs="center">
+      <v-tabs v-model="tab" color="#32cc98" style="font-family: 'Montserrat', sans-serif;" align-tabs="center">
         <v-tab density="compact" value="speaker"
           style="text-transform: none; font-weight: 700 !important; width: 300px;">Спикеры</v-tab>
         <v-tab density="compact" value="mod"

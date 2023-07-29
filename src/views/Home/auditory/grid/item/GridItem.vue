@@ -6,9 +6,9 @@
     <div class="item">
       <div class="item__box">
         <v-icon>{{ icon }}</v-icon>
-        <div class="item__title">{{ title }}</div>
+        <div class="item__title">{{ text }}</div>
       </div>
-      <div class="item__text">{{ text }}</div>
+      <div class="item__text"></div>
     </div>
   </div>
 </template>
@@ -28,18 +28,19 @@ defineProps({
 .item {
   display: flex;
   flex-direction: column;
-
+  width: 100%;
 
 
   &__box {
     display: flex;
     align-items: center;
     gap: 0.5em;
+    width: 100%;
     color: $green;
     font-weight: 700;
     letter-spacing: 2px;
-    font-family: 'Exo 2', sans-serif;
-    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
     margin-bottom: 20px;
   }
 
@@ -49,7 +50,7 @@ defineProps({
     text-align: justify;
     font-weight: 500;
     letter-spacing: 1px;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
   }
 
@@ -57,9 +58,8 @@ defineProps({
 
 
 .row {
-  width: 45%;
+  width: 100%;
   display: flex;
-  align-items: center;
   gap: 2em;
 }
 

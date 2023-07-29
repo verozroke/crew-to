@@ -8,7 +8,7 @@
     </div>
     <div class="card__text">
       <div class="card__title" style="margin-bottom: 10px;">{{ name }}</div>
-      <div style="    font-family: 'Exo 2', sans-serif;
+      <div style="    font-family: 'Montserrat', sans-serif;
     letter-spacing: .5px;
     color: rgb(89, 89, 89);">{{ text }}</div>
     </div>
@@ -87,7 +87,7 @@ defineProps({
   }
 
   &__occupation {
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     letter-spacing: .5px;
     color: rgb(89, 89, 89)
   }

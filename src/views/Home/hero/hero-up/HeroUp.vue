@@ -15,7 +15,7 @@ import HeroTitle from './title/HeroTitle.vue'
 <style lang="scss" scoped>
 .up {
   height: 50%;
-  background-color: $white;
+  background-color: $black;
 
   &__container {
     display: flex;

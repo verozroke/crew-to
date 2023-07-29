@@ -1,41 +1,45 @@
 <template>
   <ul>
     <li>
-      <RouterLink :to="{ name: 'Home' }"
-        ><v-btn prepend-icon="mdi-home" density="compact" variant="text" class="text-capitalize"
-          >Главная</v-btn
-        ></RouterLink
-      >
+      <RouterLink :to="{ name: 'Home' }"><v-btn prepend-icon="mdi-home" density="compact" variant="text"
+          class="text-capitalize">Главная</v-btn></RouterLink>
     </li>
     <li>
-      <RouterLink :to="{ name: 'Jury' }"
-        ><v-btn prepend-icon="mdi-star" density="compact" variant="text" class="text-capitalize"
-          >Жюри</v-btn
-        ></RouterLink
-      >
+      <RouterLink :to="{ name: 'CrewAwards' }"><v-btn prepend-icon="mdi-star" style="font-weight: 700;" color="#ffc14d"
+          density="compact" variant="text" class="text-capitalize">CREW Awards</v-btn></RouterLink>
     </li>
     <li>
-      <RouterLink :to="{ name: 'Speaker' }"
-        ><v-btn
-          prepend-icon="mdi-account-tie"
-          density="compact"
-          variant="text"
-          class="text-capitalize"
-          >Спикеры / модераторы</v-btn
-        >
+      <RouterLink :to="{ name: 'Speaker' }"><v-btn prepend-icon="mdi-account-tie" density="compact" variant="text"
+          class="text-capitalize">Спикеры</v-btn>
       </RouterLink>
     </li>
     <li>
-      <RouterLink :to="{ name: 'Gallery' }"
-        ><v-btn prepend-icon="mdi-image" density="compact" class="text-capitalize" variant="text"
-          >Галерея</v-btn
-        ></RouterLink
-      >
+      <RouterLink :to="{ name: 'Gallery' }"><v-btn prepend-icon="mdi-image" density="compact" class="text-capitalize"
+          variant="text">Галерея</v-btn></RouterLink>
     </li>
   </ul>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+
+
+import { useHeaderStore } from '@/stores/headerStore';
+import { computed } from 'vue';
+
+
+const headerStore = useHeaderStore()
+
+
+const color = computed(() => {
+  return headerStore.isCrewAwards ? '#f7f7f7' : '#284240'
+})
+
+
+const hoverColor = computed(() => {
+  return headerStore.isCrewAwards ? '#ffc14d' : '#32cc98'
+
+})
+</script>
 
 <style lang="scss" scoped>
 ul {
@@ -43,12 +47,12 @@ ul {
   gap: 0.5em;
 
   & li a {
-    color: $black;
+    color: v-bind(color);
     transition: 0.2s;
 
     &:hover {
       transition: 0.2s;
-      color: $green;
+      color: v-bind(hoverColor);
     }
   }
 }

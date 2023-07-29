@@ -1,9 +1,10 @@
 <template>
-  <v-btn color="#32cc98" size="small" style="color: #f7f7f7; text-transform: none" @click="switchLang"
-    icon="mdi-translate"></v-btn>
+  <v-btn :color="headerStore.isCrewAwards ? '#ffc14d' : '#32cc98'" size="small"
+    style="color: #f7f7f7; text-transform: none" @click="switchLang" icon="mdi-translate"></v-btn>
 </template>
 
 <script setup lang="ts">
+import { useHeaderStore } from '@/stores/headerStore';
 import { ref } from 'vue'
 //@ts-ignore
 import { useI18n } from 'vue-i18n';
@@ -24,6 +25,9 @@ const switchLang = () => {
   locale.value = select.value.lang
   localStorage.setItem('lang', locale.value)
 }
+
+
+const headerStore = useHeaderStore()
 
 </script>
 

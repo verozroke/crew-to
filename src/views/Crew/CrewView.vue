@@ -1,14 +1,14 @@
 <template>
-  <div id="Gallery" class="gallery">
-    <GalleryTitle />
-    <GalleryBlocks />
+  <div id="Crew" class="crew">
+    <CrewHero />
+    <CrewAbout />
+    <JuryList />
   </div>
 </template>
 
 <script setup lang="ts">
-import GalleryTitle from './title/GalleryTitle.vue'
-import GalleryBlocks from './blocks/GalleryBlocks.vue'
-
+import JuryList from './list/JuryList.vue'
+import CrewAbout from './about/CrewAbout.vue'
 import { onMounted } from 'vue';
 import { useRoute } from 'vue-router';
 import { useHeaderStore } from '@/stores/headerStore';
@@ -22,8 +22,6 @@ onMounted(() => {
   if (route.fullPath === '/crew-awards') {
     headerStore.isCrewAwards = true
 
-  } else {
-    headerStore.isCrewAwards = false
   }
 
   window.scrollTo(0, 0)
@@ -31,4 +29,9 @@ onMounted(() => {
 })
 </script>
 
-<style scoped></style>
+<style lang="scss" scoped>
+.crew {
+  display: flex;
+  flex-direction: column;
+}
+</style>

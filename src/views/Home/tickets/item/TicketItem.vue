@@ -7,7 +7,7 @@
       <li class="item__service" v-for="service in services" :key="service">{{ service }}</li>
     </ul>
     <v-btn @click="ticketStore.dialog = true" style="margin-top: 20px;     font-weight: 600;
-    font-family: 'Exo 2', sans-serif; color: #284240" rounded="0" color="#ffc14d" size="large" width="100%">Купить
+    font-family: 'Montserrat', sans-serif; color: #284240" rounded="0" color="#ffc14d" size="large" width="100%">Купить
       билет</v-btn>
   </div>
 </template>
@@ -62,7 +62,7 @@ defineProps({
     font-size: 28px;
     margin-bottom: 80px;
     font-weight: 600;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: $green;
   }
 
@@ -72,7 +72,7 @@ defineProps({
     font-size: 28px;
     margin-bottom: 40px;
     font-weight: 600;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: $black;
   }
 
@@ -86,9 +86,9 @@ defineProps({
       list-style-type: disc;
       list-style-position: outside;
       width: 100%;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 500;
-      font-family: 'Exo 2', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       color: $green
     }
 

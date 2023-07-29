@@ -17,25 +17,25 @@ const items = ref([
     id: 1,
     icon: 'mdi-numeric-1-box-outline',
     title: 'Причина 1',
-    text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi vero ratione odit? Libero quo pariatur iure minima! Eum, perferendis officia.',
+    text: 'Качественный Networking',
   },
   {
     id: 2,
     icon: 'mdi-numeric-2-box-outline',
     title: 'Причина 2',
-    text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi vero ratione odit? Libero quo pariatur iure minima! Eum, perferendis officia.',
+    text: 'Последние новости рынка недвижимости в Казахстане и Центральной Азии. ',
   },
   {
     id: 3,
     icon: 'mdi-numeric-3-box-outline',
     title: 'Причина 3',
-    text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi vero ratione odit? Libero quo pariatur iure minima! Eum, perferendis officia.',
+    text: 'Преимущества технологий Eco-Friendly. "Зеленые" и SMART- технологии в 2024 году.',
   },
   {
     id: 4,
     icon: 'mdi-numeric-4-box-outline',
     title: 'Причина 4',
-    text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi vero ratione odit? Libero quo pariatur iure minima! Eum, perferendis officia.',
+    text: 'Расширение партнерских связей и обмен опытом',
   },
 ])
 
@@ -43,9 +43,9 @@ const items = ref([
 
 <style scoped>
 .grid {
-  width: 100%;
+  width: 50%;
   display: flex;
-  flex-wrap: wrap;
-  gap: 5em;
+  flex-direction: column;
+  gap: 2em;
 }
 </style>

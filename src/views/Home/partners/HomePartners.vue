@@ -3,9 +3,21 @@
     <div class="partners__container">
       <div class="partners__title">Партнёры мероприятия</div>
       <div class="partners__list">
-        <a href="https://shikimori.me" class="partner"><img
-            src="https://kaznetpartners.com/wp-content/uploads/2023/07/astana-tower.png" alt="">
-        </a>
+        <div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 1em;">
+          <a href="https://shikimori.me" style="width: 100%; height: 300px;" class="partner"><img
+              style="width: 100%; height: 300px;"
+              src="https://kaznetpartners.com/wp-content/uploads/2023/07/astana-tower.png" alt="">
+          </a>
+          <span style="
+              width: 100%;
+              text-align: center;
+              font-size: 32px;
+              font-weight: 900;
+              margin-bottom: 20px;
+              font-family: 'Lora', serif;
+              color: #284240;
+          ">Генеральный партнёр</span>
+        </div>
         <a href="https://shikimori.me" class="partner"><img
             src="https://kaznetpartners.com/wp-content/uploads/2023/07/lynks_logo_additional_keyword_white.jpg" alt="">
         </a>
@@ -27,6 +39,8 @@
   &__container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+
   }
 
   &__title {
@@ -42,7 +56,9 @@
   &__list {
     display: flex;
     align-items: center;
-    gap: 2em;
+    gap: 20px;
+    width: 720px;
+    flex-wrap: wrap;
     justify-content: center;
   }
 }
