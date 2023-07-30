@@ -9,6 +9,7 @@
 <script setup lang="ts">
 import JuryList from './list/JuryList.vue'
 import CrewAbout from './about/CrewAbout.vue'
+import CrewHero from './hero/CrewHero.vue';
 import { onMounted } from 'vue';
 import { useRoute } from 'vue-router';
 import { useHeaderStore } from '@/stores/headerStore';
@@ -21,7 +22,6 @@ onMounted(() => {
 
   if (route.fullPath === '/crew-awards') {
     headerStore.isCrewAwards = true
-
   }
 
   window.scrollTo(0, 0)

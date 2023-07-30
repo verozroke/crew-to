@@ -1,5 +1,5 @@
 <template>
-  <div class="header" :style="{ backgroundColor: headerStore.isCrewAwards ? 'black' : 'white' }">
+  <div class="header" :style="{ backgroundColor: headerStore.isCrewAwards ? '#1B1A17' : 'white' }">
     <div class="header__container">
       <HeaderLogo />
       <HeaderNavbar />
@@ -38,7 +38,7 @@ const headerStore = useHeaderStore()
   top: 0;
   z-index: 999;
 
-  filter: drop-shadow(0.5em 0em 0.5em #ffc14d4d);
+  filter: drop-shadow(0.5em 0em 0.5em #1a140aa5);
 
   &__container {
     gap: 2em;

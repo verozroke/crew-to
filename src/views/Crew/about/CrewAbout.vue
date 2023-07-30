@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="about" id="about-forum">
     <div class="about__container">
       <div class="about__title">О форуме</div>
       <div class="about__info">
@@ -27,6 +27,11 @@
         </div>
       </div>
       <div class="about__buttons">
+        <v-btn size="large" color="#ffc14d" rounded="0" class="text-black" prepend-icon="mdi-book-clock-outline"
+          style="font-weight: 500; font-family: 'Montserrat', sans-serif;" @click="downloadProgram">Программа
+          форума</v-btn>
+        <v-btn size="large" color="#ffc14d" rounded="0" class="text-black" prepend-icon="mdi-file-delimited"
+          style="font-weight: 500; font-family: 'Montserrat', sans-serif;" @click="downloadUstav">Устав форума</v-btn>
         <!-- Program Button -->
         <!-- Ustav Button -->
       </div>
@@ -35,13 +40,31 @@
 </template>
 
 <script setup lang="ts">
+const downloadProgram = () => {
+  const link = document.createElement('a')
+
+  link.setAttribute('href', '/storage/program.pdf')
+  link.download = 'Программа CREW Central Asia 2023.pdf'
+
+  link.click()
+}
+
+
+const downloadUstav = () => {
+  const link = document.createElement('a')
+
+  link.setAttribute('href', '/storage/ustav.pdf')
+  link.download = 'Устав CREW Awards.pdf'
+
+  link.click()
+}
 
 </script>
 
 <style lang="scss" scoped>
 .about {
-  padding: 40px 0;
-  background-color: #000;
+  padding: 80px 0;
+  background-color: #1B1A17;
 
   &__container {
     display: flex;
@@ -90,6 +113,11 @@
       line-height: 1.2em;
       font-weight: 500;
     }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 2em;
   }
 }
 </style>

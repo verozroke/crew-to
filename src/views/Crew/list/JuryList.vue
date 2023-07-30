@@ -57,7 +57,7 @@ const juries = ref([
 
 .jury {
   padding: 40px 0;
-  background-color: #000;
+  background-color: #1B1A17;
 
   &__container {
     display: flex;

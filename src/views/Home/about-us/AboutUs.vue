@@ -21,6 +21,7 @@ import AboutInfo from './info/AboutInfo.vue'
   &__container {
     display: flex;
     align-items: center;
+    gap: 2em;
   }
 }
 

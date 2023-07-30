@@ -15,12 +15,10 @@
             Central Asia"!
           </div>
           <div style="display: flex;  gap: 1em; width: 100%; align-items: end; justify-content: space-between;">
-            <a href="https://drive.google.com/drive/u/0/folders/1QbDk1od0JaAfsTzh5ON04xSXNdcb__2-">
-              <v-btn color="#284240" rounded="0"
-                style="width: 300px; color: #ffc14d;   font-weight: 700;  font-family: 'Montserrat', sans-serif;"
-                size="large">Скачать
-                программу</v-btn>
-            </a>
+            <v-btn color="#284240" rounded="0"
+              style="width: 300px; color: #ffc14d;   font-weight: 700;  font-family: 'Montserrat', sans-serif;"
+              @click="downloadProgram" size="large">Скачать
+              программу</v-btn>
             <v-btn color="#32cc98" variant="outlined" rounded="0" @click="openDialog"
               style="width: 300px; font-weight: 700; font-family: 'Montserrat', sans-serif;" size="large">Стать
               партнером ивента</v-btn>
@@ -39,6 +37,15 @@ import { useProgramStore } from '../../../stores/programStore'
 
 
 const programStore = useProgramStore()
+
+const downloadProgram = () => {
+  const link = document.createElement('a')
+
+  link.setAttribute('href', '/storage/program.pdf')
+  link.download = 'Программа CREW Central Asia 2023.pdf'
+
+  link.click()
+}
 
 
 

@@ -21,7 +21,7 @@
   display: flex;
   flex-direction: column;
   gap: 2em;
-  width: 50%;
+  width: 45%;
   // height: 400px;
 
   &__title {

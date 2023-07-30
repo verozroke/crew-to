@@ -1,6 +1,7 @@
 <template>
   <v-btn :color="headerStore.isCrewAwards ? '#ffc14d' : '#32cc98'" size="small"
-    style="color: #f7f7f7; text-transform: none" @click="switchLang" icon="mdi-translate"></v-btn>
+    :style="{ 'color': headerStore.isCrewAwards ? '#000' : '#f7f7f7' }" style="text-transform: none" @click="switchLang"
+    icon="mdi-translate"></v-btn>
 </template>
 
 <script setup lang="ts">

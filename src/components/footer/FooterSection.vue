@@ -22,6 +22,18 @@ import FooterLogo from './UI/FooterLogo.vue'
 import FooterInfo from './info/FooterInfo.vue'
 import FooterContacts from './contacts/FooterContacts.vue'
 import FooterMedias from './contacts/FooterMedias.vue'
+import { ref } from 'vue';
+import { computed } from 'vue';
+import { useHeaderStore } from '@/stores/headerStore';
+
+
+const headerStore = useHeaderStore()
+
+const backgroundFooter = computed(() => {
+  return headerStore.isCrewAwards ? '#1B1A17' : '#284240'
+})
+
+
 </script>
 
 <style lang="scss" scoped>
@@ -29,7 +41,7 @@ import FooterMedias from './contacts/FooterMedias.vue'
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   padding: 40px 0 20px 0;
-  background-color: $black;
+  background-color: v-bind(backgroundFooter);
 
   &__container {
     display: flex;
