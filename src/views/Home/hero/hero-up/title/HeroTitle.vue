@@ -4,7 +4,7 @@
       <div class="title__upper-title upper-title hidden">CREW</div>
       <TitleTime />
     </div>
-    <div class="title__bottom bottom-title hidden">Central Asia 2024.</div>
+    <div class="title__bottom bottom-title hidden">Central Asia 2023.</div>
   </div>
 </template>
 

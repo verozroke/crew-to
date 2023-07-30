@@ -1,15 +1,9 @@
 <template>
   <div class="row">
-    <MediaButton
-      v-for="button in buttons"
-      :key="button.id"
-      :icon="button.icon"
-      :link="button.link"
-    />
-    <a href="https://t.me/llKUa7SLD2hmOGU6 "
-      ><v-btn class="text-white" :color="headerStore.isCrewAwards ? '#ffc14d' : '#32cc98'" icon
-        ><img class="telegram-icon" src="../../../assets/img/telegram.png" alt="" /></v-btn
-    ></a>
+    <MediaButton v-for="button in buttons" :key="button.id" :icon="button.icon" :link="button.link" />
+    <a href="https://t.me/llKUa7SLD2hmOGU6 "><v-btn :color="headerStore.isCrewAwards ? '#ffc14d' : '#32cc98'" icon><img
+          class="telegram-icon" src="../../../assets/img/telegram.png" alt=""
+          :style="{ filter: headerStore.isCrewAwards ? 'invert(1)' : 'none' }" /></v-btn></a>
   </div>
 </template>
 
