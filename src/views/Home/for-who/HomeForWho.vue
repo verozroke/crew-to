@@ -88,4 +88,14 @@ const items = ref([
     gap: 2em;
   }
 }
+
+
+@media only screen and (max-width: 850px) {
+  .who {
+    &__title {
+      text-align: center;
+      font-size: 32px;
+    }
+  }
+}
 </style>

@@ -6,20 +6,12 @@
     <ul class="item__services">
       <li class="item__service" v-for="service in services" :key="service">{{ service }}</li>
     </ul>
-    <v-btn
-      @click="ticketStore.dialog = true"
-      style="
+    <v-btn @click="ticketStore.dialog = true" style="
         margin-top: 20px;
         font-weight: 600;
         font-family: 'Montserrat', sans-serif;
         color: #284240;
-      "
-      rounded="0"
-      color="#ffc14d"
-      size="large"
-      width="100%"
-      >Купить билет</v-btn
-    >
+      " rounded="0" color="#ffc14d" size="large" width="100%">Купить билет</v-btn>
   </div>
 </template>
 
@@ -101,6 +93,38 @@ defineProps({
     flex-direction: column;
     align-items: left;
     width: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 1285px) {
+  .item {
+    width: 100%;
+    height: fit-content;
+  }
+}
+
+
+
+@media only screen and (max-width: 450px) {
+  .item {
+    padding: 20px;
+
+    &__name {
+      font-size: 22px;
+    }
+
+    &__price {
+      font-size: 22px;
+    }
+
+    &__service-title {
+      font-size: 22px;
+    }
+
+    &__services li {
+      font-size: 15px;
+    }
   }
 }
 </style>

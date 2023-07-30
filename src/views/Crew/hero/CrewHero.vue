@@ -5,7 +5,7 @@
     <div class="hero__overlay">
       <div class="hero__container">
         <div class="hero__logo">
-          <img src="/awards-hero/logo.png" alt="" />
+          <img src="/awards-hero/logo.png" alt="Hero Logo CREW Awards Central Asia 2023" />
         </div>
         <div class="hero__buttons">
           <v-btn width="250px" size="large" variant="outlined" color="#ffc14d" rounded="0"

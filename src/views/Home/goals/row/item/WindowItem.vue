@@ -5,7 +5,7 @@
       <div class="item__text">{{ text }}</div>
     </div>
     <div class="item__image">
-      <img :src="src" alt="" />
+      <img :src="src" alt="Hero Circle Image Green Energy City Utopia" />
     </div>
   </div>
 </template>

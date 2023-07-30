@@ -2,6 +2,22 @@
 import HeaderVue from './components/header/HeaderVue.vue'
 import FooterSection from '@/components/footer/FooterSection.vue'
 import PartDialog from './components/PartDialog.vue'
+import { onMounted } from 'vue';
+import { useHeaderStore } from './stores/headerStore';
+
+
+const headerStore = useHeaderStore()
+
+onMounted(() => {
+  console.log(window.innerWidth);
+
+  if (window.innerWidth < 980) {
+    console.log('watafar blyat')
+    headerStore.isMobile = true
+  }
+
+  // headerStore.isMobile
+})
 </script>
 
 <template>
@@ -34,6 +50,7 @@ import PartDialog from './components/PartDialog.vue'
 
 [class*='__container'] {
   max-width: 1400px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 

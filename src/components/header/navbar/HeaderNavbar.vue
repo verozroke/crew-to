@@ -1,42 +1,28 @@
 <template>
-  <ul>
+  <ul :style="{ flexDirection: headerStore.isMobile ? 'column' : 'row' }">
     <li>
-      <RouterLink :to="{ name: 'Home' }"
-        ><v-btn prepend-icon="mdi-home" density="compact" variant="text" class="text-capitalize"
-          >Главная</v-btn
-        ></RouterLink
-      >
-    </li>
-    <li>
-      <RouterLink :to="{ name: 'CrewAwards' }"
-        ><v-btn
-          prepend-icon="mdi-star"
-          style="font-weight: 700"
-          color="#ffc14d"
-          density="compact"
-          variant="text"
-          class="text-capitalize"
-          >CREW Awards</v-btn
-        ></RouterLink
-      >
-    </li>
-    <li>
-      <RouterLink :to="{ name: 'Speaker' }"
-        ><v-btn
-          prepend-icon="mdi-account-tie"
-          density="compact"
-          variant="text"
-          class="text-capitalize"
-          >Спикеры</v-btn
-        >
+      <RouterLink :to="{ name: 'Home' }"><v-btn prepend-icon="mdi-home"
+          :density="headerStore.isMobile ? 'default' : 'compact'" :variant="headerStore.isMobile ? 'elevated' : 'text'"
+          class="text-capitalize">Главная</v-btn>
       </RouterLink>
     </li>
     <li>
-      <RouterLink :to="{ name: 'Gallery' }"
-        ><v-btn prepend-icon="mdi-image" density="compact" class="text-capitalize" variant="text"
-          >Галерея</v-btn
-        ></RouterLink
-      >
+      <RouterLink :to="{ name: 'CrewAwards' }"><v-btn prepend-icon="mdi-star" style="font-weight: 700" color="#ffc14d"
+          :density="headerStore.isMobile ? 'default' : 'compact'" :variant="headerStore.isMobile ? 'elevated' : 'text'"
+          class="text-capitalize">CREW
+          Awards</v-btn></RouterLink>
+    </li>
+    <li>
+      <RouterLink :to="{ name: 'Speaker' }"><v-btn prepend-icon="mdi-account-tie"
+          :density="headerStore.isMobile ? 'default' : 'compact'" :variant="headerStore.isMobile ? 'elevated' : 'text'"
+          class="text-capitalize">Спикеры</v-btn>
+      </RouterLink>
+    </li>
+    <li>
+      <RouterLink :to="{ name: 'Gallery' }"><v-btn prepend-icon="mdi-image"
+          :density="headerStore.isMobile ? 'default' : 'compact'" class="text-capitalize"
+          :variant="headerStore.isMobile ? 'elevated' : 'text'">Галерея</v-btn>
+      </RouterLink>
     </li>
   </ul>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <div class="icon">
-    <img src="@img/kaznet-icon.png" alt="" />
+    <img src="@img/kaznet-icon.png" alt="Icon of Kazakh Networking Partners" />
   </div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
   <div class="jury">
     <div class="jury__image">
-      <img :src="img" alt="" />
+      <img :src="img" alt="Jury Photo" />
     </div>
     <div class="jury__info">
       <div class="jury__name-box">
@@ -12,9 +12,7 @@
       </div>
       <div class="jury__company">{{ company }}</div>
       <div class="jury__button">
-        <v-btn append-icon="mdi-open-in-new" color="#ffc14d" style="color: #000"
-          >Узнать больше</v-btn
-        >
+        <v-btn append-icon="mdi-open-in-new" color="#ffc14d" style="color: #000">Узнать больше</v-btn>
       </div>
     </div>
   </div>

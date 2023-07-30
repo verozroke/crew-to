@@ -31,4 +31,11 @@ defineProps({
     font-family: 'Montserrat', sans-serif;
   }
 }
+
+
+@media only screen and (max-width: 450px) {
+  .item {
+    font-size: 14px;
+  }
+}
 </style>

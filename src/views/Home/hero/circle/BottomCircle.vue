@@ -2,8 +2,7 @@
   <div class="circle hidden">
     <img
       src="https://images.adsttc.com/media/images/5c2e/c5e8/08a5/e5b3/9100/002e/newsletter/VCA_-_SOPREMA_-_PICTURE_-_001.jpg?1546569157"
-      alt=""
-    />
+      alt="Circle Image" />
   </div>
 </template>
 

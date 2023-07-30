@@ -30,4 +30,18 @@ import AboutInfo from './info/AboutInfo.vue'
   height: 410px;
   overflow: hidden;
 }
+
+
+@media only screen and (max-width: 1400px) {
+  .about {
+    &__container {
+      flex-direction: column;
+    }
+  }
+
+
+  .timeline {
+    width: 100%;
+  }
+}
 </style>

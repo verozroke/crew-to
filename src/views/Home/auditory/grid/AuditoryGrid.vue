@@ -1,12 +1,6 @@
 <template>
   <div class="grid">
-    <GridItem
-      v-for="item in items"
-      :key="item.id"
-      :icon="item.icon"
-      :title="item.title"
-      :text="item.text"
-    />
+    <GridItem v-for="item in items" :key="item.id" :icon="item.icon" :title="item.title" :text="item.text" />
   </div>
 </template>
 
@@ -48,5 +42,15 @@ const items = ref([
   display: flex;
   flex-direction: column;
   gap: 2em;
+}
+
+
+
+@media only screen and (max-width: 1300px) {
+
+  .grid {
+    width: 100%;
+  }
+
 }
 </style>

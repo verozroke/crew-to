@@ -4,13 +4,8 @@
     <div class="ticket__container">
       <div class="ticket__title">Билеты</div>
       <div class="ticket__row">
-        <TicketItem
-          v-for="ticket in tickets"
-          :key="ticket.id"
-          :name="ticket.name"
-          :price="ticket.price"
-          :services="ticket.services"
-        />
+        <TicketItem v-for="ticket in tickets" :key="ticket.id" :name="ticket.name" :price="ticket.price"
+          :services="ticket.services" />
       </div>
     </div>
   </div>
@@ -74,6 +69,24 @@ const tickets = ref([
     align-items: center;
     justify-content: center;
     gap: 2em;
+  }
+}
+
+
+@media only screen and (max-width: 1285px) {
+  .ticket {
+    &__row {
+      flex-direction: column;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 850px) {
+  .ticket {
+    &__title {
+      font-size: 32px;
+    }
   }
 }
 </style>

@@ -1,13 +1,9 @@
 <template>
   <RouterLink :to="{ name: 'Home' }" class="logo">
-    <img
-      :src="
-        headerStore.isCrewAwards
-          ? '/crew-to/header/header-gold-logo.png'
-          : '/crew-to/header/header-logo.jpeg'
-      "
-      alt=""
-    />
+    <img :src="headerStore.isCrewAwards
+        ? '/crew-to/header/header-gold-logo.png'
+        : '/crew-to/header/header-logo.jpeg'
+      " alt="Header Crew Central Asia Logo" />
   </RouterLink>
 </template>
 

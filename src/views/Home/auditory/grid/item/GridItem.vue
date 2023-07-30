@@ -1,8 +1,5 @@
 <template>
   <div class="row">
-    <!-- <div class="image">
-      <img src="https://kaznetpartners.com/wp-content/uploads/2021/12/dffa10eb63fedd525340ac52b609cdee-small.jpg" alt="">
-    </div> -->
     <div class="item">
       <div class="item__box">
         <v-icon>{{ icon }}</v-icon>
@@ -57,16 +54,26 @@ defineProps({
   gap: 2em;
 }
 
-.image {
-  width: 200px;
-  height: 200px;
-  border-radius: 10px;
 
-  & img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
+
+@media only screen and (max-width: 850px) {
+
+  .item {
+    &__box {
+      font-size: 18px;
+    }
+  }
+
+}
+
+
+@media only screen and (max-width: 430px) {
+
+
+  .item {
+    &__box {
+      font-size: 14px;
+    }
   }
 }
 </style>
