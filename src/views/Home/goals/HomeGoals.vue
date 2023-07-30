@@ -9,7 +9,6 @@
 
 <script setup lang="ts">
 import GoalsRow from './row/GoalsRow.vue'
-
 </script>
 
 <style lang="scss" scoped>
@@ -19,7 +18,6 @@ import GoalsRow from './row/GoalsRow.vue'
   &__container {
     display: flex;
     flex-direction: column;
-
   }
 
   &__title {

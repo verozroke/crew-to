@@ -1,15 +1,19 @@
 <template>
   <div class="list">
-    <SpeakerCard v-for="speaker in speakers" :key="speaker.id" :name="speaker.name" :occupation="speaker.occupation"
-      :company="speaker.company" :text="speaker.text" />
+    <SpeakerCard
+      v-for="speaker in speakers"
+      :key="speaker.id"
+      :name="speaker.name"
+      :occupation="speaker.occupation"
+      :company="speaker.company"
+      :text="speaker.text"
+    />
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-import SpeakerCard from './card/SpeakerCard.vue';
-
-
+import { ref } from 'vue'
+import SpeakerCard from './card/SpeakerCard.vue'
 
 const speakers = ref([
   {
@@ -48,7 +52,6 @@ const speakers = ref([
     text: 'Бро, тебе надо тренироваться'
   }
 ])
-
 </script>
 
 <style lang="scss" scoped>

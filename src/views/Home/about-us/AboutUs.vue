@@ -25,11 +25,9 @@ import AboutInfo from './info/AboutInfo.vue'
   }
 }
 
-
 .timeline {
   width: 50%;
   height: 410px;
   overflow: hidden;
-
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <v-card width="400px" color="#284240" style="padding: 20px;">
+  <v-card width="400px" color="#284240" style="padding: 20px">
     <div class="item">
       <v-icon color="#ffc14d">mdi-{{ icon }}</v-icon>
       <div class="item__name">{{ text }}</div>
@@ -8,11 +8,9 @@
 </template>
 
 <script setup lang="ts">
-
-
 defineProps({
   text: String,
-  icon: String,
+  icon: String
 })
 </script>
 
@@ -32,6 +30,5 @@ defineProps({
     letter-spacing: 1px;
     font-family: 'Montserrat', sans-serif;
   }
-
 }
 </style>

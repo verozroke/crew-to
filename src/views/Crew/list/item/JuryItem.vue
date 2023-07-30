@@ -1,32 +1,33 @@
 <template>
   <div class="jury">
     <div class="jury__image">
-      <img :src="img" alt="">
+      <img :src="img" alt="" />
     </div>
     <div class="jury__info">
       <div class="jury__name-box">
-        <div class="jury__name" style="padding-bottom: 5px;">{{ name }}</div>
+        <div class="jury__name" style="padding-bottom: 5px">{{ name }}</div>
         <v-chip color="#ffc14d" prepend-icon="mdi-briefcase" class="jury__occupation">{{
           occupation
         }}</v-chip>
       </div>
       <div class="jury__company">{{ company }}</div>
-      <div class="jury__button"><v-btn append-icon="mdi-open-in-new" color="#ffc14d" style="color: #000 ;">Узнать
-          больше</v-btn></div>
+      <div class="jury__button">
+        <v-btn append-icon="mdi-open-in-new" color="#ffc14d" style="color: #000"
+          >Узнать больше</v-btn
+        >
+      </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-
 defineProps({
   name: String,
   occupation: String,
   company: String,
   text: String,
-  img: String,
+  img: String
 })
-
 </script>
 
 <style lang="scss" scoped>
@@ -63,7 +64,7 @@ defineProps({
 
   &__name {
     font-weight: 600;
-    margin-bottom: .2em;
+    margin-bottom: 0.2em;
     color: $gold;
     font-family: 'Lora', serif;
   }
@@ -71,9 +72,9 @@ defineProps({
   &__company {
     font-weight: 500;
     color: rgb(62, 62, 62);
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
     font-size: 16px;
-    letter-spacing: 2px
+    letter-spacing: 2px;
   }
 
   &__name-box {
@@ -82,7 +83,7 @@ defineProps({
     flex-direction: column;
     display: flex;
     font-size: 22px;
-    gap: .1em;
+    gap: 0.1em;
   }
 
   &__text {
@@ -91,9 +92,7 @@ defineProps({
     width: 100%;
     line-height: 1.2em;
   }
-
 }
-
 
 .v-chip {
   justify-content: center;

@@ -1,21 +1,16 @@
 <template>
   <div class="text-box hidden">
     <TextButton />
-    <div class="city">
-      <v-icon>mdi-domain</v-icon>Алматы
-    </div>
-    <div class="adress">
-      <v-icon>mdi-map-marker</v-icon>проспект Aль-Фараби 77/7
-    </div>
+    <div class="city"><v-icon>mdi-domain</v-icon>Алматы</div>
+    <div class="adress"><v-icon>mdi-map-marker</v-icon>проспект Aль-Фараби 77/7</div>
   </div>
 </template>
 
 <script setup lang="ts">
-import TextButton from './TextButton.vue';
+import TextButton from './TextButton.vue'
 
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('show')
     } else {
@@ -29,7 +24,7 @@ setTimeout(() => {
   let hiddenTextElements = document.querySelectorAll('.text-box.hidden')
   // let hiddenTextElements = document.querySelectorAll('.hero__text.hidden')
   let hiddenElements = [...hiddenTextElements]
-  hiddenElements.forEach(hiddenElement => {
+  hiddenElements.forEach((hiddenElement) => {
     observer.observe(hiddenElement)
   })
 }, 0)
@@ -43,7 +38,7 @@ setTimeout(() => {
   line-height: 1.2em;
   display: flex;
   align-items: center;
-  gap: .5em;
+  gap: 0.5em;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -54,7 +49,7 @@ setTimeout(() => {
   line-height: 1.2em;
   display: flex;
   align-items: center;
-  gap: .5em;
+  gap: 0.5em;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -62,9 +57,8 @@ setTimeout(() => {
   width: 400px;
   font-family: 'Montserrat', sans-serif;
 
-
   &-box {
-    gap: .5em;
+    gap: 0.5em;
     text-align: justify;
     font-weight: 700;
     flex: 1 1 auto;

@@ -2,14 +2,14 @@
   <div class="circle hidden">
     <img
       src="https://images.adsttc.com/media/images/5c2e/c5e8/08a5/e5b3/9100/002e/newsletter/VCA_-_SOPREMA_-_PICTURE_-_001.jpg?1546569157"
-      alt="">
+      alt=""
+    />
   </div>
 </template>
 
 <script setup lang="ts">
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('show')
     } else {
@@ -23,11 +23,10 @@ setTimeout(() => {
   let hiddenTimerElements = document.querySelectorAll('.circle.hidden')
   // let hiddenTextElements = document.querySelectorAll('.hero__text.hidden')
   let hiddenElements = [...hiddenTimerElements]
-  hiddenElements.forEach(hiddenElement => {
+  hiddenElements.forEach((hiddenElement) => {
     observer.observe(hiddenElement)
   })
 }, 0)
-
 </script>
 
 <style lang="scss" scoped>

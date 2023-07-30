@@ -6,15 +6,16 @@
       <li>160+ проведенных мероприятий</li>
       <li>5000 делегатов</li>
     </div>
-    <div class="info__image"><img
+    <div class="info__image">
+      <img
         src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-        alt=""></div>
+        alt=""
+      />
+    </div>
   </div>
 </template>
 
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <style lang="scss" scoped>
 .info {
@@ -32,7 +33,6 @@
   }
 
   &__text {
-
     & li {
       font-size: 25px;
       letter-spacing: 1px;

@@ -4,18 +4,22 @@
     <div class="ticket__container">
       <div class="ticket__title">Билеты</div>
       <div class="ticket__row">
-        <TicketItem v-for="ticket in tickets" :key="ticket.id" :name="ticket.name" :price="ticket.price"
-          :services="ticket.services" />
+        <TicketItem
+          v-for="ticket in tickets"
+          :key="ticket.id"
+          :name="ticket.name"
+          :price="ticket.price"
+          :services="ticket.services"
+        />
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-import TicketItem from './item/TicketItem.vue';
+import { ref } from 'vue'
+import TicketItem from './item/TicketItem.vue'
 import TicketDialog from './dialog/TicketDialog.vue'
-
 
 const tickets = ref([
   {
@@ -27,31 +31,22 @@ const tickets = ref([
       'Кофе-брейк',
       'Нетворкинг',
       'Презентации спикеров',
-      'Участие в гала-ужине Central Asia Property Awards',
+      'Участие в гала-ужине Central Asia Property Awards'
     ]
   },
   {
     id: 2,
     name: 'Конференция',
     price: '150 000',
-    services: [
-      'Кофе-брейк',
-      'Нетворкинг',
-      'Презентации спикеров',
-    ]
+    services: ['Кофе-брейк', 'Нетворкинг', 'Презентации спикеров']
   },
   {
     id: 3,
     name: 'Гала-ужин Central Asia Property Awards',
     price: '250 000',
-    services: [
-      'Фуршет',
-      'Концертная часть',
-      'Нетворкинг'
-    ]
-  },
+    services: ['Фуршет', 'Концертная часть', 'Нетворкинг']
+  }
 ])
-
 </script>
 
 <style lang="scss" scoped>

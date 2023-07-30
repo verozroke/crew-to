@@ -1,15 +1,16 @@
 <template>
   <div class="logo">
-    <img :src="headerStore.isCrewAwards ? '/crew-to/header/header-gold-logo.png' : '/crew-to/logo.png'" alt="" />
+    <img
+      :src="headerStore.isCrewAwards ? '/crew-to/header/header-gold-logo.png' : '/crew-to/logo.png'"
+      alt=""
+    />
   </div>
 </template>
 
 <script setup lang="ts">
-import { useHeaderStore } from '@/stores/headerStore';
-
+import { useHeaderStore } from '@/stores/headerStore'
 
 const headerStore = useHeaderStore()
-
 </script>
 
 <style lang="scss" scoped>

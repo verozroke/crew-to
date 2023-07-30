@@ -13,20 +13,14 @@
 import HeaderLogo from './UI/HeaderLogo.vue'
 import HeaderNavbar from './navbar/HeaderNavbar.vue'
 import HeaderButton from './UI/HeaderButton.vue'
-import LanguageButton from '../LanguageButton.vue';
-import { onMounted, ref } from 'vue';
-import { useRoute } from 'vue-router';
-import { useHeaderStore } from '@/stores/headerStore';
-
+import LanguageButton from '../LanguageButton.vue'
+import { onMounted, ref } from 'vue'
+import { useRoute } from 'vue-router'
+import { useHeaderStore } from '@/stores/headerStore'
 
 const route = useRoute()
 
-
 const headerStore = useHeaderStore()
-
-
-
-
 </script>
 
 <style lang="scss" scoped>

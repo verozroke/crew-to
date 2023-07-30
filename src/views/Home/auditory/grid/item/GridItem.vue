@@ -14,14 +14,11 @@
 </template>
 
 <script setup lang="ts">
-
 defineProps({
   title: String,
   icon: String,
-  text: String,
+  text: String
 })
-
-
 </script>
 
 <style lang="scss" scoped>
@@ -29,7 +26,6 @@ defineProps({
   display: flex;
   flex-direction: column;
   width: 100%;
-
 
   &__box {
     display: flex;
@@ -53,16 +49,13 @@ defineProps({
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
   }
-
 }
-
 
 .row {
   width: 100%;
   display: flex;
   gap: 2em;
 }
-
 
 .image {
   width: 200px;

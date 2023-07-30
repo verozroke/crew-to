@@ -6,27 +6,33 @@
     <ul class="item__services">
       <li class="item__service" v-for="service in services" :key="service">{{ service }}</li>
     </ul>
-    <v-btn @click="ticketStore.dialog = true" style="margin-top: 20px;     font-weight: 600;
-    font-family: 'Montserrat', sans-serif; color: #284240" rounded="0" color="#ffc14d" size="large" width="100%">Купить
-      билет</v-btn>
+    <v-btn
+      @click="ticketStore.dialog = true"
+      style="
+        margin-top: 20px;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        color: #284240;
+      "
+      rounded="0"
+      color="#ffc14d"
+      size="large"
+      width="100%"
+      >Купить билет</v-btn
+    >
   </div>
 </template>
 
 <script setup lang="ts">
-import { useTicketStore } from '@/stores/ticketStore';
-
-
+import { useTicketStore } from '@/stores/ticketStore'
 
 const ticketStore = useTicketStore()
-
 
 defineProps({
   name: String,
   services: Array<string>,
   price: String
-
 })
-
 </script>
 
 <style lang="scss" scoped>
@@ -89,7 +95,7 @@ defineProps({
       font-size: 18px;
       font-weight: 500;
       font-family: 'Montserrat', sans-serif;
-      color: $green
+      color: $green;
     }
 
     flex-direction: column;

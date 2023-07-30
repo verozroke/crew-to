@@ -5,20 +5,17 @@
       <div class="item__text">{{ text }}</div>
     </div>
     <div class="item__image">
-      <img :src="src" alt="">
+      <img :src="src" alt="" />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-
-
 defineProps({
   title: String,
   text: String,
-  src: String,
+  src: String
 })
-
 </script>
 
 <style lang="scss" scoped>
@@ -34,7 +31,7 @@ defineProps({
     padding: 20px;
     width: 50%;
     color: $gold;
-    margin-bottom: .2em;
+    margin-bottom: 0.2em;
     background-color: $black;
   }
 
@@ -68,8 +65,5 @@ defineProps({
       width: 100%;
     }
   }
-
-
-
 }
 </style>

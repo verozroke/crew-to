@@ -6,8 +6,8 @@
 </template>
 
 <script setup lang="ts">
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('show')
     } else {
@@ -21,11 +21,10 @@ setTimeout(() => {
   let hiddenTitleElements = document.querySelectorAll('.time.hidden')
   // let hiddenTextElements = document.querySelectorAll('.hero__text.hidden')
   let hiddenElements = [...hiddenTitleElements]
-  hiddenElements.forEach(hiddenElement => {
+  hiddenElements.forEach((hiddenElement) => {
     observer.observe(hiddenElement)
   })
 }, 0)
-
 </script>
 
 <style lang="scss" scoped>

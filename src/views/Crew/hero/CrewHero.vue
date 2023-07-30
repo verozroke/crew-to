@@ -5,21 +5,21 @@
     <div class="hero__overlay">
       <div class="hero__container">
         <div class="hero__logo">
-          <img src="/crew-to/awards-hero/logo.png" alt="">
+          <img src="/awards-hero/logo.png" alt="" />
         </div>
         <div class="hero__buttons">
           <v-btn width="250px" size="large" variant="outlined" color="#ffc14d" rounded="0"
-            style="font-weight: 500; font-family: 'Montserrat', sans-serif;" @click="programStore.dialog = true">Стать
+            style="font-weight: 500; font-family: 'Montserrat', sans-serif" @click="programStore.dialog = true">Стать
             партнером</v-btn>
           <v-btn width="250px" size="large" color="#ffc14d" rounded="0" class="text-black"
-            style="font-weight: 500; font-family: 'Montserrat', sans-serif;" @click="ticketStore.dialog = true">Купить
+            style="font-weight: 500; font-family: 'Montserrat', sans-serif" @click="ticketStore.dialog = true">Купить
             билет</v-btn>
           <v-btn width="250px" size="large" variant="outlined" color="#ffc14d" rounded="0"
-            style="font-weight: 500; font-family: 'Montserrat', sans-serif;" @click="partStore.dialog = true">Подать
+            style="font-weight: 500; font-family: 'Montserrat', sans-serif" @click="partStore.dialog = true">Подать
             заявку</v-btn>
         </div>
         <v-btn icon="mdi-arrow-down" variant="text" @click="moveDown('about-forum')"
-          style="font-size: 24px; color: #7a7a7a; position: absolute; bottom: 30px;">
+          style="font-size: 24px; color: #7a7a7a; position: absolute; bottom: 30px">
           <v-icon></v-icon>
         </v-btn>
       </div>
@@ -31,18 +31,16 @@
 </template>
 
 <script setup lang="ts">
-import PartDialog from '@/components/PartDialog.vue';
-import TicketDialog from '@/views/Home/tickets/dialog/TicketDialog.vue';
+import PartDialog from '@/components/PartDialog.vue'
+import TicketDialog from '@/views/Home/tickets/dialog/TicketDialog.vue'
 import PartnerDialog from './dialog/PartnerDialog.vue'
-import { useProgramStore } from '@/stores/programStore';
-import { useTicketStore } from '@/stores/ticketStore';
-import { usePartStore } from '@/stores/partStore';
-
+import { useProgramStore } from '@/stores/programStore'
+import { useTicketStore } from '@/stores/ticketStore'
+import { usePartStore } from '@/stores/partStore'
 
 const programStore = useProgramStore()
 const ticketStore = useTicketStore()
 const partStore = usePartStore()
-
 
 const moveDown = (blockID: string) => {
   const $block = document.getElementById(blockID)
@@ -51,8 +49,6 @@ const moveDown = (blockID: string) => {
     block: 'start'
   })
 }
-
-
 </script>
 
 <style lang="scss" scoped>

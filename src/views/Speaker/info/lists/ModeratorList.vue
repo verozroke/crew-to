@@ -1,15 +1,19 @@
 <template>
   <div class="list">
-    <SpeakerCard v-for="mod in mods" :key="mod.id" :name="mod.name" :occupation="mod.occupation" :company="mod.company"
-      :text="mod.text" />
+    <SpeakerCard
+      v-for="mod in mods"
+      :key="mod.id"
+      :name="mod.name"
+      :occupation="mod.occupation"
+      :company="mod.company"
+      :text="mod.text"
+    />
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-import SpeakerCard from './card/SpeakerCard.vue';
-
-
+import { ref } from 'vue'
+import SpeakerCard from './card/SpeakerCard.vue'
 
 const mods = ref([
   {
@@ -48,7 +52,6 @@ const mods = ref([
     text: 'Бро, тебе надо тренироваться'
   }
 ])
-
 </script>
 
 <style lang="scss" scoped>

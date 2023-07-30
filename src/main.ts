@@ -21,7 +21,6 @@ import { languages, defaultLocale } from '@/i18n/index'
 //@ts-ignore
 import { createI18n, useI18n } from 'vue-i18n'
 
-
 const vuetify = createVuetify({
   components,
   directives,
@@ -53,7 +52,6 @@ const i18n = createI18n({
   locale: localStorageLang || defaultLocale,
   fallbackLocale: 'ru',
   messages
-
 })
 app.use(i18n)
 

@@ -32,39 +32,33 @@ const _minutes = computed(() => _seconds.value * 60)
 const _hours = computed(() => _minutes.value * 60)
 const _days = computed(() => _hours.value * 24)
 
-
 const showRemaining = () => {
   const timer = setInterval(() => {
-    const now = new Date();
+    const now = new Date()
     const end = new Date(2023, 9, 18, 9, 30)
 
     const distance = end.getTime() - now.getTime()
-
 
     if (distance < 0) {
       clearInterval(timer)
       return
     }
 
-
     const days = Math.floor(distance / _days.value)
 
-    const hours = Math.floor((distance % _days.value) / _hours.value);
-    const minutes = Math.floor((distance % _hours.value) / _minutes.value);
-    const seconds = Math.floor((distance % _minutes.value) / _seconds.value);
-    displayMinutes.value = minutes < 10 ? "0" + minutes : minutes;
-    displaySeconds.value = seconds < 10 ? "0" + seconds : seconds;
-    displayHours.value = hours < 10 ? "0" + hours : hours;
-    displayDays.value = days < 10 ? "0" + days : days;
+    const hours = Math.floor((distance % _days.value) / _hours.value)
+    const minutes = Math.floor((distance % _hours.value) / _minutes.value)
+    const seconds = Math.floor((distance % _minutes.value) / _seconds.value)
+    displayMinutes.value = minutes < 10 ? '0' + minutes : minutes
+    displaySeconds.value = seconds < 10 ? '0' + seconds : seconds
+    displayHours.value = hours < 10 ? '0' + hours : hours
+    displayDays.value = days < 10 ? '0' + days : days
   }, 1000)
 }
-
-
 
 onMounted(() => {
   showRemaining()
 })
-
 </script>
 
 <style lang="scss" scoped>
@@ -99,7 +93,7 @@ onMounted(() => {
     font-family: 'Lora', serif;
     text-align: center;
     color: $white;
-    border-radius: .1em;
+    border-radius: 0.1em;
     border: 2px solid $white;
     height: 150px;
     width: 125px;

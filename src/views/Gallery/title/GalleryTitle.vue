@@ -1,6 +1,8 @@
 <template>
   <div class="title">
-    <div class="title__container">Галерея <v-icon style="font-size: 100px; margin-left: .2em;">mdi-image</v-icon></div>
+    <div class="title__container">
+      Галерея <v-icon style="font-size: 100px; margin-left: 0.2em">mdi-image</v-icon>
+    </div>
   </div>
 </template>
 

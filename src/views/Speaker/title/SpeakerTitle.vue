@@ -1,7 +1,9 @@
 <template>
   <div class="title">
-    <div class="title__container">Спикеры и модераторы <v-icon
-        style="font-size: 100px; margin-left: .2em;">mdi-account-tie</v-icon></div>
+    <div class="title__container">
+      Спикеры и модераторы
+      <v-icon style="font-size: 100px; margin-left: 0.2em">mdi-account-tie</v-icon>
+    </div>
   </div>
 </template>
 

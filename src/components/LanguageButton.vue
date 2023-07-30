@@ -1,19 +1,25 @@
 <template>
-  <v-btn :color="headerStore.isCrewAwards ? '#ffc14d' : '#32cc98'" size="small"
-    :style="{ 'color': headerStore.isCrewAwards ? '#000' : '#f7f7f7' }" style="text-transform: none" @click="switchLang"
-    icon="mdi-translate"></v-btn>
+  <v-btn
+    :color="headerStore.isCrewAwards ? '#ffc14d' : '#32cc98'"
+    size="small"
+    :style="{ color: headerStore.isCrewAwards ? '#000' : '#f7f7f7' }"
+    style="text-transform: none"
+    @click="switchLang"
+    icon="mdi-translate"
+  ></v-btn>
 </template>
 
 <script setup lang="ts">
-import { useHeaderStore } from '@/stores/headerStore';
+import { useHeaderStore } from '@/stores/headerStore'
 import { ref } from 'vue'
 //@ts-ignore
-import { useI18n } from 'vue-i18n';
+import { useI18n } from 'vue-i18n'
 
 const { t, locale } = useI18n({ useScope: 'global' })
 
-
-const select = ref(localStorage.getItem('lang') ? { lang: localStorage.getItem('lang') } : { lang: 'ru' })
+const select = ref(
+  localStorage.getItem('lang') ? { lang: localStorage.getItem('lang') } : { lang: 'ru' }
+)
 
 const switchLang = () => {
   if (select.value.lang === 'ru') {
@@ -27,9 +33,7 @@ const switchLang = () => {
   localStorage.setItem('lang', locale.value)
 }
 
-
 const headerStore = useHeaderStore()
-
 </script>
 
 <style scoped></style>

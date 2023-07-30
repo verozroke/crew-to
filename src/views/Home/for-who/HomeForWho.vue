@@ -10,66 +10,56 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-import WhoItem from './item/WhoItem.vue';
-
+import { ref } from 'vue'
+import WhoItem from './item/WhoItem.vue'
 
 const items = ref([
   {
     id: 1,
     text: 'Девелоперы',
-    icon: 'code-json',
+    icon: 'code-json'
   },
   {
     id: 2,
     text: 'Property & facility-компании',
-    icon: 'sprout',
-
+    icon: 'sprout'
   },
   {
     id: 3,
     text: 'Обслуживающие компании',
-    icon: 'account-wrench',
-
+    icon: 'account-wrench'
   },
   {
     id: 4,
     text: 'Агентства недвижимости',
-    icon: 'sign-real-estate',
+    icon: 'sign-real-estate'
   },
   {
     id: 5,
     text: 'Поставщики решений',
-    icon: 'checkbox-multiple-marked-circle',
-
+    icon: 'checkbox-multiple-marked-circle'
   },
   {
     id: 6,
     text: 'Производство материалов',
-    icon: 'factory',
-
+    icon: 'factory'
   },
   {
     id: 7,
     text: 'Арендаторы',
-    icon: 'car-key',
-
+    icon: 'car-key'
   },
   {
     id: 8,
     text: 'Инвесторы',
-    icon: 'cash-multiple',
-
+    icon: 'cash-multiple'
   },
   {
     id: 9,
     text: 'IT-интеграторы',
-    icon: 'code-tags-check',
-
-  },
-
+    icon: 'code-tags-check'
+  }
 ])
-
 </script>
 
 <style lang="scss" scoped>

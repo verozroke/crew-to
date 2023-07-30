@@ -2,17 +2,14 @@
   <div class="hero">
     <HeroUp />
     <HeroBottom />
-    <BottomCircle style="position: absolute; bottom: -1100px; z-index: 2; right: -750px;" />
+    <BottomCircle style="position: absolute; bottom: -1100px; z-index: 2; right: -750px" />
   </div>
 </template>
 
 <script setup lang="ts">
-import HeroBottom from './hero-bottom/HeroBottom.vue';
-import HeroUp from './hero-up/HeroUp.vue';
+import HeroBottom from './hero-bottom/HeroBottom.vue'
+import HeroUp from './hero-up/HeroUp.vue'
 import BottomCircle from './circle/BottomCircle.vue'
-
-
-
 </script>
 
 <style lang="scss" scoped>
@@ -23,6 +20,5 @@ import BottomCircle from './circle/BottomCircle.vue'
   display: flex;
   flex-direction: column;
   width: 100vw;
-
 }
 </style>

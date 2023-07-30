@@ -10,8 +10,8 @@
 <script setup lang="ts">
 import BottomTimer from './timer/BottomTimer.vue'
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('show')
     } else {
@@ -25,11 +25,10 @@ setTimeout(() => {
   let hiddenTimerElements = document.querySelectorAll('.bottom-timer.hidden')
   // let hiddenTextElements = document.querySelectorAll('.hero__text.hidden')
   let hiddenElements = [...hiddenTimerElements]
-  hiddenElements.forEach(hiddenElement => {
+  hiddenElements.forEach((hiddenElement) => {
     observer.observe(hiddenElement)
   })
 }, 0)
-
 </script>
 
 <style lang="scss" scoped>

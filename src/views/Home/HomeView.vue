@@ -9,25 +9,21 @@ import HomeProgram from './program/HomeProgram.vue'
 import ContactUs from './contact-us/ContactUs.vue'
 import HomeTicket from './tickets/HomeTicket.vue'
 
-import { onMounted } from 'vue';
-import { useRoute } from 'vue-router';
-import { useHeaderStore } from '@/stores/headerStore';
+import { onMounted } from 'vue'
+import { useRoute } from 'vue-router'
+import { useHeaderStore } from '@/stores/headerStore'
 const route = useRoute()
-
 
 const headerStore = useHeaderStore()
 
 onMounted(() => {
-
   if (route.fullPath === '/crew-awards') {
     headerStore.isCrewAwards = true
-
   } else {
     headerStore.isCrewAwards = false
   }
 
   window.scrollTo(0, 0)
-
 })
 </script>
 
@@ -44,7 +40,5 @@ onMounted(() => {
     <ContactUs />
     <HomePartners />
     <!-- sections -->
-
-
   </div>
 </template>

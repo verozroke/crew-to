@@ -1,11 +1,7 @@
 <script setup lang="ts">
 import HeaderVue from './components/header/HeaderVue.vue'
 import FooterSection from '@/components/footer/FooterSection.vue'
-import PartDialog from './components/PartDialog.vue';
-
-
-
-
+import PartDialog from './components/PartDialog.vue'
 </script>
 
 <template>

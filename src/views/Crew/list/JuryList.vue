@@ -3,8 +3,16 @@
     <div class="jury__container">
       <div class="jury__title">Жюри мероприятия</div>
       <div class="jury__list">
-        <JuryItem v-for="jury in juries" :key="jury.id" :name="jury.name" :occupation="jury.occupation"
-          :company="jury.company" :text="jury.text" :img="jury.img" :reverse="jury.reverse" />
+        <JuryItem
+          v-for="jury in juries"
+          :key="jury.id"
+          :name="jury.name"
+          :occupation="jury.occupation"
+          :company="jury.company"
+          :text="jury.text"
+          :img="jury.img"
+          :reverse="jury.reverse"
+        />
       </div>
     </div>
   </div>
@@ -14,8 +22,6 @@
 import { ref } from 'vue'
 import JuryItem from './item/JuryItem.vue'
 
-
-
 const juries = ref([
   {
     id: 1,
@@ -24,7 +30,7 @@ const juries = ref([
     company: 'ТОО Ak Didar',
     text: 'Огуречкин Иван - достойный кандидат мастера спорта по пинпонгу. Он умеет Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, doloribus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut aut a amet perspiciatis obcaecati molestiae debitis cupiditate quae, laudantium quia?',
     img: 'https://media.glamour.com/photos/56957dc55fff94d44eec1d9b/master/pass/entertainment-2013-09-saul-breaking-bad-main.jpg',
-    reverse: false,
+    reverse: false
   },
   {
     id: 2,
@@ -33,7 +39,7 @@ const juries = ref([
     company: 'ТОО Ak Didar',
     text: 'Огуречкин Иван - достойный кандидат мастера спорта по пинпонгу. Он умеет Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, doloribus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut aut a amet perspiciatis obcaecati molestiae debitis cupiditate quae, laudantium quia?',
     img: 'https://media.glamour.com/photos/56957dc55fff94d44eec1d9b/master/pass/entertainment-2013-09-saul-breaking-bad-main.jpg',
-    reverse: true,
+    reverse: true
   },
   {
     id: 3,
@@ -42,22 +48,20 @@ const juries = ref([
     company: 'ТОО Ak Didar',
     text: 'Огуречкин Иван - достойный кандидат мастера спорта по пинпонгу. Он умеет Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, doloribus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut aut a amet perspiciatis obcaecati molestiae debitis cupiditate quae, laudantium quia?',
     img: 'https://media.glamour.com/photos/56957dc55fff94d44eec1d9b/master/pass/entertainment-2013-09-saul-breaking-bad-main.jpg',
-    reverse: false,
+    reverse: false
   }
 ])
 </script>
 
 <style lang="scss" scoped>
 .list {
-
-
-  &__container {}
+  &__container {
+  }
 }
-
 
 .jury {
   padding: 40px 0;
-  background-color: #1B1A17;
+  background-color: #1b1a17;
 
   &__container {
     display: flex;

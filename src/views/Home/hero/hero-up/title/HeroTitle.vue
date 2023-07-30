@@ -1,9 +1,7 @@
 <template>
-  <div class=" title ">
-    <div class="title__upper ">
-      <div class="title__upper-title upper-title hidden">
-        CREW
-      </div>
+  <div class="title">
+    <div class="title__upper">
+      <div class="title__upper-title upper-title hidden">CREW</div>
       <TitleTime />
     </div>
     <div class="title__bottom bottom-title hidden">Central Asia 2024.</div>
@@ -13,8 +11,8 @@
 <script setup lang="ts">
 import TitleTime from './time/TitleTime.vue'
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('show')
     } else {
@@ -29,7 +27,7 @@ setTimeout(() => {
   let hiddenBottomTitleElements = document.querySelectorAll('.bottom-title.hidden')
   // let hiddenTextElements = document.querySelectorAll('.hero__text.hidden')
   let hiddenElements = [...hiddenTitleElements, ...hiddenBottomTitleElements]
-  hiddenElements.forEach(hiddenElement => {
+  hiddenElements.forEach((hiddenElement) => {
     observer.observe(hiddenElement)
   })
 }, 0)
@@ -42,7 +40,6 @@ setTimeout(() => {
   justify-content: end;
   height: 100%;
   padding-bottom: 60px;
-
 
   &__upper {
     display: flex;
