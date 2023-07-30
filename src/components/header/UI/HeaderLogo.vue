@@ -1,13 +1,12 @@
 <template>
   <RouterLink :to="{ name: 'Home' }" class="logo">
-    <img :src="headerStore.isCrewAwards ? '/header/header-gold-logo.png' : '/header/header-logo.jpeg'" alt="" />
+    <img :src="headerStore.isCrewAwards ? '/crew-to/header/header-gold-logo.png' : '/crew-to/header/header-logo.jpeg'"
+      alt="" />
   </RouterLink>
 </template>
 
 <script setup lang="ts">
 import { useHeaderStore } from '@/stores/headerStore';
-import { onMounted, ref } from 'vue';
-import { useRoute } from 'vue-router';
 
 
 const headerStore = useHeaderStore()
