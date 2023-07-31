@@ -22,4 +22,15 @@ import HeroTitle from './title/HeroTitle.vue'
     height: 100%;
   }
 }
+
+
+@media only screen and (max-width: 1282px) {
+  .up {
+    height: 100%;
+
+    &__container {
+      flex-direction: column;
+    }
+  }
+}
 </style>

@@ -52,6 +52,7 @@ const tickets = ref([
 <style lang="scss" scoped>
 .ticket {
   padding: 40px 0;
+  background-color: #1b1a17;
 
   &__container {
     display: flex;
@@ -65,7 +66,7 @@ const tickets = ref([
     margin-bottom: 40px;
     font-weight: 900;
     font-family: 'Lora', serif;
-    color: $black;
+    color: $gold;
   }
 
   &__row {

@@ -23,8 +23,6 @@ import { useHeaderStore } from '@/stores/headerStore'
 const route = useRoute()
 
 const headerStore = useHeaderStore()
-
-
 </script>
 
 <style lang="scss" scoped>

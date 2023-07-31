@@ -31,14 +31,12 @@ import AboutInfo from './info/AboutInfo.vue'
   overflow: hidden;
 }
 
-
 @media only screen and (max-width: 1400px) {
   .about {
     &__container {
       flex-direction: column;
     }
   }
-
 
   .timeline {
     width: 100%;

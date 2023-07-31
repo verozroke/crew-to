@@ -1,20 +1,31 @@
 <template>
   <div class="ticker">
     <v-timeline>
-      <v-timeline-item v-for="year in years" :key="year.color" :dot-color="year.color" size="x-small">
+      <v-timeline-item
+        v-for="year in years"
+        :key="year.color"
+        :dot-color="year.color"
+        size="x-small"
+      >
         <template v-slot:opposite>
-          <div :class="`headline font-weight-bold timeline-year text-${year.color}`"
+          <div
+            :class="`headline font-weight-bold timeline-year text-${year.color}`"
             style="font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 32px"
-            :style="{ color: year.color }" v-text="year.year"></div>
+            :style="{ color: year.color }"
+            v-text="year.year"
+          ></div>
         </template>
-        <h2 :class="`headline timeline-text  text-${year.color}`" style="
+        <h2
+          :class="`headline timeline-text  text-${year.color}`"
+          style="
             font-family: 'Montserrat', sans-serif;
             font-weight: 500;
             font-size: 20px;
-            padding: 30px 0;
+            /* padding: 30px 0; */
             width: 100%;
             text-align: justify;
-          ">
+          "
+        >
           {{ year.text }}
         </h2>
       </v-timeline-item>
@@ -116,7 +127,7 @@ const years = ref([
 
 <style scoped>
 .ticker {
-  height: 4000px;
+  height: 2500px;
   box-sizing: content-box;
   width: 100%;
 
@@ -143,9 +154,7 @@ const years = ref([
   }
 }
 
-
 @media only screen and (max-width: 736px) {
-
   .timeline-year {
     font-size: 18px !important;
   }
@@ -153,17 +162,13 @@ const years = ref([
   .timeline-text {
     font-size: 12px !important;
   }
-
 }
 
-
 @media only screen and (max-width: 450px) {
-
   .timeline-text {
     font-size: 9px !important;
     width: 100px !important;
     margin-right: 0 !important;
   }
-
 }
 </style>

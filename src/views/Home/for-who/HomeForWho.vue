@@ -89,7 +89,6 @@ const items = ref([
   }
 }
 
-
 @media only screen and (max-width: 850px) {
   .who {
     &__title {

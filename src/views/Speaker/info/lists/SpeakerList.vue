@@ -1,13 +1,7 @@
 <template>
   <div class="list">
-    <SpeakerCard
-      v-for="speaker in speakers"
-      :key="speaker.id"
-      :name="speaker.name"
-      :occupation="speaker.occupation"
-      :company="speaker.company"
-      :text="speaker.text"
-    />
+    <SpeakerCard v-for="speaker in speakers" :key="speaker.id" :name="speaker.name" :occupation="speaker.occupation"
+      :company="speaker.company" :text="speaker.text" />
   </div>
 </template>
 
@@ -61,5 +55,12 @@ const speakers = ref([
   gap: 2em;
   align-items: center;
   justify-content: center;
+}
+
+
+@media only screen and (max-width: 666px) {
+  .list {
+    width: 300px !important;
+  }
 }
 </style>

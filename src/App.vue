@@ -2,19 +2,35 @@
 import HeaderVue from './components/header/HeaderVue.vue'
 import FooterSection from '@/components/footer/FooterSection.vue'
 import PartDialog from './components/PartDialog.vue'
-import { onMounted } from 'vue';
-import { useHeaderStore } from './stores/headerStore';
-
+import { nextTick, onMounted, ref } from 'vue'
+import { useHeaderStore } from './stores/headerStore'
 
 const headerStore = useHeaderStore()
 
-onMounted(() => {
-  console.log(window.innerWidth);
-
+function onResize() {
   if (window.innerWidth < 980) {
-    console.log('watafar blyat')
     headerStore.isMobile = true
+  } else if (window.innerWidth >= 980) {
+    headerStore.isMobile = false
   }
+}
+
+onMounted(() => {
+  if (window.innerWidth < 980) {
+    headerStore.isMobile = true
+  } else if (window.innerWidth >= 980) {
+    headerStore.isMobile = false
+  }
+  nextTick(() => {
+    window.addEventListener('resize', onResize)
+  })
+
+  // console.log(window.innerWidth);
+
+  // if (window.innerWidth < 980) {
+  //   console.log('watafar blyat')
+  //   headerStore.isMobile = true
+  // }
 
   // headerStore.isMobile
 })

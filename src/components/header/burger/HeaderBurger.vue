@@ -1,16 +1,35 @@
 <template>
   <div>
-    <v-btn @click="dialog = true" icon="mdi-menu" variant="tonal" color="#32cc98"></v-btn>
-    <v-dialog v-model="dialog" fullscreen :scrim="false" transition="dialog-bottom-transition">
+    <v-btn
+      @click="headerStore.burger = true"
+      icon="mdi-menu"
+      variant="tonal"
+      :color="headerStore.isCrewAwards ? '#ffc14d' : '#32cc98'"
+    ></v-btn>
+    <v-dialog
+      v-model="headerStore.burger"
+      fullscreen
+      :scrim="false"
+      transition="dialog-bottom-transition"
+    >
       <v-card>
-        <v-toolbar color="#f7f7f7">
-          <div class="toolbar"><v-btn icon="mdi-close" variant="text" color="#32cc98" @click="dialog = false"></v-btn>
+        <v-toolbar
+          :color="headerStore.isCrewAwards ? '#1B1A17' : '#f7f7f7'"
+          style="transition: 0.4s"
+        >
+          <div class="toolbar">
+            <v-btn
+              icon="mdi-close"
+              variant="text"
+              :color="headerStore.isCrewAwards ? '#ffc14d' : '#32cc98'"
+              @click="headerStore.burger = false"
+            ></v-btn>
           </div>
         </v-toolbar>
-        <div class="body">
-          <HeaderNavbar />
-          <HeaderButton />
-          <LanguageButton />
+        <div class="body" :style="{ backgroundColor: backgroundColoring }">
+          <BurgerNavbar />
+          <BurgerButton />
+          <BurgerLanguageButton />
         </div>
       </v-card>
     </v-dialog>
@@ -19,13 +38,17 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import HeaderNavbar from '../navbar/HeaderNavbar.vue'
-import HeaderButton from '../UI/HeaderButton.vue'
-import LanguageButton from '../../LanguageButton.vue'
+import BurgerNavbar from './childs/BurgerNavbar.vue'
+import BurgerButton from './childs/BurgerButton.vue'
+import BurgerLanguageButton from './childs/BurgerLanguageButton.vue'
+import { useHeaderStore } from '@/stores/headerStore'
+import { computed } from 'vue'
 
+const headerStore = useHeaderStore()
 
-const dialog = ref(false)
-
+const backgroundColoring = computed(() => {
+  return headerStore.isCrewAwards ? '#1B1A17' : '#f7f7f7'
+})
 </script>
 
 <style lang="scss" scoped>
@@ -37,10 +60,14 @@ const dialog = ref(false)
 }
 
 .body {
+  transition: 0.4s;
+  padding: 0 40px;
   display: flex;
   height: 100%;
   width: 100%;
+  gap: 2em;
+  justify-content: center;
   flex-direction: column;
-  background-color: $white;
+  background-color: v-bind(backgroundColoring);
 }
 </style>

@@ -1,0 +1,36 @@
+<template>
+  <v-btn
+    v-if="!headerStore.isCrewAwards"
+    @click="partStore.dialog = true"
+    size="large"
+    :color="headerStore.isCrewAwards ? '#ffc14d' : '#32cc98'"
+    style="color: #f7f7f7; text-transform: none"
+    >{{ t('header.button') }}</v-btn
+  >
+  <v-btn
+    v-if="headerStore.isCrewAwards"
+    size="large"
+    @click="ticketStore.dialog = true"
+    :color="headerStore.isCrewAwards ? '#ffc14d' : '#32cc98'"
+    style="color: #000; text-transform: none"
+    >Купить билет</v-btn
+  >
+</template>
+
+<script setup lang="ts">
+import { useHeaderStore } from '@/stores/headerStore'
+import { usePartStore } from '@/stores/partStore'
+import { useTicketStore } from '@/stores/ticketStore'
+// @ts-ignore
+
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n({ useScope: 'global' })
+
+const partStore = usePartStore()
+const ticketStore = useTicketStore()
+
+const headerStore = useHeaderStore()
+</script>
+
+<style scoped></style>

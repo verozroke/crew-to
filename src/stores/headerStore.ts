@@ -4,6 +4,7 @@ import { defineStore } from 'pinia'
 export const useHeaderStore = defineStore('headerStore', () => {
   const isCrewAwards = ref(false)
   const isMobile = ref(false)
+  const burger = ref(false)
 
   const changeisCrewAwards = () => {
     isCrewAwards.value = !isCrewAwards.value
@@ -16,5 +17,6 @@ export const useHeaderStore = defineStore('headerStore', () => {
     changeisCrewAwards,
     isMobile,
     changeIsMobile,
+    burger
   }
 })

@@ -25,16 +25,35 @@
           </div>
         </div>
         <div class="about__image">
-          <img src="https://kaznetpartners.com/wp-content/uploads/2019/05/IMG_8963-768x512.jpg"
-            alt="About Us Section from Crew Awards Forum Image" />
+          <iframe
+            src="https://app.vectary.com/p/02yW3ciqUKtbcXAHhIniPn"
+            frameborder="0"
+            width="100%"
+            height="100%"
+          ></iframe>
         </div>
       </div>
       <div class="about__buttons">
-        <v-btn size="large" color="#ffc14d" rounded="0" class="text-black" prepend-icon="mdi-book-clock-outline"
-          style="font-weight: 500; font-family: 'Montserrat', sans-serif" @click="downloadProgram">Программа
-          форума</v-btn>
-        <v-btn size="large" color="#ffc14d" rounded="0" class="text-black" prepend-icon="mdi-file-delimited"
-          style="font-weight: 500; font-family: 'Montserrat', sans-serif" @click="downloadUstav">Устав форума</v-btn>
+        <v-btn
+          size="large"
+          color="#ffc14d"
+          rounded="0"
+          class="text-black"
+          prepend-icon="mdi-book-clock-outline"
+          style="font-weight: 500; font-family: 'Montserrat', sans-serif"
+          @click="downloadProgram"
+          >Программа форума</v-btn
+        >
+        <v-btn
+          size="large"
+          color="#ffc14d"
+          rounded="0"
+          class="text-black"
+          prepend-icon="mdi-file-delimited"
+          style="font-weight: 500; font-family: 'Montserrat', sans-serif"
+          @click="downloadUstav"
+          >Устав форума</v-btn
+        >
         <!-- Program Button -->
         <!-- Ustav Button -->
       </div>
@@ -103,7 +122,7 @@ const downloadUstav = () => {
     width: 60%;
     justify-content: space-between;
 
-    &>div {
+    & > div {
       font-size: 16px;
       letter-spacing: 1px;
       font-family: 'Montserrat', sans-serif;
@@ -119,6 +138,48 @@ const downloadUstav = () => {
   &__buttons {
     display: flex;
     gap: 2em;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .about {
+    &__title {
+      text-align: center;
+    }
+
+    &__text {
+      width: 100%;
+      gap: 2em;
+
+      & > div {
+        text-align: center;
+      }
+    }
+
+    &__info {
+      flex-direction: column !important;
+      align-items: center;
+    }
+
+    &__buttons {
+      justify-content: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .about {
+    &__title {
+      font-size: 32px;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .about {
+    &__buttons {
+      flex-direction: column !important;
+    }
   }
 }
 </style>

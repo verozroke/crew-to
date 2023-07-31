@@ -83,4 +83,22 @@ const juries = ref([
     gap: 4em;
   }
 }
+
+@media only screen and (max-width: 1058px) {
+  .jury {
+    &__list {
+      flex-direction: column;
+      gap: 0.5em;
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .jury {
+    &__title {
+      text-align: center;
+      font-size: 32px;
+    }
+  }
+}
 </style>

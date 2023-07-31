@@ -67,4 +67,32 @@ const backgroundFooter = computed(() => {
     color: $white;
   }
 }
+
+
+@media only screen and (max-width: 1275px) {
+  .footer {
+    &__main {
+      flex-direction: column;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 660px) {
+  .footer {
+    &__second {
+      flex-direction: column;
+      gap: 1em;
+    }
+
+    &__rights {
+      text-align: center;
+    }
+  }
+
+  .row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 </style>

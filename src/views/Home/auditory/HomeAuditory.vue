@@ -8,28 +8,47 @@
           <div class="info__image">
             <img
               src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/453787532.jpg?k=33c31fc80a87fdf4f8a4d08fd1a3df8bd60ac3918106a10140e29f7a9705e293&o=&hp=1"
-              alt="Auditory More Image" />
+              alt="Auditory More Image"
+            />
           </div>
           <div class="info__text">
             Ждём Вас 18 октября в отеле "The Ritz-Carlton Carlton Almaty" на ежегодном
             Центрально-Азиатском форуме "Crew Central Asia"!
           </div>
-          <div class="button-row" style="
+          <div
+            class="button-row"
+            style="
               display: flex;
               gap: 1em;
               width: 100%;
               align-items: end;
               justify-content: space-between;
-            ">
-            <v-btn color="#284240" class="button" rounded="0" style="
+            "
+          >
+            <v-btn
+              color="#284240"
+              class="button"
+              rounded="0"
+              style="
                 width: 300px;
                 color: #ffc14d;
                 font-weight: 700;
                 font-family: 'Montserrat', sans-serif;
-              " @click="downloadProgram" size="large">Скачать программу</v-btn>
-            <v-btn color="#32cc98" class="button" variant="outlined" rounded="0" @click="openDialog"
-              style="width: 300px; font-weight: 700; font-family: 'Montserrat', sans-serif" size="large">Стать партнером
-              ивента</v-btn>
+              "
+              @click="downloadProgram"
+              size="large"
+              >Скачать программу</v-btn
+            >
+            <v-btn
+              color="#32cc98"
+              class="button"
+              variant="outlined"
+              rounded="0"
+              @click="openDialog"
+              style="width: 300px; font-weight: 700; font-family: 'Montserrat', sans-serif"
+              size="large"
+              >Стать партнером ивента</v-btn
+            >
             <ProgramDialog />
           </div>
         </div>
@@ -113,7 +132,6 @@ const openDialog = () => {
   }
 }
 
-
 @media only screen and (max-width: 1300px) {
   .row {
     flex-direction: column;
@@ -140,13 +158,11 @@ const openDialog = () => {
     }
   }
 
-
   .info {
     &__text {
       font-size: 16px;
     }
   }
-
 
   .button {
     font-size: 10px !important;
@@ -155,8 +171,6 @@ const openDialog = () => {
 }
 
 @media only screen and (max-width: 430px) {
-
-
   .button-row {
     flex-direction: column;
     align-items: center !important;

@@ -1,7 +1,7 @@
 <template>
   <div class="title">
     <div class="title__container">
-      Галерея <v-icon style="font-size: 100px; margin-left: 0.2em">mdi-image</v-icon>
+      Галерея <v-icon class="icon" style="font-size: 100px; margin-left: 0.2em">mdi-image</v-icon>
     </div>
   </div>
 </template>
@@ -25,6 +25,16 @@
     align-items: end;
     height: 100%;
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .icon {
+    font-size: 32px !important;
   }
 }
 </style>

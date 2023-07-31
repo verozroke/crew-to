@@ -1,7 +1,7 @@
 <template>
   <div class="bottom">
     <div class="bottom__container bottom-timer hidden">
-      <div class="bottom__title">До конференции:</div>
+      <div class="bottom__title">До начала конференции:</div>
       <BottomTimer />
     </div>
   </div>
@@ -64,6 +64,29 @@ setTimeout(() => {
       filter: blur(0);
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1282px) {
+  .bottom {
+    &__container {
+      gap: 2em;
+      align-items: center;
+    }
+
+    &__title {
+      text-align: center;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 674px) {
+  .bottom {
+    &__title {
+      font-size: 32px;
     }
   }
 }

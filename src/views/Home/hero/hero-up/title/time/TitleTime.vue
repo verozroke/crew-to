@@ -1,7 +1,7 @@
 <template>
   <div class="time hidden">
-    <div class="time__begin">День мероприятия:</div>
-    <div class="time__numbers">18.10</div>
+    <!-- <div class="time__begin">День мероприятия:</div> -->
+    <div class="time__numbers">18 октября</div>
   </div>
 </template>
 
@@ -31,24 +31,25 @@ setTimeout(() => {
 .time {
   &.hidden {
     opacity: 0;
-    transition: all 1.5s;
+    transition: all 2s;
     filter: blur(20px);
-    transform: translateY(-200px);
+    transform: translateX(-200px);
   }
 
   &.show {
     filter: blur(0);
     opacity: 1;
-    transform: translateY(0%);
+    transform: translateX(0%);
   }
 
   display: flex;
   flex-direction: column;
-  margin-right: 35px;
-  height: 100px;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
   background-color: $green;
   color: $white;
-  width: 250px;
+  width: 350px;
   padding: 10px;
 
   &__begin {
@@ -62,7 +63,18 @@ setTimeout(() => {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     letter-spacing: 10px;
-    font-size: 64px;
+    font-size: 24px;
+  }
+}
+
+
+@media only screen and (max-width: 674px) {
+  .time {
+    width: 300px;
+
+    &__numbers {
+      font-size: 20px;
+    }
   }
 }
 </style>

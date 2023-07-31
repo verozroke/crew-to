@@ -1,22 +1,17 @@
 <template>
-  <div
-    class="card"
-    style="
+  <div class="card" style="
       background-image: url('https://v1.popcornnews.ru/k2/news/1200/upload/news/446128934473.jpg');
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-    "
-  >
+    ">
     <div class="card__box">
       <div class="card__title">{{ name }}</div>
       <div class="card__occupation">{{ occupation }}, {{ company }}</div>
     </div>
     <div class="card__text">
       <div class="card__title" style="margin-bottom: 10px">{{ name }}</div>
-      <div
-        style="font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px; color: rgb(89, 89, 89)"
-      >
+      <div style="font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px; color: rgb(89, 89, 89)">
         {{ text }}
       </div>
     </div>
@@ -95,6 +90,14 @@ defineProps({
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.5px;
     color: rgb(89, 89, 89);
+  }
+}
+
+
+@media only screen and (max-width: 666px) {
+  .card {
+    width: 300px;
+    height: 350px;
   }
 }
 </style>

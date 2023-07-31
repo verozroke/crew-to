@@ -12,7 +12,9 @@
       </div>
       <div class="jury__company">{{ company }}</div>
       <div class="jury__button">
-        <v-btn append-icon="mdi-open-in-new" color="#ffc14d" style="color: #000">Узнать больше</v-btn>
+        <v-btn append-icon="mdi-open-in-new" color="#ffc14d" style="color: #000"
+          >Узнать больше</v-btn
+        >
       </div>
     </div>
   </div>
@@ -94,5 +96,10 @@ defineProps({
 
 .v-chip {
   justify-content: center;
+}
+
+@media only screen and (max-width: 1058px) {
+  .jury {
+  }
 }
 </style>

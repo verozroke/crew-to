@@ -34,4 +34,19 @@ defineProps({
     transform: scale(1);
   }
 }
+
+
+
+@media only screen and (max-width: 750px) {
+  .block {
+    width: 100%;
+    max-width: 100%;
+
+    & img {
+      filter: brightness(100%);
+      transform: scale(1);
+      transition: 0.4s;
+    }
+  }
+}
 </style>

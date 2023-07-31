@@ -18,6 +18,7 @@
             style="font-weight: 500; font-family: 'Montserrat', sans-serif" @click="partStore.dialog = true">Подать
             заявку</v-btn>
         </div>
+        <CrewSteps />
         <v-btn icon="mdi-arrow-down" variant="text" @click="moveDown('about-forum')"
           style="font-size: 24px; color: #7a7a7a; position: absolute; bottom: 30px">
           <v-icon></v-icon>
@@ -78,6 +79,41 @@ const moveDown = (blockID: string) => {
   &__buttons {
     display: flex;
     gap: 2em;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .hero {
+    &__logo {
+      width: 500px;
+      height: 195px;
+
+      & img {
+        width: 100%;
+      }
+    }
+
+    &__buttons {
+      flex-direction: column;
+      gap: 1em;
+    }
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .hero {
+    &__container {
+      gap: 2em;
+    }
+
+    &__logo {
+      width: 100%;
+
+      & img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
   }
 }
 </style>

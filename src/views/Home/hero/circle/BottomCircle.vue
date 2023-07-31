@@ -56,4 +56,22 @@ setTimeout(() => {
     border-radius: 50%;
   }
 }
+
+
+@media only screen and (max-width: 1282px) {
+  .circle {
+    &.hidden {
+      opacity: 0;
+      transition: all 2s;
+      filter: blur(20px);
+      transform: translateY(300px);
+    }
+
+    &.show {
+      filter: blur(0);
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
 </style>

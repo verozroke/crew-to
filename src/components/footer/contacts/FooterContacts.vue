@@ -44,6 +44,14 @@ const contacts = ref([
   display: flex;
 }
 
+
+@media only screen and (max-width: 850px) {
+  .contacts {
+    flex-direction: column;
+    gap: 2em;
+  }
+}
+
 .contact {
   display: flex;
   flex-direction: column;

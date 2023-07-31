@@ -32,7 +32,6 @@ defineProps({
   }
 }
 
-
 @media only screen and (max-width: 450px) {
   .item {
     font-size: 14px;

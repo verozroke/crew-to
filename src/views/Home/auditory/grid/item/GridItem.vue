@@ -54,22 +54,15 @@ defineProps({
   gap: 2em;
 }
 
-
-
 @media only screen and (max-width: 850px) {
-
   .item {
     &__box {
       font-size: 18px;
     }
   }
-
 }
 
-
 @media only screen and (max-width: 430px) {
-
-
   .item {
     &__box {
       font-size: 14px;

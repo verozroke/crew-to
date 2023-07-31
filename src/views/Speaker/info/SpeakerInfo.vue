@@ -1,31 +1,18 @@
 <template>
   <div class="speaker-info">
     <div class="speaker-info__container">
-      <v-tabs
-        v-model="tab"
-        color="#32cc98"
-        style="font-family: 'Montserrat', sans-serif"
-        align-tabs="center"
-      >
-        <v-tab
-          density="compact"
-          value="speaker"
-          style="text-transform: none; font-weight: 700 !important; width: 300px"
-          >Спикеры</v-tab
-        >
-        <v-tab
-          density="compact"
-          value="mod"
-          style="text-transform: none; font-weight: 700 !important; width: 300px"
-          >Модераторы</v-tab
-        >
+      <v-tabs v-model="tab" color="#32cc98" style="font-family: 'Montserrat', sans-serif" align-tabs="center">
+        <v-tab density="compact" value="speaker" class="tab"
+          style="text-transform: none; font-weight: 700 !important; width: 300px">Спикеры</v-tab>
+        <v-tab density="compact" value="mod" class="tab"
+          style="text-transform: none; font-weight: 700 !important; width: 300px">Модераторы</v-tab>
       </v-tabs>
       <v-window v-model="tab">
-        <v-window-item value="speaker">
+        <v-window-item value="speaker" class="col">
           <div class="title">Наши спикеры</div>
           <SpeakerList />
         </v-window-item>
-        <v-window-item value="mod">
+        <v-window-item value="mod" class="col">
           <div class="title">Наши модераторы</div>
           <ModeratorList />
         </v-window-item>
@@ -60,5 +47,25 @@ const tab = ref(null)
   margin-bottom: 50px;
   font-family: 'Lora', serif;
   color: $black;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+@media only screen and (max-width: 850px) {
+  .title {
+    font-size: 32px;
+  }
+}
+
+
+@media only screen and (max-width: 666px) {
+  .tab {
+    width: 120px !important;
+  }
 }
 </style>

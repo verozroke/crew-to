@@ -99,4 +99,38 @@ onMounted(() => {
     width: 125px;
   }
 }
+
+
+@media only screen and (max-width: 674px) {
+  .timer {
+    &__title {
+      font-size: 14px;
+    }
+
+    &__digit {
+      font-size: 32px;
+      width: 75px;
+      height: 100px;
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 400px) {
+  .timer {
+    gap: 1em;
+
+    &__title {
+      font-size: 12px;
+    }
+
+    &__digit {
+      font-size: 20px;
+      width: 50px;
+      height: 75px;
+    }
+
+  }
+}
 </style>

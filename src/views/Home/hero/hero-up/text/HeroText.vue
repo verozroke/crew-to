@@ -3,11 +3,13 @@
     <TextButton />
     <div class="city"><v-icon>mdi-domain</v-icon>Алматы</div>
     <div class="adress"><v-icon>mdi-map-marker</v-icon>проспект Aль-Фараби 77/7</div>
+    <TitleTime />
   </div>
 </template>
 
 <script setup lang="ts">
 import TextButton from './TextButton.vue'
+import TitleTime from '../title/time/TitleTime.vue'
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -85,6 +87,36 @@ setTimeout(() => {
       opacity: 1;
       transform: translateY(0);
     }
+  }
+}
+
+
+@media only screen and (max-width: 1282px) {
+  .text {
+    &-box {
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 20px;
+    }
+
+
+  }
+
+
+}
+
+
+
+@media only screen and (max-width: 674px) {
+  .city {
+    font-size: 18px;
+    text-align: center;
+
+  }
+
+  .adress {
+    font-size: 18px;
+    text-align: center;
   }
 }
 </style>

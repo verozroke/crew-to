@@ -12,10 +12,10 @@
         margin-top: 20px;
         font-weight: 600;
         font-family: 'Montserrat', sans-serif;
-        color: #ffc14d;
+        color: #1b1a17;
       "
       rounded="0"
-      color="#284240"
+      color="#ffc14d"
       size="large"
       width="100%"
       >Купить билет</v-btn
@@ -40,7 +40,7 @@ defineProps({
   width: 28%;
   height: 600px;
   padding: 40px;
-  background-color: $white;
+  background-color: #343432;
   border-radius: 20px;
   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.177));
   display: flex;
@@ -59,7 +59,7 @@ defineProps({
     text-align: center;
     height: 40px;
     font-family: 'Lora', serif;
-    color: $black;
+    color: $white;
   }
 
   &__price {
@@ -69,7 +69,7 @@ defineProps({
     margin-bottom: 80px;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
-    color: $green;
+    color: $gold;
   }
 
   &__service-title {
@@ -79,7 +79,7 @@ defineProps({
     margin-bottom: 40px;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
-    color: $black;
+    color: $white;
   }
 
   &__services {
@@ -95,7 +95,7 @@ defineProps({
       font-size: 18px;
       font-weight: 500;
       font-family: 'Montserrat', sans-serif;
-      color: $green;
+      color: $gold;
     }
 
     flex-direction: column;
