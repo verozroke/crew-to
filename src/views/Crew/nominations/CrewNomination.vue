@@ -16,10 +16,18 @@
 </template>
 
 <script lang="ts" setup>
+import type { Ref } from 'vue';
 import NominationList from './list/NominationList.vue';
 import { ref } from 'vue'
 
-const items1 = ref([
+type TypeNomination = {
+  id: number;
+  title: string;
+  text: string;
+}
+
+
+const items1: Ref<TypeNomination[]> = ref([
   {
     id: 1,
     title: 'Редевелопмент года',
@@ -46,7 +54,7 @@ const items1 = ref([
 
 ])
 
-const items2 = ref([
+const items2: Ref<TypeNomination[]> = ref([
   {
     id: 1,
     title: 'Управляющая компания года',

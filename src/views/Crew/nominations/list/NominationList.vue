@@ -19,9 +19,17 @@
 
 <script setup lang="ts">
 
-defineProps({
-  items: Array,
-})
+
+type TypeNomination = {
+  id: number;
+  title: string;
+  text: string;
+}
+
+
+defineProps<{
+  items: TypeNomination[]
+}>()
 
 </script>
 
