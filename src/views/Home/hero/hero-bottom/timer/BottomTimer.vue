@@ -100,7 +100,6 @@ onMounted(() => {
   }
 }
 
-
 @media only screen and (max-width: 674px) {
   .timer {
     &__title {
@@ -115,8 +114,6 @@ onMounted(() => {
   }
 }
 
-
-
 @media only screen and (max-width: 400px) {
   .timer {
     gap: 1em;
@@ -130,7 +127,6 @@ onMounted(() => {
       width: 50px;
       height: 75px;
     }
-
   }
 }
 </style>

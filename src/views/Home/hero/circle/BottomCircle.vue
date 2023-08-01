@@ -1,8 +1,6 @@
 <template>
   <div class="circle hidden">
-    <img
-      src="https://images.adsttc.com/media/images/5c2e/c5e8/08a5/e5b3/9100/002e/newsletter/VCA_-_SOPREMA_-_PICTURE_-_001.jpg?1546569157"
-      alt="Circle Image" />
+    <img src="/crew-to/hero-image.jpg" alt="Circle Image" />
   </div>
 </template>
 
@@ -56,7 +54,6 @@ setTimeout(() => {
     border-radius: 50%;
   }
 }
-
 
 @media only screen and (max-width: 1282px) {
   .circle {

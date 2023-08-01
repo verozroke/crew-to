@@ -51,7 +51,7 @@ const tickets = ref([
 
 <style lang="scss" scoped>
 .ticket {
-  padding: 40px 0;
+  padding: 80px 0;
 
   &__container {
     display: flex;

@@ -29,9 +29,6 @@
   }
 }
 
-
-
-
 @media only screen and (max-width: 750px) {
   .title {
     font-size: 32px;

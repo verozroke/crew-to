@@ -68,7 +68,6 @@ const backgroundFooter = computed(() => {
   }
 }
 
-
 @media only screen and (max-width: 1275px) {
   .footer {
     &__main {
@@ -76,7 +75,6 @@ const backgroundFooter = computed(() => {
     }
   }
 }
-
 
 @media only screen and (max-width: 660px) {
   .footer {

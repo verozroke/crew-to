@@ -23,7 +23,6 @@ import HeroTitle from './title/HeroTitle.vue'
   }
 }
 
-
 @media only screen and (max-width: 1282px) {
   .up {
     height: 100%;

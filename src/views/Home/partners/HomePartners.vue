@@ -16,8 +16,7 @@
               alt="Event Partner"
             />
           </a>
-          <span
-            style="
+          <!-- <span style="
               width: 100%;
               text-align: center;
               font-size: 32px;
@@ -25,9 +24,7 @@
               margin-bottom: 20px;
               font-family: 'Lora', serif;
               color: #284240;
-            "
-            >Генеральный партнёр</span
-          >
+            ">Генеральный партнёр</span> -->
         </div>
         <a href="https://shikimori.me" class="partner"
           ><img
@@ -36,9 +33,7 @@
           />
         </a>
         <a href="https://shikimori.me" class="partner"
-          ><img
-            src="https://kaznetpartners.com/wp-content/uploads/2023/07/gray-plaza.png"
-            alt="Event Partner"
+          ><img src="/crew-to/grey-plaza.jpeg" alt="Event Partner"
         /></a>
       </div>
     </div>
@@ -49,7 +44,7 @@
 
 <style lang="scss" scoped>
 .partners {
-  padding: 40px 0;
+  padding: 80px 0;
 
   &__container {
     display: flex;

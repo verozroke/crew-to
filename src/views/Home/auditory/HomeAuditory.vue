@@ -80,7 +80,7 @@ const openDialog = () => {
 
 <style lang="scss" scoped>
 .auditory {
-  padding: 40px 0;
+  padding: 80px 0;
 
   &__container {
     display: flex;

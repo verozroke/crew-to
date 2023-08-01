@@ -2,7 +2,10 @@
   <div class="hero">
     <HeroUp />
     <HeroBottom />
-    <BottomCircle class="circling" style="position: absolute; bottom: -1100px; z-index: 2; right: -750px" />
+    <BottomCircle
+      class="circling"
+      style="position: absolute; bottom: -1000px; z-index: 2; right: -750px"
+    />
   </div>
 </template>
 
@@ -22,10 +25,6 @@ import BottomCircle from './circle/BottomCircle.vue'
   width: 100vw;
 }
 
-
-
-
-
 @media only screen and (max-width: 1282px) {
   .hero {
     background-color: $black;
@@ -34,6 +33,7 @@ import BottomCircle from './circle/BottomCircle.vue'
   }
 
   .circling {
+    bottom: -1100px !important;
     right: calc(50% - 750px) !important;
   }
 }

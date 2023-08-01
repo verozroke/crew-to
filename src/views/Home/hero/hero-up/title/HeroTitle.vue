@@ -25,7 +25,11 @@ setTimeout(() => {
   let hiddenBottomTitleElements = document.querySelectorAll('.bottom-title.hidden')
   let hiddenBottom2TitleElements = document.querySelectorAll('.bottom-2-title.hidden')
   // let hiddenTextElements = document.querySelectorAll('.hero__text.hidden')
-  let hiddenElements = [...hiddenTitleElements, ...hiddenBottomTitleElements, ...hiddenBottom2TitleElements]
+  let hiddenElements = [
+    ...hiddenTitleElements,
+    ...hiddenBottomTitleElements,
+    ...hiddenBottom2TitleElements
+  ]
   hiddenElements.forEach((hiddenElement) => {
     observer.observe(hiddenElement)
   })
@@ -91,7 +95,7 @@ setTimeout(() => {
         opacity: 0;
         transition: all 2.5s;
         filter: blur(20px);
-        transform: translateX(-400px);
+        transform: translateX(-300px);
       }
 
       &.show {
@@ -116,12 +120,10 @@ setTimeout(() => {
   }
 }
 
-
 @media only screen and (max-width: 1282px) {
   .title {
     padding: 40px 0;
     align-items: center;
-
 
     &__bottom {
       padding: 0;
@@ -131,13 +133,10 @@ setTimeout(() => {
         padding: 0;
 
         text-align: center !important;
-
       }
     }
   }
 }
-
-
 
 @media only screen and (max-width: 674px) {
   .title {

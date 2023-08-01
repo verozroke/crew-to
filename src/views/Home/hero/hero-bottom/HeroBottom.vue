@@ -68,7 +68,6 @@ setTimeout(() => {
   }
 }
 
-
 @media only screen and (max-width: 1282px) {
   .bottom {
     &__container {
@@ -81,7 +80,6 @@ setTimeout(() => {
     }
   }
 }
-
 
 @media only screen and (max-width: 674px) {
   .bottom {

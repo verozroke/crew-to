@@ -1,5 +1,5 @@
 <template>
-  <v-dialog v-model="ticketStore.dialog" style="max-width: 900px;">
+  <v-dialog v-model="ticketStore.dialog" style="max-width: 900px">
     <v-card>
       <div class="upper">
         <v-card-title class="title"> Купить билет </v-card-title>
@@ -7,9 +7,12 @@
           <v-btn variant="text" icon="mdi-close"></v-btn>
         </div>
       </div>
-      <iframe width="100%" height="768"
+      <iframe
+        width="100%"
+        height="768"
         src=" https://www.wrike.com/form/eyJhY2NvdW50SWQiOjU4OTQ5OTgsInRhc2tGb3JtSWQiOjEwNzMwMjh9CTQ4NDM3NzY3MDc2NDYJOTQwZGM2NWNkYjFlNDU0Y2QzYzhmZDIyNDRjY2NlNDZiOGQ4M2E2YjhmZTFlNTQyMjBmNjU3NWIyOGJkNjYwOA== "
-        frameborder="0"></iframe>
+        frameborder="0"
+      ></iframe>
     </v-card>
   </v-dialog>
 </template>

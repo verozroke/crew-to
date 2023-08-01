@@ -3,12 +3,16 @@
     <div class="nomination__container">
       <div class="nomination__title">Номинации</div>
       <div class="nomination__box">
-        <div class="nomination__subtitle">Номинации, победители которых автоматически получают право участия в
-          международном этапе Конкурса FIABCI Prix d’Excellence</div>
+        <div class="nomination__subtitle">
+          Номинации, победители которых автоматически получают право участия в международном этапе
+          Конкурса FIABCI Prix d’Excellence
+        </div>
         <NominationList :items="items1" />
       </div>
       <div class="nomination__box">
-        <div class="nomination__subtitle">Специальные номинации Конкурса CENTRAL ASIA PROPERTY AWARDS 2023</div>
+        <div class="nomination__subtitle">
+          Специальные номинации Конкурса CENTRAL ASIA PROPERTY AWARDS 2023
+        </div>
         <NominationList :items="items2" />
       </div>
     </div>
@@ -16,16 +20,15 @@
 </template>
 
 <script lang="ts" setup>
-import type { Ref } from 'vue';
-import NominationList from './list/NominationList.vue';
+import type { Ref } from 'vue'
+import NominationList from './list/NominationList.vue'
 import { ref } from 'vue'
 
 type TypeNomination = {
-  id: number;
-  title: string;
-  text: string;
+  id: number
+  title: string
+  text: string
 }
-
 
 const items1: Ref<TypeNomination[]> = ref([
   {
@@ -50,8 +53,7 @@ const items1: Ref<TypeNomination[]> = ref([
     title: 'Лучший объект рекреации и отдыха',
     text: `Лучшие проекты в каждой из нижеперечисленных категорий будут награждены. Объекты рекреации и отдыха
 (тематические, детские парки)`
-  },
-
+  }
 ])
 
 const items2: Ref<TypeNomination[]> = ref([
@@ -127,12 +129,8 @@ const items2: Ref<TypeNomination[]> = ref([
     \n● Номинация «Девелопер года - Город в городе»;
     \n● Номинация «Девелопер года - Комфортная среда»;
     \n● Номинация «Премьера года».`
-  },
-
-
+  }
 ])
-
-
 </script>
 
 <style lang="scss" scoped>
@@ -172,7 +170,6 @@ const items2: Ref<TypeNomination[]> = ref([
   }
 }
 
-
 @media only screen and (max-width: 850px) {
   .nomination {
     &__title {
@@ -189,9 +186,7 @@ const items2: Ref<TypeNomination[]> = ref([
   }
 }
 
-
 @media only screen and (max-width: 500px) {
-
   .nomination {
     &__box {
       width: 100%;

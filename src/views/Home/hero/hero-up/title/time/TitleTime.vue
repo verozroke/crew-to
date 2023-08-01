@@ -31,25 +31,25 @@ setTimeout(() => {
 .time {
   &.hidden {
     opacity: 0;
-    transition: all 2s;
+    transition: all 2s ease;
     filter: blur(20px);
-    transform: translateX(-200px);
+    transform: translateX(200px);
   }
 
   &.show {
     filter: blur(0);
     opacity: 1;
-    transform: translateX(0%);
+    transform: translateY(0);
   }
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 50px;
+  height: 44px;
   background-color: $green;
   color: $white;
-  width: 350px;
+  width: 200px;
   padding: 10px;
 
   &__begin {
@@ -62,15 +62,14 @@ setTimeout(() => {
     // font-family: 'Lora', serif;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
-    letter-spacing: 10px;
-    font-size: 24px;
+    letter-spacing: 5px;
+    font-size: 20px;
   }
 }
 
-
 @media only screen and (max-width: 674px) {
   .time {
-    width: 300px;
+    // width: 300px;
 
     &__numbers {
       font-size: 20px;

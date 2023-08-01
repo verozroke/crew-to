@@ -44,7 +44,6 @@ const contacts = ref([
   display: flex;
 }
 
-
 @media only screen and (max-width: 850px) {
   .contacts {
     flex-direction: column;

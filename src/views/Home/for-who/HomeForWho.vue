@@ -64,7 +64,7 @@ const items = ref([
 
 <style lang="scss" scoped>
 .who {
-  padding: 40px 0;
+  padding: 80px 0;
 
   &__container {
     display: flex;

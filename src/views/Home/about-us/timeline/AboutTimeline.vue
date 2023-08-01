@@ -1,6 +1,6 @@
 <template>
   <div class="ticker">
-    <v-timeline>
+    <v-timeline side="end">
       <v-timeline-item
         v-for="year in years"
         :key="year.color"
@@ -23,7 +23,7 @@
             font-size: 20px;
             /* padding: 30px 0; */
             width: 100%;
-            text-align: justify;
+            text-align: left;
           "
         >
           {{ year.text }}

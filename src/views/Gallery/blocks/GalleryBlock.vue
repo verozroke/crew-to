@@ -35,8 +35,6 @@ defineProps({
   }
 }
 
-
-
 @media only screen and (max-width: 750px) {
   .block {
     width: 100%;

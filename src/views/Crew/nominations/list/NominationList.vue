@@ -1,10 +1,18 @@
 <template>
   <v-expansion-panels>
     <v-expansion-panel color="#343432" v-for="item in items" :key="item.id">
-      <v-expansion-panel-title color="#ffc14d"
-        style="display: flex; align-items: center; gap: 1em; font-family: 'Montserrat', sans-serif;font-family: 'Montserrat', sans-serif;">
+      <v-expansion-panel-title
+        color="#ffc14d"
+        style="
+          display: flex;
+          align-items: center;
+          gap: 1em;
+          font-family: 'Montserrat', sans-serif;
+          font-family: 'Montserrat', sans-serif;
+        "
+      >
         <v-icon>mdi-trophy-award</v-icon>
-        <div style="letter-spacing: 1px; font-weight: 700; font-size: 18px;" class="title">
+        <div style="letter-spacing: 1px; font-weight: 700; font-size: 18px" class="title">
           {{ item.title }}
         </div>
       </v-expansion-panel-title>
@@ -18,19 +26,15 @@
 </template>
 
 <script setup lang="ts">
-
-
 type TypeNomination = {
-  id: number;
-  title: string;
-  text: string;
+  id: number
+  title: string
+  text: string
 }
-
 
 defineProps<{
   items: TypeNomination[]
 }>()
-
 </script>
 
 <style lang="scss" scoped>
@@ -47,7 +51,6 @@ defineProps<{
   }
 }
 
-
 @media only screen and (max-width: 608px) {
   .title {
     font-size: 16px !important;
@@ -58,9 +61,7 @@ defineProps<{
   }
 }
 
-
 @media only screen and (max-width: 500px) {
-
   .title {
     font-size: 14px !important;
   }
@@ -68,6 +69,5 @@ defineProps<{
   .text {
     font-size: 12px !important;
   }
-
 }
 </style>

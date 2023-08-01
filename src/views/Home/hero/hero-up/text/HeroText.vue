@@ -1,9 +1,11 @@
 <template>
   <div class="text-box hidden">
-    <TextButton />
+    <div class="button-row" style="display: flex; align-items: center; gap: 1em">
+      <TextButton />
+      <TitleTime />
+    </div>
     <div class="city"><v-icon>mdi-domain</v-icon>Алматы</div>
     <div class="adress"><v-icon>mdi-map-marker</v-icon>проспект Aль-Фараби 77/7</div>
-    <TitleTime />
   </div>
 </template>
 
@@ -36,7 +38,7 @@ setTimeout(() => {
 .adress {
   text-align: end;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.2em;
   display: flex;
   align-items: center;
@@ -47,7 +49,7 @@ setTimeout(() => {
 .city {
   text-align: end;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.2em;
   display: flex;
   align-items: center;
@@ -68,8 +70,8 @@ setTimeout(() => {
     display: flex;
     flex-direction: column;
     color: $white;
-    padding-bottom: 80px;
-
+    padding-bottom: 155px;
+    padding-right: 90px;
     justify-content: end;
     line-height: 1.2em;
     align-items: end;
@@ -79,7 +81,7 @@ setTimeout(() => {
       opacity: 0;
       transition: all 1.5s;
       filter: blur(20px);
-      transform: translateX(500px);
+      transform: translateX(300px);
     }
 
     &.show {
@@ -90,28 +92,25 @@ setTimeout(() => {
   }
 }
 
-
 @media only screen and (max-width: 1282px) {
   .text {
     &-box {
       justify-content: center;
       align-items: center;
       padding-bottom: 20px;
+      padding-right: 0;
     }
-
-
   }
 
-
+  .button-row {
+    flex-direction: column;
+  }
 }
-
-
 
 @media only screen and (max-width: 674px) {
   .city {
     font-size: 18px;
     text-align: center;
-
   }
 
   .adress {

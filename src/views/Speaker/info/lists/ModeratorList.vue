@@ -1,7 +1,13 @@
 <template>
   <div class="list">
-    <SpeakerCard v-for="mod in mods" :key="mod.id" :name="mod.name" :occupation="mod.occupation" :company="mod.company"
-      :text="mod.text" />
+    <SpeakerCard
+      v-for="mod in mods"
+      :key="mod.id"
+      :name="mod.name"
+      :occupation="mod.occupation"
+      :company="mod.company"
+      :text="mod.text"
+    />
   </div>
 </template>
 

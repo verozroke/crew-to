@@ -13,7 +13,7 @@ import GoalsRow from './row/GoalsRow.vue'
 
 <style lang="scss" scoped>
 .goals {
-  padding: 40px 0;
+  padding: 80px 0;
 
   &__container {
     display: flex;
