@@ -1,6 +1,6 @@
 <template>
   <div class="circle hidden">
-    <img src="/crew-to/hero-image.jpg" alt="Circle Image" />
+    <img src="/hero-image.jpg" alt="Circle Image" />
   </div>
 </template>
 

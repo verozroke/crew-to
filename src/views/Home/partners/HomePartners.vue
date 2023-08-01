@@ -3,18 +3,10 @@
     <div class="partners__container">
       <div class="partners__title">Партнёры мероприятия</div>
       <div class="partners__list">
-        <div
-          style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 1em"
-        >
-          <a
-            href="https://shikimori.me"
-            style="width: 100%; height: 300px"
-            class="partner main-partner"
-            ><img
+        <div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 1em">
+          <a href="https://shikimori.me" style="width: 100%; height: 300px" class="partner main-partner"><img
               style="width: 100%; height: 300px; object-fit: cover"
-              src="https://kaznetpartners.com/wp-content/uploads/2023/07/astana-tower.png"
-              alt="Event Partner"
-            />
+              src="https://kaznetpartners.com/wp-content/uploads/2023/07/astana-tower.png" alt="Event Partner" />
           </a>
           <!-- <span style="
               width: 100%;
@@ -26,15 +18,11 @@
               color: #284240;
             ">Генеральный партнёр</span> -->
         </div>
-        <a href="https://shikimori.me" class="partner"
-          ><img
+        <a href="https://shikimori.me" class="partner"><img
             src="https://kaznetpartners.com/wp-content/uploads/2023/07/lynks_logo_additional_keyword_white.jpg"
-            alt="Event Partner"
-          />
+            alt="Event Partner" />
         </a>
-        <a href="https://shikimori.me" class="partner"
-          ><img src="/crew-to/grey-plaza.jpeg" alt="Event Partner"
-        /></a>
+        <a href="https://shikimori.me" class="partner"><img src="/grey-plaza.jpeg" alt="Event Partner" /></a>
       </div>
     </div>
   </div>
