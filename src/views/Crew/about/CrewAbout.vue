@@ -1,7 +1,7 @@
 <template>
   <div class="about" id="about-forum">
     <div class="about__container">
-      <div class="about__title">О форуме</div>
+      <div class="about__title">О премии</div>
       <div class="about__info">
         <div class="about__text">
           <div>
@@ -25,35 +25,16 @@
           </div>
         </div>
         <div class="about__image">
-          <iframe
-            src="https://app.vectary.com/p/02yW3ciqUKtbcXAHhIniPn"
-            frameborder="0"
-            width="100%"
-            height="100%"
-          ></iframe>
+          <iframe src="https://app.vectary.com/p/02yW3ciqUKtbcXAHhIniPn" frameborder="0" width="100%"
+            height="100%"></iframe>
         </div>
       </div>
       <div class="about__buttons">
-        <v-btn
-          size="large"
-          color="#ffc14d"
-          rounded="0"
-          class="text-black"
-          prepend-icon="mdi-book-clock-outline"
-          style="font-weight: 500; font-family: 'Montserrat', sans-serif"
-          @click="downloadProgram"
-          >Программа форума</v-btn
-        >
-        <v-btn
-          size="large"
-          color="#ffc14d"
-          rounded="0"
-          class="text-black"
-          prepend-icon="mdi-file-delimited"
-          style="font-weight: 500; font-family: 'Montserrat', sans-serif"
-          @click="downloadUstav"
-          >Устав форума</v-btn
-        >
+        <!-- <v-btn size="large" color="#ffc14d" rounded="0" class="text-black" prepend-icon="mdi-book-clock-outline"
+          style="font-weight: 500; font-family: 'Montserrat', sans-serif" @click="downloadProgram">Программа
+          форума</v-btn> -->
+        <v-btn size="large" color="#ffc14d" rounded="0" class="text-black" prepend-icon="mdi-file-delimited"
+          style="font-weight: 500; font-family: 'Montserrat', sans-serif" @click="downloadUstav">Устав конкурса</v-btn>
         <!-- Program Button -->
         <!-- Ustav Button -->
       </div>
@@ -122,7 +103,7 @@ const downloadUstav = () => {
     width: 60%;
     justify-content: space-between;
 
-    & > div {
+    &>div {
       font-size: 16px;
       letter-spacing: 1px;
       font-family: 'Montserrat', sans-serif;
@@ -151,7 +132,7 @@ const downloadUstav = () => {
       width: 100%;
       gap: 2em;
 
-      & > div {
+      &>div {
         text-align: center;
       }
     }

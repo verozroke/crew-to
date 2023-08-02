@@ -1,7 +1,7 @@
 <template>
   <div class="bottom">
     <div class="bottom__container bottom-timer hidden">
-      <div class="bottom__title">До начала конференции:</div>
+      <div class="bottom__title">До начала форума:</div>
       <BottomTimer />
     </div>
   </div>

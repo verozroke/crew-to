@@ -1,12 +1,6 @@
 <template>
   <div class="grid">
-    <GridItem
-      v-for="item in items"
-      :key="item.id"
-      :icon="item.icon"
-      :title="item.title"
-      :text="item.text"
-    />
+    <GridItem v-for="item in items" :key="item.id" :icon="item.icon" :title="item.title" :text="item.text" />
   </div>
 </template>
 
@@ -19,7 +13,7 @@ const items = ref([
     id: 1,
     icon: 'mdi-numeric-1-box-outline',
     title: 'Причина 1',
-    text: 'Качественный Networking'
+    text: 'Качественный Networking.'
   },
   {
     id: 2,
@@ -37,7 +31,7 @@ const items = ref([
     id: 4,
     icon: 'mdi-numeric-4-box-outline',
     title: 'Причина 4',
-    text: 'Расширение партнерских связей и обмен опытом'
+    text: 'Расширение партнерских связей и обмен опытом.'
   }
 ])
 </script>

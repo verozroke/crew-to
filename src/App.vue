@@ -7,7 +7,7 @@ import { useHeaderStore } from './stores/headerStore'
 
 const headerStore = useHeaderStore()
 
-function onResize() {
+const onResize = () => {
   if (window.innerWidth < 980) {
     headerStore.isMobile = true
   } else if (window.innerWidth >= 980) {
@@ -16,23 +16,12 @@ function onResize() {
 }
 
 onMounted(() => {
-  if (window.innerWidth < 980) {
-    headerStore.isMobile = true
-  } else if (window.innerWidth >= 980) {
-    headerStore.isMobile = false
-  }
+  onResize()
   nextTick(() => {
     window.addEventListener('resize', onResize)
   })
 
-  // console.log(window.innerWidth);
 
-  // if (window.innerWidth < 980) {
-  //   console.log('watafar blyat')
-  //   headerStore.isMobile = true
-  // }
-
-  // headerStore.isMobile
 })
 </script>
 

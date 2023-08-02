@@ -3,10 +3,12 @@
     <v-timeline direction="horizontal" side="end" line-inset="12">
       <v-timeline-item dot-color="#ffc14d" fill-dot>
         <template v-slot:opposite>
-          <div class="timeline-text">Защита проектов, голосование, подведение итогов</div>
+          <div class="timeline-text">Прием анкет по всем номинациям премии</div>
         </template>
-        <div class="timeline-time">25.09.2023 - 13.10.2023</div>
+
+        <div class="timeline-time" style="">01.07.2023 - 31.08.2023</div>
       </v-timeline-item>
+
 
       <v-timeline-item dot-color="#ffc14d" fill-dot>
         <template v-slot:opposite>
@@ -15,14 +17,13 @@
 
         <div class="timeline-time">01.09.2023- 22.09.2023</div>
       </v-timeline-item>
-
       <v-timeline-item dot-color="#ffc14d" fill-dot>
         <template v-slot:opposite>
-          <div class="timeline-text">Прием анкет по всем номинациям премии</div>
+          <div class="timeline-text">Защита проектов, голосование, подведение итогов</div>
         </template>
-
-        <div class="timeline-time" style="">01.07.2023 - 31.08.2023</div>
+        <div class="timeline-time">25.09.2023 - 13.10.2023</div>
       </v-timeline-item>
+
     </v-timeline>
   </div>
 </template>

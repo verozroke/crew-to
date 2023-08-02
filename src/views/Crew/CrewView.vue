@@ -5,7 +5,7 @@
     <CrewAbout />
     <CrewNomination />
     <CrewTicket />
-    <JuryList />
+    <!-- <JuryList /> -->
   </div>
 </template>
 

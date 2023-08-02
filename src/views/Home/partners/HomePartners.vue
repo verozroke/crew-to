@@ -1,7 +1,7 @@
 <template>
   <div class="partners">
     <div class="partners__container">
-      <div class="partners__title">Партнёры мероприятия</div>
+      <div class="partners__title">Партнёры форума</div>
       <div class="partners__list">
         <div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 1em">
           <a href="https://shikimori.me" style="width: 100%; height: 300px" class="partner main-partner"><img
