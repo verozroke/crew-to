@@ -1,6 +1,7 @@
 <template>
   <div class="contacts">
     <div class="contact" v-for="contact in contacts" :key="contact.id">
+      <div class="contact__subtitle">{{ contact.occupation }}</div>
       <div class="contact__title">{{ contact.name }}</div>
       <div class="contact__phone">
         <v-icon>mdi-phone</v-icon>
@@ -20,21 +21,25 @@ import { ref } from 'vue'
 const contacts = ref([
   {
     id: 1,
-    name: 'Бека с района',
-    phone: '8-747-446-19-66',
-    email: 'Verozroke450@gmail.com'
+    occupation: 'Медиа и премии',
+    name: 'Алия Кудайбергенова',
+    phone: '+7 777 079 3714',
+    email: 'crewpropertyawards@gmail.com'
   },
   {
-    id: 1,
-    name: 'Бека с района',
-    phone: '8-747-446-19-66',
-    email: 'Verozroke450@gmail.com'
+    id: 2,
+    occupation: 'Бронирование билетов',
+
+    name: 'Айдын Алимбеков',
+    phone: '+7 708 425 3995',
+    email: 'info@kaznetpartners.com'
   },
   {
-    id: 1,
-    name: 'Бека с района',
-    phone: '8-747-446-19-66',
-    email: 'Verozroke450@gmail.com'
+    id: 3,
+    occupation: 'Партнерство',
+    name: 'Айдын Алимбеков',
+    phone: '+7 708 425 3995',
+    email: 'alimbekovaidyn@kaznetpartners.com'
   }
 ])
 </script>
@@ -63,8 +68,18 @@ const contacts = ref([
     color: $white;
     font-weight: 700;
     letter-spacing: 1px;
+    text-align: center;
     font-size: 18px;
     margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    color: $green;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
   }
 
   &__phone {

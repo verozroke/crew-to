@@ -3,8 +3,8 @@
     <div class="header__container">
       <HeaderLogo />
       <HeaderNavbar v-if="!headerStore.isMobile" />
-      <HeaderButton v-if="!headerStore.isMobile" />
       <LanguageButton v-if="!headerStore.isMobile" />
+      <HeaderButton v-if="!headerStore.isMobile" />
       <HeaderBurger v-if="headerStore.isMobile" />
     </div>
   </div>

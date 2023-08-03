@@ -1,22 +1,15 @@
 <template>
-  <div
-    class="card"
-    style="
-      background-image: url('https://v1.popcornnews.ru/k2/news/1200/upload/news/446128934473.jpg');
-      background-position: center;
+  <div class="card" style="background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-    "
-  >
+    " :style="{ backgroundImage: `url('${imgSrc}')` }">
     <div class="card__box">
       <div class="card__title">{{ name }}</div>
       <div class="card__occupation">{{ occupation }}, {{ company }}</div>
     </div>
     <div class="card__text">
       <div class="card__title" style="margin-bottom: 10px">{{ name }}</div>
-      <div
-        style="font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px; color: rgb(89, 89, 89)"
-      >
+      <div style="font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px; color: rgb(89, 89, 89)">
         {{ text }}
       </div>
     </div>
@@ -28,7 +21,8 @@ defineProps({
   name: String,
   occupation: String,
   text: String,
-  company: String
+  company: String,
+  imgSrc: String,
 })
 </script>
 
@@ -61,7 +55,7 @@ defineProps({
     padding: 20px;
     position: absolute;
     background-color: white;
-    height: 25%;
+    height: 50%;
     transform: translateY(500px);
     transition: 0.4s;
   }
@@ -69,15 +63,15 @@ defineProps({
   &__box {
     gap: 0.2em;
     border-radius: 5em;
-    width: 80%;
+    width: 90%;
     transition: 0.2s;
-
+    padding: 0 20px;
     transform: translateY(0px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    height: 100px;
     margin: 0 0 20px 0;
     background-color: $white;
     border: 3px solid #000;
@@ -92,6 +86,7 @@ defineProps({
   }
 
   &__occupation {
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.5px;
     color: rgb(89, 89, 89);

@@ -3,12 +3,24 @@
     <div class="partners__container">
       <div class="partners__title">Партнёры форума</div>
       <div class="partners__list">
-        <div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 1em">
-          <a href="https://shikimori.me" style="width: 100%; height: 300px" class="partner main-partner"><img
-              style="width: 100%; height: 300px; object-fit: cover"
-              src="https://kaznetpartners.com/wp-content/uploads/2023/07/astana-tower.png" alt="Event Partner" />
-          </a>
-          <!-- <span style="
+
+        <a href="https://shikimori.me" class="partner"><img src="/partners/official/lynks.jpg" alt="Event Partner" /></a>
+        <a href="https://shikimori.me" class="partner"><img src="/partners/official/esentai.png"
+            alt="Event Partner" /></a>
+      </div>
+      <div class="partners__list">
+
+        <a href="https://shikimori.me" class="partner"><img src="/partners/common/marden.png" alt="Event Partner" />
+        </a>
+        <a href="https://shikimori.me" class="partner"><img src="/partners/common/grey-plaza.jpeg"
+            alt="Event Partner" /></a>
+        <a href="https://shikimori.me" class="partner"><img src="/partners/common/astana-tower.png"
+            alt="Event Partner" /></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- <span style="
               width: 100%;
               text-align: center;
               font-size: 32px;
@@ -17,15 +29,6 @@
               font-family: 'Lora', serif;
               color: #284240;
             ">Генеральный партнёр</span> -->
-        </div>
-        <a href="https://shikimori.me" class="partner"><img
-            src="https://kaznetpartners.com/wp-content/uploads/2023/07/lynks_logo_additional_keyword_white.jpg"
-            alt="Event Partner" />
-        </a>
-        <a href="https://shikimori.me" class="partner"><img src="/grey-plaza.jpeg" alt="Event Partner" /></a>
-      </div>
-    </div>
-  </div>
 </template>
 
 <script setup lang="ts"></script>
@@ -38,6 +41,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 40px;
   }
 
   &__title {
@@ -53,9 +57,8 @@
   &__list {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
     width: 720px;
-    flex-wrap: wrap;
     justify-content: center;
   }
 }

@@ -7,26 +7,30 @@
           <div class="contact__item">
             <v-icon>mdi-map-marker</v-icon>
             <div class="contact__text">
-              Бизнес-Центр Есентай Тауэр, проспект Aль-Фараби 77/7, Алматы 050040
+              г. Астана, Казахстан, ул. Самал 12, 12 этаж.
             </div>
           </div>
           <div class="contact__item">
             <v-icon>mdi-phone</v-icon>
-            <div class="contact__text">8-747-446-19-66</div>
+            <div class="contact__text">+7 708 425 3995</div>
           </div>
           <div class="contact__item">
             <v-icon>mdi-email</v-icon>
-            <div class="contact__text">Verozroke450@gmail.com</div>
+            <div class="contact__text">info@kaznetpartners.com <br> crewpropertyawards@gmail.com</div>
+          </div>
+          <div class="contact__item">
+            <v-icon>mdi-link</v-icon>
+            <div class="contact__text"><a href="https://kaznetpartners.com/">https://kaznetpartners.com/</a> <br> <br>
+              <a href="https://fiabcica.com/">https://fiabcica.com/</a>
+            </div>
           </div>
         </div>
       </div>
+
       <iframe
-        class="google-map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.542814564375!2d76.92666527595853!3d43.219077671125966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836f307c71953f%3A0x3a7913cb3982fc67!2sRitz-Carlton!5e0!3m2!1sru!2skz!4v1690191312632!5m2!1sru!2skz"
-        style="width: 600px; border: 0; border-radius: 20px; height: 450px"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20023.274451006895!2d71.40814994849623!3d51.147023540920834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424586c9805b2b6f%3A0x380167865c706e4c!2sAstana%20Tower!5e0!3m2!1sru!2skz!4v1691062776023!5m2!1sru!2skz"
+        width="600" height="450" style="width: 600px; border: 0; border-radius: 20px; height: 450px" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
 </template>
@@ -73,6 +77,15 @@
     height: 450px;
     display: flex;
     flex-direction: column;
+  }
+
+  &__text a {
+    color: black;
+    text-decoration: underline;
+
+    &:visited {
+      color: black;
+    }
   }
 }
 
