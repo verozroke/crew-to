@@ -1,21 +1,21 @@
 <template>
   <div class="partners">
     <div class="partners__container">
+      <div class="partners__title">Официальные партнёры форума</div>
+      <div class="partners__list">
+
+        <a href="#" class="partner"><img src="/partners/official/lynks.jpg" alt="Event Partner" /></a>
+        <a href="#" class="partner"><img src="/partners/official/esentai.png" alt="Event Partner" /></a>
+        <a href="#" class="partner"><img src="/partners/common/grey-plaza.jpeg" alt="Event Partner" /></a>
+
+        <a href="#" class="partner"><img src="/partners/common/astana-tower.png" alt="Event Partner" /></a>
+      </div>
       <div class="partners__title">Партнёры форума</div>
       <div class="partners__list">
 
-        <a href="https://shikimori.me" class="partner"><img src="/partners/official/lynks.jpg" alt="Event Partner" /></a>
-        <a href="https://shikimori.me" class="partner"><img src="/partners/official/esentai.png"
-            alt="Event Partner" /></a>
-      </div>
-      <div class="partners__list">
-
-        <a href="https://shikimori.me" class="partner"><img src="/partners/common/marden.png" alt="Event Partner" />
+        <a href="#" class="partner"><img src="/partners/common/marden.png" alt="Event Partner" />
         </a>
-        <a href="https://shikimori.me" class="partner"><img src="/partners/common/grey-plaza.jpeg"
-            alt="Event Partner" /></a>
-        <a href="https://shikimori.me" class="partner"><img src="/partners/common/astana-tower.png"
-            alt="Event Partner" /></a>
+
       </div>
     </div>
   </div>
@@ -58,7 +58,8 @@
     display: flex;
     align-items: center;
     gap: 40px;
-    width: 720px;
+    width: 100%;
+    flex-wrap: wrap;
     justify-content: center;
   }
 }
