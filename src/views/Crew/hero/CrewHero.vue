@@ -1,5 +1,5 @@
 <template>
-  <v-parallax src="/awards-hero/crew-awards-bg.jpg" class="hero">
+  <v-parallax src="/crew-to/awards-hero/crew-awards-bg.jpg" class="hero">
     <div class="hero__overlay">
       <div class="hero__container">
         <div class="hero__logo">
