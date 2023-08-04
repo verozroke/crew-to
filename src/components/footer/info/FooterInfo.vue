@@ -1,13 +1,7 @@
 <template>
   <div class="info">
-    <InfoItem
-      v-for="item in items"
-      :key="item.id"
-      :icon="item.icon"
-      :link="item.link"
-      :text="item.text"
-      :type="item.type"
-    />
+    <InfoItem v-for="item in items" :key="item.id" :icon="item.icon" :link="item.link" :text="item.text"
+      :type="item.type" />
   </div>
 </template>
 
@@ -20,14 +14,14 @@ const items = ref([
     id: 1,
     icon: 'map-marker',
     link: '',
-    text: 'Сейфуллина 12',
+    text: 'г. Астана, Казахстан, ул. Самал 12, 12 этаж.',
     type: 'text'
   },
   {
     id: 2,
     icon: 'email',
     link: '',
-    text: 'Verozroke450@gmail.com',
+    text: 'info@kaznetpartners.com; crewpropertyawards@gmail.com',
     type: 'text'
   },
   {
