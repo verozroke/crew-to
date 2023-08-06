@@ -1,6 +1,6 @@
 <template>
   <div class="block">
-    <img :src="`/crew-to/gallery/${src}`" alt="Gallery Photo" />
+    <img :src="src" alt="Gallery Photo" />
   </div>
 </template>
 
@@ -16,6 +16,7 @@ defineProps({
   max-width: 50%;
   position: relative;
   overflow: hidden;
+  height: 380px;
 
   &:hover {
     & img {
@@ -28,7 +29,7 @@ defineProps({
   & img {
     filter: brightness(50%);
     width: 100%;
-    object-position: center;
+    height: 380px;
     object-fit: cover;
     transition: 0.4s;
     transform: scale(1);
