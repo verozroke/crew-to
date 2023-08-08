@@ -1,7 +1,7 @@
 <template>
   <div class="text-box hidden">
     <div class="button-row" style="display: flex; align-items: center; gap: 1em">
-      <TextButton />
+      <!-- <TextButton /> -->
       <TitleTime />
     </div>
     <div class="city"><v-icon>mdi-domain</v-icon>Алматы</div>
