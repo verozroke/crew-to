@@ -1,8 +1,8 @@
 <template>
   <RouterLink :to="{ name: 'Home' }" class="logo">
     <img :src="headerStore.isCrewAwards
-        ? '/crew-to/header/header-gold-logo.png'
-        : '/crew-to/header/header-logo.jpeg'
+      ? '/header/header-gold-logo.png'
+      : '/header/header-logo.jpeg'
       " alt="Header CREW Central Asia Logo" />
   </RouterLink>
 </template>

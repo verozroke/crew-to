@@ -20,7 +20,7 @@ const speakers = ref([
 компаниях Mandarin Plaza, JLL (Украина и Франция), DCH,
 Argo Real Estate Opportunities Fund, DGL Group, КВЦ
 «Парковый».`,
-    imgSrc: '/crew-to/speakers/speaker-1.png'
+    imgSrc: '/speakers/speaker-1.png'
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ Argo Real Estate Opportunities Fund, DGL Group, КВЦ
     occupation: 'Генеральный директор, Соучредитель',
     company: 'CPM IREM',
     text: 'Более 25 лет опыта в области управления и эксплуатации недвижимости. Основатель и соучредитель Lynks Property Management.',
-    imgSrc: '/crew-to/speakers/speaker-2.jpg'
+    imgSrc: '/speakers/speaker-2.jpg'
   },
   {
     id: 3,
@@ -39,7 +39,7 @@ Argo Real Estate Opportunities Fund, DGL Group, КВЦ
 время он успел внести весомый вклад в развитие крупнейшей на тот момент
 девелоперской компании ESPRO, а в 2010 г. стать частью команды российского
 подразделения международной сети JLL.`,
-    imgSrc: '/crew-to/speakers/speaker-3.jpg'
+    imgSrc: '/speakers/speaker-3.jpg'
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ Argo Real Estate Opportunities Fund, DGL Group, КВЦ
     occupation: 'генеральный директор управляющей компании бизнес-центра «Astana Tower»',
     company: 'Astana Tower',
     text: 'Профессиональный опыт работы свыше 20 лет в коммерческой недвижимости в сфере комплексного управления, брокериджа и эксплуатации коммерческой недвижимости, ведению сложных проектов, настройке и оптимизации бизнес-процессов.',
-    imgSrc: '/crew-to/speakers/speaker-4.jpg'
+    imgSrc: '/speakers/speaker-4.jpg'
   },
 
 ])

@@ -15,7 +15,7 @@ export default defineConfig({
       }
     }
   },
-  base: '/crew-to/',
+
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),

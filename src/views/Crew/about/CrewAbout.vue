@@ -46,7 +46,7 @@
 const downloadProgram = () => {
   const link = document.createElement('a')
 
-  link.setAttribute('href', '/crew-to/storage/program.pdf')
+  link.setAttribute('href', '/storage/program.pdf')
   link.download = 'Программа CREW Central Asia 2023.pdf'
 
   link.click()
@@ -55,7 +55,7 @@ const downloadProgram = () => {
 const downloadUstav = () => {
   const link = document.createElement('a')
 
-  link.setAttribute('href', '/crew-to/storage/ustav.pdf')
+  link.setAttribute('href', '/storage/ustav.pdf')
   link.download = 'Устав CREW Awards.pdf'
 
   link.click()

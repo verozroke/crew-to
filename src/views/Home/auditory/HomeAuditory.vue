@@ -48,7 +48,7 @@ const programStore = useProgramStore()
 const downloadProgram = () => {
   const link = document.createElement('a')
 
-  link.setAttribute('href', '/crew-to/storage/program.pdf')
+  link.setAttribute('href', '/storage/program.pdf')
   link.download = 'Программа CREW Central Asia 2023.pdf'
 
   link.click()

@@ -5,8 +5,8 @@
       <div class="partners__list">
 
         <a href="https://lynkspm.com/" class="partner"><img src="/partners/official/lynks.jpg" alt="Event Partner" /></a>
-        <a href="https://esentai.com/" class="partner"><img src="/partners/official/esentai.png"
-            alt="Event Partner" /></a>
+        <!-- <a href="https://esentai.com/" class="partner"><img src="/partners/official/esentai.png"
+            alt="Event Partner" /></a> -->
         <a href="" class="partner"><img src="/partners/common/grey-plaza.jpeg" alt="Event Partner" /></a>
 
         <a href="https://astanatower.kz/" class="partner"><img src="/partners/common/astana-tower.png"
