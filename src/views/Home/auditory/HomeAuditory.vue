@@ -1,7 +1,9 @@
 <template>
   <div class="auditory">
     <div class="auditory__container">
-      <div class="auditory__title">Что вы получите от посещения на форум?</div>
+      <div class="auditory__title">
+        Что вы получите от посещения форума?
+      </div>
       <div class="row">
         <AuditoryGrid />
         <div class="info">
