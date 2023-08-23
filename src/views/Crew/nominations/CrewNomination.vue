@@ -1,7 +1,7 @@
 <template>
   <div class="nomination">
     <div class="nomination__container">
-      <div class="nomination__title">Номинации</div>
+      <div class="nomination__title">{{ t('crew.nominations.title') }}</div>
       <div class="nomination__box">
         <div class="nomination__subtitle">
           {{ t('crew.nominations.1.title') }}
