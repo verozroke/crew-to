@@ -12,23 +12,23 @@
           value="speaker"
           class="tab"
           style="text-transform: none; font-weight: 700 !important; width: 300px"
-          >Спикеры</v-tab
+          >{{ t('speaker.speakers') }}</v-tab
         >
         <v-tab
           density="compact"
           value="mod"
           class="tab"
           style="text-transform: none; font-weight: 700 !important; width: 300px"
-          >Модераторы</v-tab
+          >{{ t('speaker.moderators') }}</v-tab
         >
       </v-tabs>
       <v-window v-model="tab">
         <v-window-item value="speaker" class="col">
-          <div class="title">Наши спикеры</div>
+          <div class="title">{{ t('speaker.our_speakers') }}</div>
           <SpeakerList />
         </v-window-item>
         <v-window-item value="mod" class="col">
-          <div class="title">Наши модераторы</div>
+          <div class="title">{{ t('speaker.our_moderators') }}</div>
           <ModeratorList />
         </v-window-item>
       </v-window>
@@ -40,6 +40,11 @@
 import { ref } from 'vue'
 import SpeakerList from './lists/SpeakerList.vue'
 import ModeratorList from './lists/ModeratorList.vue'
+// @ts-ignore
+
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n({ useScope: 'global' })
 
 const tab = ref(null)
 </script>

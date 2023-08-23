@@ -2,7 +2,7 @@
   <div class="auditory">
     <div class="auditory__container">
       <div class="auditory__title">
-        Что вы получите от посещения форума?
+        {{ t('home.auditory.title') }}
       </div>
       <div class="row">
         <AuditoryGrid />
@@ -10,28 +10,48 @@
           <div class="info__image">
             <img
               src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/453787532.jpg?k=33c31fc80a87fdf4f8a4d08fd1a3df8bd60ac3918106a10140e29f7a9705e293&o=&hp=1"
-              alt="Auditory More Image" />
+              alt="Auditory More Image"
+            />
           </div>
           <div class="info__text">
-            Ждём Вас 18 октября в отеле "The Ritz-Carlton Carlton Almaty" на ежегодном
-            Центрально-Азиатском форуме "Crew Central Asia"!
+            {{ t('home.auditory.text') }}
           </div>
-          <div class="button-row" style="
+          <div
+            class="button-row"
+            style="
               display: flex;
               gap: 1em;
               width: 100%;
               align-items: end;
               justify-content: space-between;
-            ">
-            <v-btn color="#284240" class="button" rounded="0" style="
-                width: 300px;
+            "
+          >
+            <v-btn
+              color="#284240"
+              class="button"
+              rounded="0"
+              style="
+                width: 320px;
                 color: #ffc14d;
                 font-weight: 700;
                 font-family: 'Montserrat', sans-serif;
-              " @click="downloadProgram" size="large">Скачать программу</v-btn>
-            <v-btn color="#32cc98" class="button" variant="outlined" rounded="0" @click="openDialog"
-              style="width: 300px; font-weight: 700; font-family: 'Montserrat', sans-serif" size="large">Стать
-              партнером</v-btn>
+              "
+              @click="downloadProgram"
+              size="large"
+            >
+              {{ t('home.auditory.download_program') }}
+            </v-btn>
+            <v-btn
+              color="#32cc98"
+              class="button"
+              variant="outlined"
+              rounded="0"
+              @click="openDialog"
+              style="width: 300px; font-weight: 700; font-family: 'Montserrat', sans-serif"
+              size="large"
+            >
+              {{ t('home.auditory.become_partner') }}
+            </v-btn>
             <ProgramDialog />
           </div>
         </div>
@@ -44,6 +64,11 @@
 import AuditoryGrid from './grid/AuditoryGrid.vue'
 import ProgramDialog from './dialog/ProgramDialog.vue'
 import { useProgramStore } from '../../../stores/programStore'
+// @ts-ignore
+
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n({ useScope: 'global' })
 
 const programStore = useProgramStore()
 

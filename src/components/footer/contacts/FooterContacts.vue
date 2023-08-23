@@ -16,28 +16,39 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { useHeaderStore } from '@/stores/headerStore'
+import { computed } from 'vue'
+// @ts-ignore
 
-const contacts = ref([
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n({ useScope: 'global' })
+
+const headerStore = useHeaderStore()
+
+const occupationColor = computed(() => {
+  return headerStore.isCrewAwards ? '#ffc14d' : '#32cc98'
+})
+
+const contacts = computed(() => [
   {
     id: 1,
-    occupation: 'Медиа и премии',
-    name: 'Алия Кудайбергенова',
+    occupation: t('footer.contacts.1.occupation'),
+    name: t('footer.contacts.1.name'),
     phone: '+7 777 079 3714',
     email: 'crewpropertyawards@gmail.com'
   },
   {
     id: 2,
-    occupation: 'Бронирование билетов',
-
-    name: 'Айдын Алимбеков',
+    occupation: t('footer.contacts.2.occupation'),
+    name: t('footer.contacts.2.name'),
     phone: '+7 708 425 3995',
     email: 'info@kaznetpartners.com'
   },
   {
     id: 3,
-    occupation: 'Партнерство',
-    name: 'Айдын Алимбеков',
+    occupation: t('footer.contacts.3.occupation'),
+    name: t('footer.contacts.3.name'),
     phone: '+7 708 425 3995',
     email: 'alimbekovaidyn@kaznetpartners.com'
   }
@@ -74,7 +85,7 @@ const contacts = ref([
   }
 
   &__subtitle {
-    color: $green;
+    color: v-bind(occupationColor);
     font-weight: 700;
     letter-spacing: 1px;
     text-align: center;

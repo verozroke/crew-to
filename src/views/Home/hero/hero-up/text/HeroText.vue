@@ -4,14 +4,19 @@
       <!-- <TextButton /> -->
       <TitleTime />
     </div>
-    <div class="city"><v-icon>mdi-domain</v-icon>Алматы</div>
-    <div class="adress"><v-icon>mdi-map-marker</v-icon>проспект Aль-Фараби 77/7</div>
+    <div class="city"><v-icon>mdi-domain</v-icon>{{ t('home.hero.city') }}</div>
+    <div class="adress"><v-icon>mdi-map-marker</v-icon>{{ t('home.hero.adress') }}</div>
   </div>
 </template>
 
 <script setup lang="ts">
 import TextButton from './TextButton.vue'
 import TitleTime from '../title/time/TitleTime.vue'
+// @ts-ignore
+
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n({ useScope: 'global' })
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {

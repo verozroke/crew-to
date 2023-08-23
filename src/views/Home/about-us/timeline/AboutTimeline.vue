@@ -1,13 +1,23 @@
 <template>
   <div class="ticker">
     <v-timeline side="end">
-      <v-timeline-item v-for="year in years" :key="year.color" :dot-color="year.color" size="x-small">
+      <v-timeline-item
+        v-for="year in years"
+        :key="year.color"
+        :dot-color="year.color"
+        size="x-small"
+      >
         <template v-slot:opposite>
-          <div :class="`headline font-weight-bold timeline-year text-${year.color}`"
+          <div
+            :class="`headline font-weight-bold timeline-year text-${year.color}`"
             style="font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 32px"
-            :style="{ color: year.color }" v-text="year.year"></div>
+            :style="{ color: year.color }"
+            v-text="year.year"
+          ></div>
         </template>
-        <h2 :class="`headline timeline-text-unique`" style="
+        <h2
+          :class="`headline timeline-text-unique`"
+          style="
             font-family: 'Montserrat', sans-serif;
             font-weight: 500;
             font-size: 20px;
@@ -15,7 +25,8 @@
             width: 100%;
             text-align: left;
             color: #000;
-          ">
+          "
+        >
           {{ year.text }}
         </h2>
       </v-timeline-item>
@@ -24,93 +35,99 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { computed } from 'vue'
+// import { ref } from 'vue'
+// @ts-ignore
 
-const years = ref([
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n({ useScope: 'global' })
+
+const years = computed(() => [
   {
     color: '#32cc98',
     year: '2013',
-    text: 'Создание CREW Central Asia'
+    text: t('home.about_us.timeline.1')
   },
   {
     color: '#32cc98',
     year: '2014',
-    text: 'Проведение первых ивентов в сфере коммерческой недвижимости'
+    text: t('home.about_us.timeline.2')
   },
   {
     color: '#32cc98',
     year: '2015',
-    text: '2 еженегодный Форум CREW 2015. Специальный гость форума Donald Trump Jr.'
+    text: t('home.about_us.timeline.3')
   },
   {
     color: '#32cc98',
     year: '2016',
-    text: 'CRE Week впервые в Алмате'
+    text: t('home.about_us.timeline.4')
   },
   {
     color: '#32cc98',
     year: '2017',
-    text: 'Центрально Азиатский форум по девелопменту с участием мэров городов Центральной Азии.'
+    text: t('home.about_us.timeline.5')
   },
   {
     color: '#32cc98',
     year: '2018',
-    text: 'Впервые проведен в Астане Форум по Редевелопменту объектов.'
+    text: t('home.about_us.timeline.6')
   },
   {
     color: '#32cc98',
     year: '2019',
-    text: 'Проведен Первый выездной CREW Форум «Трансформация рынка недвижимости» в горах.'
+    text: t('home.about_us.timeline.7')
   },
   {
     color: '#32cc98',
     year: '2019',
-    text: 'Первый бизнес завтраки в других регионах Казахстана.'
+    text: t('home.about_us.timeline.8')
   },
   {
     color: '#32cc98',
     year: '2020',
-    text: 'Серия онлайн конференций «Рынок недвижимости в период пандемии».'
+    text: t('home.about_us.timeline.9')
   },
   {
     color: '#32cc98',
     year: '2020',
-    text: 'Первая масштабная гибридная (онлайн-офлайн) конференция в городе Ташкент.'
+    text: t('home.about_us.timeline.10')
   },
   {
     color: '#32cc98',
     year: '2021',
-    text: 'Центрально-Азиатский Форум CREW «Будущее Городов». В городе Ташкент, Узбекистан.'
+    text: t('home.about_us.timeline.11')
   },
   {
     color: '#32cc98',
     year: '2021',
-    text: 'Подписание сотрудничества и открытия представительства Международной Федерации FIABCI в Центр Азии с головным офисом в Алматы.'
+    text: t('home.about_us.timeline.12')
   },
   {
     color: '#32cc98',
     year: '2021',
-    text: 'Первые Property туры в Дубае, ОАЭ.'
+    text: t('home.about_us.timeline.13')
   },
   {
     color: '#32cc98',
     year: '2021',
-    text: 'Создание Real Estate Businesses School.'
+    text: t('home.about_us.timeline.14')
   },
   {
     color: '#32cc98',
     year: '2022',
-    text: 'Проведение первой по складской конференции в Центральной Азии «CREW WAREHOUSE».'
+    text: t('home.about_us.timeline.15')
   },
   {
     color: '#32cc98',
     year: '2022',
-    text: 'Проведение первой CREW Central Asia Awards вместе со всемирным конкурсом по недвижимости FIABCI PRIX EXELIANCE.'
+    text: t('home.about_us.timeline.16')
   },
   {
     color: '#32cc98',
     year: '2023',
-    text: '10-летие компании CREW Central Asia. Создание CREW CLUB.'
+    text: t('home.about_us.timeline.17')
   }
 ])
 </script>

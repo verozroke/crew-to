@@ -6,24 +6,50 @@
           <img src="/awards-hero/logo.png" alt="Hero Logo CREW Awards Central Asia 2023" />
         </div>
         <div class="hero__buttons">
-          <v-btn width="250px" size="large" variant="outlined" color="#ffc14d" rounded="0"
-            style="font-weight: 500; font-family: 'Montserrat', sans-serif" @click="programStore.dialog = true">Стать
-            партнером</v-btn>
-          <v-btn width="250px" size="large" color="#ffc14d" rounded="0" class="text-black"
-            style="font-weight: 500; font-family: 'Montserrat', sans-serif" @click="ticketStore.dialog = true">Купить
-            билет</v-btn>
-          <v-btn width="250px" size="large" variant="outlined" color="#ffc14d" rounded="0"
-            style="font-weight: 500; font-family: 'Montserrat', sans-serif" @click="partStore.dialog = true">Подать
-            заявку</v-btn>
+          <v-btn
+            width="250px"
+            size="large"
+            variant="outlined"
+            color="#ffc14d"
+            rounded="0"
+            style="font-weight: 500; font-family: 'Montserrat', sans-serif"
+            @click="programStore.dialog = true"
+            >{{ t('home.auditory.become_partner') }}</v-btn
+          >
+          <v-btn
+            width="250px"
+            size="large"
+            color="#ffc14d"
+            rounded="0"
+            class="text-black"
+            style="font-weight: 500; font-family: 'Montserrat', sans-serif"
+            @click="ticketStore.dialog = true"
+          >
+            {{ t('tickets.buy_ticket') }}</v-btn
+          >
+          <v-btn
+            width="250px"
+            size="large"
+            variant="outlined"
+            color="#ffc14d"
+            rounded="0"
+            style="font-weight: 500; font-family: 'Montserrat', sans-serif"
+            @click="partStore.dialog = true"
+          >
+            {{ t('header.submit_application') }}</v-btn
+          >
         </div>
-        <v-btn icon="mdi-arrow-down" variant="text" @click="moveDown('about-forum')"
-          style="font-size: 24px; color: #7a7a7a; position: absolute; bottom: 30px">
+        <v-btn
+          icon="mdi-arrow-down"
+          variant="text"
+          @click="moveDown('about-forum')"
+          style="font-size: 24px; color: #7a7a7a; position: absolute; bottom: 30px"
+        >
           <v-icon></v-icon>
         </v-btn>
       </div>
     </div>
     <part-dialog />
-    <TicketDialog />
     <PartnerDialog />
   </v-parallax>
 </template>
@@ -35,6 +61,11 @@ import PartnerDialog from './dialog/PartnerDialog.vue'
 import { useProgramStore } from '@/stores/programStore'
 import { useTicketStore } from '@/stores/ticketStore'
 import { usePartStore } from '@/stores/partStore'
+// @ts-ignore
+
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n({ useScope: 'global' })
 
 const programStore = useProgramStore()
 const ticketStore = useTicketStore()

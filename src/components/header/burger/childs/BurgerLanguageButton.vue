@@ -6,7 +6,7 @@
     style="text-transform: none"
     @click="switchLang"
     prepend-icon="mdi-translate"
-    >Сменить язык</v-btn
+    >{{ t('header.language') }}</v-btn
   >
 </template>
 

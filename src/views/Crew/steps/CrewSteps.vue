@@ -3,32 +3,36 @@
     <v-timeline direction="horizontal" side="end" line-inset="12">
       <v-timeline-item dot-color="#ffc14d" fill-dot>
         <template v-slot:opposite>
-          <div class="timeline-text">Прием анкет по всем номинациям премии</div>
+          <div class="timeline-text">{{ t('crew.steps.1') }}</div>
         </template>
 
         <div class="timeline-time" style="">01.07.2023 - 31.08.2023</div>
       </v-timeline-item>
 
-
       <v-timeline-item dot-color="#ffc14d" fill-dot>
         <template v-slot:opposite>
-          <div class="timeline-text" style="f">Первое заседание Конкурсной Комиссии</div>
+          <div class="timeline-text" style="f">{{ t('crew.steps.2') }}</div>
         </template>
 
         <div class="timeline-time">01.09.2023- 22.09.2023</div>
       </v-timeline-item>
       <v-timeline-item dot-color="#ffc14d" fill-dot>
         <template v-slot:opposite>
-          <div class="timeline-text">Защита проектов, голосование, подведение итогов</div>
+          <div class="timeline-text">{{ t('crew.steps.3') }}</div>
         </template>
         <div class="timeline-time">25.09.2023 - 13.10.2023</div>
       </v-timeline-item>
-
     </v-timeline>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+// @ts-ignore
+
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n({ useScope: 'global' })
+</script>
 
 <style lang="scss">
 .timeline-unique {

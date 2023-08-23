@@ -2,9 +2,9 @@
   <div class="info">
     <div class="info__title">CREW Central Asia</div>
     <div class="info__text">
-      <li>10+ лет</li>
-      <li>160+ проведенных мероприятий</li>
-      <li>5000 делегатов</li>
+      <li>{{ t('home.about_us.first_point') }}</li>
+      <li>{{ t('home.about_us.second_point') }}</li>
+      <li>{{ t('home.about_us.third_point') }}</li>
     </div>
     <div class="info__image">
       <img src="/awards-hero/crew-awards-bg.jpg" alt="About Image" />
@@ -12,7 +12,13 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+// @ts-ignore
+
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n({ useScope: 'global' })
+</script>
 
 <style lang="scss" scoped>
 .info {

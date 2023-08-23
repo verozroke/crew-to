@@ -8,8 +8,8 @@
       </div>
       <div class="footer__second">
         <div class="footer__rights">
-          &copy; {{ new Date(Date.now()).getFullYear() }} Kazakhstan Networking Partners. Все права
-          защищены.
+          &copy; {{ new Date(Date.now()).getFullYear() }}
+          {{ t('footer.rights') }}
         </div>
         <FooterMedias />
       </div>
@@ -22,10 +22,13 @@ import FooterLogo from './UI/FooterLogo.vue'
 import FooterInfo from './info/FooterInfo.vue'
 import FooterContacts from './contacts/FooterContacts.vue'
 import FooterMedias from './contacts/FooterMedias.vue'
-import { ref } from 'vue'
 import { computed } from 'vue'
 import { useHeaderStore } from '@/stores/headerStore'
+// @ts-ignore
 
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n({ useScope: 'global' })
 const headerStore = useHeaderStore()
 
 const backgroundFooter = computed(() => {

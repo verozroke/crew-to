@@ -10,53 +10,58 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
 import WhoItem from './item/WhoItem.vue'
+import { computed } from 'vue'
+// @ts-ignore
 
-const items = ref([
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n({ useScope: 'global' })
+
+const items = computed(() => [
   {
     id: 1,
-    text: 'Девелоперы',
+    text: t('home.for_who.1'),
     icon: 'code-json'
   },
   {
     id: 2,
-    text: 'Property & facility-компании',
+    text: t('home.for_who.2'),
     icon: 'sprout'
   },
   {
     id: 3,
-    text: 'Обслуживающие компании',
+    text: t('home.for_who.3'),
     icon: 'account-wrench'
   },
   {
     id: 4,
-    text: 'Агентства недвижимости',
+    text: t('home.for_who.4'),
     icon: 'sign-real-estate'
   },
   {
     id: 5,
-    text: 'Поставщики решений',
+    text: t('home.for_who.5'),
     icon: 'checkbox-multiple-marked-circle'
   },
   {
     id: 6,
-    text: 'Производство материалов',
+    text: t('home.for_who.6'),
     icon: 'factory'
   },
   {
     id: 7,
-    text: 'Арендаторы',
+    text: t('home.for_who.7'),
     icon: 'car-key'
   },
   {
     id: 8,
-    text: 'Инвесторы',
+    text: t('home.for_who.8'),
     icon: 'cash-multiple'
   },
   {
     id: 9,
-    text: 'IT-интеграторы',
+    text: t('home.for_who.9'),
     icon: 'code-tags-check'
   }
 ])

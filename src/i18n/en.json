@@ -1,5 +1,233 @@
 {
   "header": {
-    "button": "Apply"
+    "home": "Main page",
+    "speakers": "Speakers",
+    "gallery": "Gallery",
+    "buy_ticket": "Buy ticket",
+    "submit_application": "Submit an apl.",
+    "language": "Change language"
+  },
+  "crew": {
+    "steps": {
+      "1": "Acceptance of applications for all nominations of the award",
+      "2": "The first meeting of the Competition Commission",
+      "3": "Project presentations, voting, and summarizing the results"
+    },
+    "about_us": {
+      "title": "About the awards",
+      "text": {
+        "1": "The CREW Central Asia Award is an annual professional accolade designed to recognize outstanding real estate projects in the Central Asian region. It serves as a recognition of innovation, quality, sustainability, and social significance within projects that make a substantial contribution to the industry's development.",
+        "2": "The award's objective is to encourage and support exceptional achievements in the field of real estate in Central Asia. The award program highlights projects that exceed standard benchmarks and have a positive impact on society and the environment. It stimulates innovation, quality, and sustainability in creating new spaces and infrastructural development.",
+        "3": "Winners receive well-deserved recognition, reputational advantages, and the opportunity to establish new partnerships. Moreover, participation in the award fosters the expansion of networking opportunities and the exchange of expertise with leading real estate professionals in Central Asia."
+      },
+      "ustav": "Competition Charter"
+    },
+    "nominations": {
+      "1": {
+        "title": "Nominations whose winners automatically gain the right to participate in the international stage of the FIABCI Prix d’Excellence competition",
+        "1": {
+          "title": "Redevelopment of the Year",
+          "text": "Redevelopment of the Year: The top projects in each of the following categories will be awarded:\n\n● \"Office Real Estate Redevelopment\" nomination;\n\n● \"Commercial Real Estate Redevelopment\" nomination;\n\n● \"Industrial Real Estate Redevelopment\" nomination."
+        },
+        "2": {
+          "title": "Office Real Estate",
+          "text": "The best projects in each of the following categories will be awarded:\n\n● \"Best Class A Office Real Estate\";\n\n● \"Best Class A+ Office Real Estate\";\n\n● \"Best Class B Office Real Estate\";\n\n● \"Best Class B+ Office Real Estate\"."
+        },
+        "3": {
+          "title": "Best Recreational and Leisure Facility",
+          "text": "The top projects in each of the following categories will be awarded: Recreational and Leisure Facilities (Themed, Children's Parks)"
+        }
+      },
+      "2": {
+        "title": "Special Nominations of the CENTRAL ASIA PROPERTY AWARDS 2023 competition",
+        "1": {
+          "title": "Property Management Company of the Year",
+          "text": "The top projects in each of the following categories will be awarded:\n\n● \"Best Property Management Company - Facility Management\" nomination;\n\n● \"Best Property Management Company - Property Management\" nomination."
+        },
+        "2": {
+          "title": "Warehouse Real Estate",
+          "text": "The top projects in each of the following categories will be awarded:\n\n● \"Large Class A Warehouse Complex\" nomination;\n\n● \"Medium Class B Warehouse Complex\" nomination."
+        },
+        "3": {
+          "title": "Cleaning Company",
+          "text": "The top projects in the following category will be awarded:\n\n● \"Best Cleaning Company\" nomination."
+        },
+        "4": {
+          "title": "Coworking Centers",
+          "text": "The top projects in each of the following categories will be awarded:\n\n● Coworking Space of the Year - \"Best Agile Workspace\";\n\n● Coworking Space of the Year - \"Best Technological Solutions\";\n\n● Coworking Space of the Year - \"Best Architectural Solutions and Design\"."
+        },
+        "5": {
+          "title": "Shopping Centers",
+          "text": "The best projects in each of the categories below will be awarded.\n\n● Shopping centers: large (from 100,000 m2).\n\n● Shopping malls: Medium (50,000 to 100,000 m2).\n\n● Shopping malls: small (up to 50,000 m2)."
+        },
+        "6": {
+          "title": "Supplier of the Year",
+          "text": "The top projects in the following category will be awarded:\n\n\"Supplier of the Year\" nomination."
+        },
+        "7": {
+          "title": "Broker of the Year",
+          "text": "The top projects in the following category will be awarded:\n\n\"Broker of the Year\" nomination."
+        },
+        "8": {
+          "title": "Deal of the Year",
+          "text": " The top projects in each of the following categories will be awarded:\n\n\"Deal of the Year. Purchase-Sale\" nomination;\n\n\"Deal of the Year. Lease\" nomination."
+        },
+        "9": {
+          "title": "Developer of the Year",
+          "text": "The top projects in each of the following categories will be awarded:\n\n\"Developer of the Year - City within a City\" nomination;\n\n\"Developer of the Year - Comfortable Environment\" nomination;\n\n\"Premiere of the Year\" nomination."
+        }
+      }
+    }
+  },
+  "speaker": {
+    "title": "Speakers and Moderators",
+    "speakers": "Speakers",
+    "moderators": "Moderators",
+    "our_speakers": "Forum speakers",
+    "our_moderators": "Forum moderators",
+    "list": {
+      "1": {
+        "name": "Lubov Tsapenkova",
+        "occupation": "Partner, CEO",
+        "text": "Lubov possesses over 15 years of experience in real estate development and management. She has worked with companies such as Mandarin Plaza, JLL (Ukraine and France), DCH, Argo Real Estate Opportunities Fund, DGL Group, and Parkovy Convention and Exhibition Center."
+      },
+      "2": {
+        "name": "Leonid Volokh",
+        "occupation": "Chief Executive Officer, Co-Founder",
+        "text": "With over 25 years of experience in property management and operations. Founder and Co-Founder of Lynks Property Management."
+      },
+      "3": {
+        "name": "Evgeny Bumagin",
+        "occupation": "General Director of IBC Real Estate in Kazakhstan",
+        "text": "Evgeny has been working in the field of warehouse real estate for over 16 years. During this time, he has made a significant contribution to the development of the largest developer company at that time, ESPRO, and in 2010, he became part of the team of the Russian division of the international network JLL."
+      },
+      "4": {
+        "name": "Zhanar Yeseneeva",
+        "occupation": " General Director of the property management company for the \"Astana Tower\" business center",
+        "text": "With over 20 years of professional experience in commercial real estate, specializing in comprehensive management, brokerage, and operation of commercial properties, as well as handling complex projects, configuring and optimizing business processes."
+      }
+    }
+  },
+  "footer": {
+    "contacts": {
+      "1": {
+        "occupation": "Media and awards",
+        "name": "Aliya Kudaibergenova"
+      },
+      "2": {
+        "occupation": "Ticket booking",
+        "name": "Aidana Abdigaliyeva"
+      },
+      "3": {
+        "occupation": "Partnership",
+        "name": "Aidyn Alimbekov"
+      }
+    },
+    "address": "Astana, Kazakhstan, st. Samal 12, 12th floor.",
+    "rights": "Kazakhstan Networking Partners. All rights reserved."
+  },
+  "home": {
+    "hero": {
+      "date": "October 18",
+      "city": "Almaty",
+      "adress": "77/7 Al-Farabi Avenue",
+      "forum_starts": "Forum starts in:",
+      "days": "Days",
+      "hours": "Hours",
+      "minutes": "Minutes",
+      "seconds": "Seconds"
+    },
+    "about_us": {
+      "first_point": "10+ years",
+      "second_point": "160+ hosted events",
+      "third_point": "5000 delegates",
+      "timeline": {
+        "1": "Establishment of CREW Central Asia.",
+        "2": "Launch of the first events in the commercial real estate sphere.",
+        "3": "2nd Annual CREW Forum 2015. Special guest: Donald Trump Jr.",
+        "4": "Inaugural CRE Week in Almaty.",
+        "5": "Central Asian Development Forum with the participation of mayors from Central Asian cities.",
+        "6": "First-ever Real Estate Redevelopment Forum held in Astana.",
+        "7": "First off-site CREW Forum \"Real Estate Market Transformation\" in the mountains.",
+        "8": "Commencement of the first business breakfasts in other regions of Kazakhstan.",
+        "9": "Series of online conferences \"Real Estate Market During the Pandemic.\"",
+        "10": "First large-scale hybrid (online-offline) conference in Tashkent.",
+        "11": "Central Asian CREW Forum \"Cities of the Future\" in Tashkent, Uzbekistan.",
+        "12": "Collaboration agreement and opening of the representation office of the International Federation FIABCI in Central Asia with the main office in Almaty.",
+        "13": "Inaugural Property Tours in Dubai, UAE.",
+        "14": "Establishment of the Real Estate Business School.",
+        "15": "Hosting of the first conference on warehouse real estate in Central Asia - \"CREW WAREHOUSE.\"",
+        "16": "Inaugural CREW Central Asia Awards held in conjunction with the global real estate competition FIABCI PRIX D'EXCELLENCE.",
+        "17": "10th anniversary of CREW Central Asia. Creation of the CREW CLUB."
+      }
+    },
+    "auditory": {
+      "title": "What will you get from visiting the forum?",
+      "points": {
+        "1": "High-quality Networking opportunities.",
+        "2": "Latest real estate market news in Kazakhstan and Central Asia.",
+        "3": "Benefits of Eco-Friendly technologies. \"Green\" and SMART technologies in 2024.",
+        "4": "Expansion of partnership connections and knowledge exchange."
+      },
+      "text": "We look forward to welcoming you on October 18 at \"The Ritz-Carlton Almaty\" hotel for the annual Central Asian forum \"Crew Central Asia\"!",
+      "become_partner": "Download program",
+      "download_program": "Become a partner"
+    },
+    "for_who": {
+      "1": "Developers",
+      "2": "Real estate and objects-companies",
+      "3": "Service companies",
+      "4": "Real estate agency",
+      "5": "Solution Providers",
+      "6": "Materials production",
+      "7": "Tenants",
+      "8": "Investors",
+      "9": "IT integrators"
+    },
+    "contact_us": {
+      "title": "Contact us",
+      "adress": "Astana, Kazakhstan, st. Samal 12, 12th floor."
+    },
+    "partners": {
+      "official_partner": "Official partners",
+      "partner": "Partners"
+    }
+  },
+  "gallery": {
+    "title": "Gallery"
+  },
+  "tickets": {
+    "packet_includes": "Package includes:",
+    "buy_ticket": "Buy ticket",
+    "title": "Tickets",
+    "ticket1": {
+      "name": "All inclusive",
+      "price": "650$",
+      "services": {
+        "1": "Participation in the Central Asia Property Conference",
+        "2": "Coffee break",
+        "3": "Networking",
+        "4": "Speaker presentations",
+        "5": "Participation in the Central Asia Property Awards Gala Dinner"
+      }
+    },
+    "ticket2": {
+      "name": "Conference",
+      "price": "325$",
+      "services": {
+        "1": "Coffee break",
+        "2": "Networking",
+        "3": "Speaker presentations"
+      }
+    },
+    "ticket3": {
+      "name": "Gala Dinner Central Asia Property Awards",
+      "price": "541$",
+      "services": {
+        "1": "Buffet",
+        "2": "Concert part",
+        "3": "Networking"
+      }
+    }
   }
 }

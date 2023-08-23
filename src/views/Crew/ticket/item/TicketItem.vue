@@ -2,7 +2,7 @@
   <div class="item">
     <div class="item__name">{{ name }}</div>
     <div class="item__price">{{ price }} тенге</div>
-    <div class="item__service-title">Пакет включает:</div>
+    <div class="item__service-title">{{ t('tickets.packet_includes') }}</div>
     <ul class="item__services">
       <li class="item__service" v-for="service in services" :key="service">{{ service }}</li>
     </ul>
@@ -18,14 +18,18 @@
       color="#ffc14d"
       size="large"
       width="100%"
-      >Купить билет</v-btn
+      >{{ t('tickets.buy_ticket') }}</v-btn
     >
   </div>
 </template>
 
 <script setup lang="ts">
 import { useTicketStore } from '@/stores/ticketStore'
+// @ts-ignore
 
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n({ useScope: 'global' })
 const ticketStore = useTicketStore()
 
 defineProps({

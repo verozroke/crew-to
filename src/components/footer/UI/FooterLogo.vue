@@ -1,6 +1,9 @@
 <template>
   <div class="logo">
-    <img :src="headerStore.isCrewAwards ? '/header/header-gold-logo.png' : '/logo.png'" alt="Footer Logo" />
+    <img
+      :src="headerStore.isCrewAwards ? '/header/header-gold-logo.png' : '/logo.png'"
+      alt="Footer Logo"
+    />
   </div>
 </template>
 

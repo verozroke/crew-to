@@ -1,20 +1,31 @@
 <template>
   <div class="info">
-    <InfoItem v-for="item in items" :key="item.id" :icon="item.icon" :link="item.link" :text="item.text"
-      :type="item.type" />
+    <InfoItem
+      v-for="item in items"
+      :key="item.id"
+      :icon="item.icon"
+      :link="item.link"
+      :text="item.text"
+      :type="item.type"
+    />
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
 import InfoItem from './item/InfoItem.vue'
+// @ts-ignore
 
-const items = ref([
+import { useI18n } from 'vue-i18n'
+import { computed } from 'vue'
+
+const { t } = useI18n({ useScope: 'global' })
+
+const items = computed(() => [
   {
     id: 1,
     icon: 'map-marker',
     link: '',
-    text: 'г. Астана, Казахстан, ул. Самал 12, 12 этаж.',
+    text: t('footer.address'),
     type: 'text'
   },
   {

@@ -1,23 +1,26 @@
 <template>
   <div class="partners">
     <div class="partners__container">
-      <div class="partners__title">Официальные партнёры форума</div>
+      <div class="partners__title">{{ t('home.partners.official_partner') }}</div>
       <div class="partners__list">
-
-        <a href="https://lynkspm.com/" class="partner"><img src="/partners/official/lynks.jpg" alt="Event Partner" /></a>
+        <a href="https://lynkspm.com/" class="partner"
+          ><img src="/partners/official/lynks.jpg" alt="Event Partner"
+        /></a>
         <!-- <a href="https://esentai.com/" class="partner"><img src="/partners/official/esentai.png"
             alt="Event Partner" /></a> -->
-        <a href="" class="partner"><img src="/partners/common/grey-plaza.jpeg" alt="Event Partner" /></a>
+        <a href="" class="partner"
+          ><img src="/partners/common/grey-plaza.jpeg" alt="Event Partner"
+        /></a>
 
-        <a href="https://astanatower.kz/" class="partner"><img src="/partners/common/astana-tower.png"
-            alt="Event Partner" /></a>
+        <a href="https://astanatower.kz/" class="partner"
+          ><img src="/partners/common/astana-tower.png" alt="Event Partner"
+        /></a>
       </div>
-      <div class="partners__title">Партнёры форума</div>
+      <div class="partners__title">{{ t('home.partners.partner') }}</div>
       <div class="partners__list">
-
-        <a href="https://marden.kz/" class="partner"><img src="/partners/common/marden.png" alt="Event Partner" />
+        <a href="https://marden.kz/" class="partner"
+          ><img src="/partners/common/marden.png" alt="Event Partner" />
         </a>
-
       </div>
     </div>
   </div>
@@ -33,7 +36,13 @@
             ">Генеральный партнёр</span> -->
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+// @ts-ignore
+
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n({ useScope: 'global' })
+</script>
 
 <style lang="scss" scoped>
 .partners {

@@ -12,7 +12,7 @@
           size="large"
           :variant="headerStore.isMobile ? 'tonal' : 'text'"
           class="text-capitalize"
-          >Главная</v-btn
+          >{{ t('header.home') }}</v-btn
         >
       </RouterLink>
     </li>
@@ -44,7 +44,7 @@
           :color="headerStore.isCrewAwards ? '#ffc14d' : '#32cc98'"
           :variant="headerStore.isMobile ? 'tonal' : 'text'"
           class="text-capitalize"
-          >Спикеры</v-btn
+          >{{ t('header.speakers') }}</v-btn
         >
       </RouterLink>
     </li>
@@ -60,7 +60,7 @@
           class="text-capitalize"
           :color="headerStore.isCrewAwards ? '#ffc14d' : '#32cc98'"
           :variant="headerStore.isMobile ? 'tonal' : 'text'"
-          >Галерея</v-btn
+          >{{ t('header.gallery') }}</v-btn
         >
       </RouterLink>
     </li>
@@ -70,7 +70,11 @@
 <script setup lang="ts">
 import { useHeaderStore } from '@/stores/headerStore'
 import { computed } from 'vue'
+// @ts-ignore
 
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n({ useScope: 'global' })
 const headerStore = useHeaderStore()
 
 const close = () => {

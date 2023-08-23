@@ -1,13 +1,29 @@
 <template>
   <div>
-    <v-btn @click="headerStore.burger = true" icon="mdi-menu" variant="tonal"
-      :color="headerStore.isCrewAwards ? '#ffc14d' : '#32cc98'"></v-btn>
-    <v-dialog v-model="headerStore.burger" fullscreen :scrim="false" transition="dialog-bottom-transition">
+    <v-btn
+      @click="headerStore.burger = true"
+      icon="mdi-menu"
+      variant="tonal"
+      :color="headerStore.isCrewAwards ? '#ffc14d' : '#32cc98'"
+    ></v-btn>
+    <v-dialog
+      v-model="headerStore.burger"
+      fullscreen
+      :scrim="false"
+      transition="dialog-bottom-transition"
+    >
       <v-card>
-        <v-toolbar :color="headerStore.isCrewAwards ? '#1B1A17' : '#f7f7f7'" style="transition: 0.4s">
+        <v-toolbar
+          :color="headerStore.isCrewAwards ? '#1B1A17' : '#f7f7f7'"
+          style="transition: 0.4s"
+        >
           <div class="toolbar">
-            <v-btn icon="mdi-close" variant="text" :color="headerStore.isCrewAwards ? '#ffc14d' : '#32cc98'"
-              @click="headerStore.burger = false"></v-btn>
+            <v-btn
+              icon="mdi-close"
+              variant="text"
+              :color="headerStore.isCrewAwards ? '#ffc14d' : '#32cc98'"
+              @click="headerStore.burger = false"
+            ></v-btn>
           </div>
         </v-toolbar>
         <div class="body" :style="{ backgroundColor: backgroundColoring }">

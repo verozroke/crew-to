@@ -5,18 +5,20 @@
       <HeaderNavbar v-if="!headerStore.isMobile" />
       <LanguageButton v-if="!headerStore.isMobile" />
       <HeaderButton v-if="!headerStore.isMobile" />
+      <TicketDialog />
+
       <HeaderBurger v-if="headerStore.isMobile" />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import TicketDialog from '@/views/Home/tickets/dialog/TicketDialog.vue'
 import HeaderLogo from './UI/HeaderLogo.vue'
 import HeaderNavbar from './navbar/HeaderNavbar.vue'
 import HeaderButton from './UI/HeaderButton.vue'
 import LanguageButton from '../LanguageButton.vue'
 import HeaderBurger from './burger/HeaderBurger.vue'
-import { onMounted, ref } from 'vue'
 import { useRoute } from 'vue-router'
 import { useHeaderStore } from '@/stores/headerStore'
 

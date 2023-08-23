@@ -20,8 +20,6 @@ onMounted(() => {
   nextTick(() => {
     window.addEventListener('resize', onResize)
   })
-
-
 })
 </script>
 

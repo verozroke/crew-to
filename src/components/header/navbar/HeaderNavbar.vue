@@ -7,7 +7,7 @@
           :density="headerStore.isMobile ? 'default' : 'compact'"
           :variant="headerStore.isMobile ? 'elevated' : 'text'"
           class="text-capitalize"
-          >Главная</v-btn
+          >{{ t('header.home') }}</v-btn
         >
       </RouterLink>
     </li>
@@ -31,7 +31,7 @@
           :density="headerStore.isMobile ? 'default' : 'compact'"
           :variant="headerStore.isMobile ? 'elevated' : 'text'"
           class="text-capitalize"
-          >Спикеры</v-btn
+          >{{ t('header.speakers') }}</v-btn
         >
       </RouterLink>
     </li>
@@ -42,7 +42,7 @@
           :density="headerStore.isMobile ? 'default' : 'compact'"
           class="text-capitalize"
           :variant="headerStore.isMobile ? 'elevated' : 'text'"
-          >Галерея</v-btn
+          >{{ t('header.gallery') }}</v-btn
         >
       </RouterLink>
     </li>
@@ -52,6 +52,11 @@
 <script setup lang="ts">
 import { useHeaderStore } from '@/stores/headerStore'
 import { computed } from 'vue'
+// @ts-ignore
+
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n({ useScope: 'global' })
 
 const headerStore = useHeaderStore()
 

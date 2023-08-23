@@ -9,9 +9,7 @@
 import { ref } from 'vue'
 import SpeakerCard from './card/SpeakerCard.vue'
 
-const mods = ref([
-
-])
+const mods = ref([])
 </script>
 
 <style lang="scss" scoped>

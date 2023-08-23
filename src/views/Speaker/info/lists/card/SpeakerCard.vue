@@ -1,15 +1,18 @@
 <template>
-  <div class="card" style="background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    " :style="{ backgroundImage: `url('${imgSrc}')` }">
+  <div
+    class="card"
+    style="background-position: center; background-repeat: no-repeat; background-size: cover"
+    :style="{ backgroundImage: `url('${imgSrc}')` }"
+  >
     <div class="card__box">
       <div class="card__title">{{ name }}</div>
       <div class="card__occupation">{{ occupation }}, {{ company }}</div>
     </div>
     <div class="card__text">
       <div class="card__title" style="margin-bottom: 10px">{{ name }}</div>
-      <div style="font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px; color: rgb(89, 89, 89)">
+      <div
+        style="font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px; color: rgb(89, 89, 89)"
+      >
         {{ text }}
       </div>
     </div>
@@ -22,7 +25,7 @@ defineProps({
   occupation: String,
   text: String,
   company: String,
-  imgSrc: String,
+  imgSrc: String
 })
 </script>
 

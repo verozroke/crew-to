@@ -88,7 +88,7 @@ const blocks = ref([
   {
     id: 20,
     src: '/storage/gallery/(20).webp'
-  },
+  }
 ])
 </script>
 

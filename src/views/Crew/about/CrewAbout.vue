@@ -1,48 +1,54 @@
 <template>
   <div class="about" id="about-forum">
     <div class="about__container">
-      <div class="about__title">О премии</div>
+      <div class="about__title">{{ t('crew.about_us.title') }}</div>
       <div class="about__info">
         <div class="about__text">
           <div>
-            Премия CREW Central Asia - это ежегодная профессиональная награда, предназначенная для
-            выдающихся проектов недвижимости в регионе Центральной Азии. Она служит признанием
-            инноваций, качества, устойчивости и социальной значимости проектов, вносящих
-            существенный вклад в развитие отрасли.
+            {{ t('crew.about_us.text.1') }}
           </div>
           <div>
-            Цель премии заключается в поощрении и поддержке выдающихся достижений в области
-            недвижимости Центральной Азии. Программа премии выделяет проекты, превосходящие
-            стандартные показатели, и оказывающие положительное влияние на общество и окружающую
-            среду. Она стимулирует инновационность, качество и устойчивость в создании новых
-            пространств и инфраструктурного развития.
+            {{ t('crew.about_us.text.2') }}
           </div>
           <div>
-            Победители получают заслуженное признание, репутационные преимущества и возможность
-            установления новых партнерских связей. Более того, участие в премии способствует
-            расширению сети контактов и обмену опытом с ведущими профессионалами недвижимости
-            Центральной Азии.
+            {{ t('crew.about_us.text.3') }}
           </div>
         </div>
         <div class="about__image">
-          <iframe src="https://app.vectary.com/p/02yW3ciqUKtbcXAHhIniPn" frameborder="0" width="100%"
-            height="100%"></iframe>
+          <iframe
+            src="https://app.vectary.com/p/02yW3ciqUKtbcXAHhIniPn"
+            frameborder="0"
+            width="100%"
+            height="100%"
+          ></iframe>
         </div>
       </div>
       <div class="about__buttons">
         <!-- <v-btn size="large" color="#ffc14d" rounded="0" class="text-black" prepend-icon="mdi-book-clock-outline"
           style="font-weight: 500; font-family: 'Montserrat', sans-serif" @click="downloadProgram">Программа
           форума</v-btn> -->
-        <v-btn size="large" color="#ffc14d" rounded="0" class="text-black" prepend-icon="mdi-file-delimited"
-          style="font-weight: 500; font-family: 'Montserrat', sans-serif" @click="downloadUstav">Устав конкурса</v-btn>
-        <!-- Program Button -->
-        <!-- Ustav Button -->
+        <v-btn
+          size="large"
+          color="#ffc14d"
+          rounded="0"
+          class="text-black"
+          prepend-icon="mdi-file-delimited"
+          style="font-weight: 500; font-family: 'Montserrat', sans-serif"
+          @click="downloadUstav"
+          >{{ t('crew.about_us.ustav') }}</v-btn
+        >
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+// @ts-ignore
+
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n({ useScope: 'global' })
+
 const downloadProgram = () => {
   const link = document.createElement('a')
 
@@ -103,7 +109,7 @@ const downloadUstav = () => {
     width: 60%;
     justify-content: space-between;
 
-    &>div {
+    & > div {
       font-size: 16px;
       letter-spacing: 1px;
       font-family: 'Montserrat', sans-serif;
@@ -132,7 +138,7 @@ const downloadUstav = () => {
       width: 100%;
       gap: 2em;
 
-      &>div {
+      & > div {
         text-align: center;
       }
     }

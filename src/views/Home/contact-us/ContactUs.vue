@@ -2,12 +2,12 @@
   <div class="contact">
     <div class="contact__container">
       <div class="contact__info">
-        <div class="contact__title">Свяжитесь с нами</div>
+        <div class="contact__title">{{ t('home.contact_us.title') }}</div>
         <div class="contact__list">
           <div class="contact__item">
             <v-icon>mdi-map-marker</v-icon>
             <div class="contact__text">
-              г. Астана, Казахстан, ул. Самал 12, 12 этаж.
+              {{ t('home.contact_us.adress') }}
             </div>
           </div>
           <div class="contact__item">
@@ -16,11 +16,16 @@
           </div>
           <div class="contact__item">
             <v-icon>mdi-email</v-icon>
-            <div class="contact__text">info@kaznetpartners.com <br> crewpropertyawards@gmail.com</div>
+            <div class="contact__text">
+              info@kaznetpartners.com <br />
+              crewpropertyawards@gmail.com
+            </div>
           </div>
           <div class="contact__item">
             <v-icon>mdi-link</v-icon>
-            <div class="contact__text"><a href="https://kaznetpartners.com/">https://kaznetpartners.com/</a> <br> <br>
+            <div class="contact__text">
+              <a href="https://kaznetpartners.com/">https://kaznetpartners.com/</a> <br />
+              <br />
               <a href="https://fiabcica.com/">https://fiabcica.com/</a>
             </div>
           </div>
@@ -29,13 +34,23 @@
 
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20023.274451006895!2d71.40814994849623!3d51.147023540920834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424586c9805b2b6f%3A0x380167865c706e4c!2sAstana%20Tower!5e0!3m2!1sru!2skz!4v1691062776023!5m2!1sru!2skz"
-        width="600" height="450" style="width: 600px; border: 0; border-radius: 20px; height: 450px" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+        width="600"
+        height="450"
+        style="width: 600px; border: 0; border-radius: 20px; height: 450px"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+// @ts-ignore
+
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n({ useScope: 'global' })
+</script>
 
 <style lang="scss" scoped>
 .contact {

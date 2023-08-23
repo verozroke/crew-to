@@ -1,7 +1,7 @@
 <template>
   <div class="bottom">
     <div class="bottom__container bottom-timer hidden">
-      <div class="bottom__title">До начала форума:</div>
+      <div class="bottom__title">{{ t('home.hero.forum_starts') }}</div>
       <BottomTimer />
     </div>
   </div>
@@ -9,7 +9,11 @@
 
 <script setup lang="ts">
 import BottomTimer from './timer/BottomTimer.vue'
+// @ts-ignore
 
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n({ useScope: 'global' })
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {

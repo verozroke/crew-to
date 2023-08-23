@@ -1,11 +1,17 @@
 <template>
   <div class="time hidden">
     <!-- <div class="time__begin">День мероприятия:</div> -->
-    <div class="time__numbers">18 октября</div>
+    <div class="time__numbers">{{ t('home.hero.date') }}</div>
   </div>
 </template>
 
 <script setup lang="ts">
+// @ts-ignore
+
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n({ useScope: 'global' })
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {

@@ -4,14 +4,13 @@
       <div class="nomination__title">Номинации</div>
       <div class="nomination__box">
         <div class="nomination__subtitle">
-          Номинации, победители которых автоматически получают право участия в международном этапе
-          Конкурса FIABCI Prix d’Excellence
+          {{ t('crew.nominations.1.title') }}
         </div>
         <NominationList :items="items1" />
       </div>
       <div class="nomination__box">
         <div class="nomination__subtitle">
-          Специальные номинации Конкурса CENTRAL ASIA PROPERTY AWARDS 2023
+          {{ t('crew.nominations.2.title') }}
         </div>
         <NominationList :items="items2" />
       </div>
@@ -20,9 +19,15 @@
 </template>
 
 <script lang="ts" setup>
-import type { Ref } from 'vue'
 import NominationList from './list/NominationList.vue'
-import { ref } from 'vue'
+import { computed } from 'vue'
+
+// @ts-ignore
+
+import { useI18n } from 'vue-i18n'
+import type { ComputedRef } from 'vue'
+
+const { t } = useI18n({ useScope: 'global' })
 
 type TypeNomination = {
   id: number
@@ -30,107 +35,69 @@ type TypeNomination = {
   text: string
 }
 
-const items1: Ref<TypeNomination[]> = ref([
+const items1: ComputedRef<TypeNomination[]> = computed(() => [
   {
     id: 1,
-    title: 'Редевелопмент года',
-    text: `Лучшие проекты в каждой из нижеперечисленных категорий будут награждены.
-
-    \n● Номинация «Редевелопмент офисной недвижимости»;
-    \n● Номинация «Редевелопмент торговой недвижимости»;
-    \n● Номинация «Редевелопмент индустриальной недвижимости».`
+    title: t('crew.nominations.1.1.title'),
+    text: t('crew.nominations.1.1.text')
   },
   {
     id: 2,
-    title: 'Офисная недвижимость',
-    text: `Лучшие проекты в каждой из нижеперечисленных категорий будут награждены.
-
-    \n● Номинация «Лучшая офисная недвижимость класса А»;
-    \n● Номинация «Лучшая офисная недвижимость класса А+»;
-    \n● Номинация «Лучшая офисная недвижимости класса В».
-    \n● Номинация «Лучшая офисная недвижимости класса В+».`
+    title: t('crew.nominations.1.2.title'),
+    text: t('crew.nominations.1.2.text')
   },
   {
     id: 3,
-    title: 'Лучший объект рекреации и отдыха',
-    text: `Лучшие проекты в каждой из нижеперечисленных категорий будут награждены. Объекты рекреации и отдыха
-(тематические, детские парки)`
+    title: t('crew.nominations.1.3.title'),
+    text: t('crew.nominations.1.3.text')
   }
 ])
 
-const items2: Ref<TypeNomination[]> = ref([
+const items2: ComputedRef<TypeNomination[]> = computed(() => [
   {
     id: 1,
-    title: 'Управляющая компания года',
-    text: `Лучшие проекты в каждой из нижеперечисленных категорий будут награждены.
-\n● Номинация «Лучшая управляющая компания – Facility Management»;
-\n● Номинация «Лучшая управляющая компания – Property Management».`
+    title: t('crew.nominations.2.1.title'),
+    text: t('crew.nominations.2.1.text')
   },
   {
     id: 2,
-    title: 'Складская недвижимость',
-    text: `Лучшие проекты в каждой из нижеперечисленных категорий будут награждены.
-
-    \n● Номинация «Крупный складской комплекс класса А»;
-    \n● Номинация «Средний складской комплекс класса Б».`
+    title: t('crew.nominations.2.2.title'),
+    text: t('crew.nominations.2.2.text')
   },
   {
     id: 3,
-    title: 'Клининговая компания',
-    text: `Лучшие проекты в каждой из нижеперечисленных категорий будут награждены.
-
-    \n● Номинация «Лучшая клининговая компания».`
+    title: t('crew.nominations.2.3.title'),
+    text: t('crew.nominations.2.3.text')
   },
   {
     id: 4,
-    title: 'Коворкинг-центры',
-    text: `Лучшие проекты в каждой из нижеперечисленных категорий будут награждены
-
-    \n● Коворкинг года «Лучшее agile-пространство»; 
-
-    \n● Коворкинг года «Лучшие технологические решения»; 
-
-    \n● Коворкинг года «Лучшие архитектурные решения и дизайн». `
+    title: t('crew.nominations.2.4.title'),
+    text: t('crew.nominations.2.4.text')
   },
   {
     id: 5,
-    title: 'Торговые центры',
-    text: `Лучшие проекты в каждой из нижеперечисленных категорий будут награждены.
-
-    \n● Торговые центры: крупные (от 100,000 м2).  
-\n● Торговые центры: средние (от 50,000 до 100,000 м2).  
-\n● Торговые центры: малые (до 50,000 м2). `
+    title: t('crew.nominations.2.5.title'),
+    text: t('crew.nominations.2.5.text')
   },
   {
     id: 6,
-    title: 'Поставщик года',
-    text: `Лучшие проекты в каждой из нижеперечисленных категорий будут награждены.
-
-    \n● Номинация «Поставщик года».`
+    title: t('crew.nominations.2.6.title'),
+    text: t('crew.nominations.2.6.text')
   },
   {
     id: 7,
-    title: 'Брокер года',
-    text: `Лучшие проекты в каждой из нижеперечисленных категорий будут награждены.
-
-    \n● Номинация «Брокер года».`
+    title: t('crew.nominations.2.7.title'),
+    text: t('crew.nominations.2.7.text')
   },
   {
     id: 8,
-    title: 'Сделка года',
-    text: `Лучшие проекты в каждой из нижеперечисленных категорий будут награждены.
-
-    \n● Номинация «Сделка года. Купля-продажа»;
-    \n● Номинация «Сделка года. Аренда».`
+    title: t('crew.nominations.2.8.title'),
+    text: t('crew.nominations.2.8.text')
   },
   {
     id: 9,
-    title: 'Девелопер',
-    text: `Лучшие проекты в каждой из нижеперечисленных категорий будут награждены.
-
-    \n● Номинация «Девелопер года - Город в городе»;
-    \n● Номинация «Девелопер года - Комфортная среда»;
-    \n● Номинация «Премьера года».`
+    title: t('crew.nominations.2.9.title'),
+    text: t('crew.nominations.2.9.text')
   }
 ])
 </script>

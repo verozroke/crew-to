@@ -2,7 +2,7 @@
   <div class="ticket">
     <TicketDialog />
     <div class="ticket__container">
-      <div class="ticket__title">Билеты</div>
+      <div class="ticket__title">{{ t('tickets.title') }}</div>
       <div class="ticket__row">
         <TicketItem
           v-for="ticket in tickets"
@@ -17,34 +17,47 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 import TicketItem from './item/TicketItem.vue'
 import TicketDialog from './dialog/TicketDialog.vue'
+// @ts-ignore
 
-const tickets = ref([
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n({ useScope: 'global' })
+
+const tickets = computed(() => [
   {
     id: 1,
-    name: 'Все включено',
-    price: '300 000',
+    name: t('tickets.ticket1.name'),
+    price: t('tickets.ticket1.price'),
     services: [
-      'Участие в конференции Central Asia Property',
-      'Кофе-брейк',
-      'Нетворкинг',
-      'Презентации спикеров',
-      'Участие в гала-ужине Central Asia Property Awards'
+      t('tickets.ticket1.services.1'),
+      t('tickets.ticket1.services.2'),
+      t('tickets.ticket1.services.3'),
+      t('tickets.ticket1.services.4'),
+      t('tickets.ticket1.services.5')
     ]
   },
   {
     id: 2,
-    name: 'Конференция',
-    price: '150 000',
-    services: ['Кофе-брейк', 'Нетворкинг', 'Презентации спикеров']
+    name: t('tickets.ticket2.name'),
+    price: t('tickets.ticket2.price'),
+    services: [
+      t('tickets.ticket2.services.1'),
+      t('tickets.ticket2.services.2'),
+      t('tickets.ticket2.services.3')
+    ]
   },
   {
     id: 3,
-    name: 'Гала-ужин Central Asia Property Awards',
-    price: '250 000',
-    services: ['Фуршет', 'Концертная часть', 'Нетворкинг']
+    name: t('tickets.ticket3.name'),
+    price: t('tickets.ticket2.price'),
+    services: [
+      t('tickets.ticket3.services.1'),
+      t('tickets.ticket3.services.2'),
+      t('tickets.ticket3.services.3')
+    ]
   }
 ])
 </script>

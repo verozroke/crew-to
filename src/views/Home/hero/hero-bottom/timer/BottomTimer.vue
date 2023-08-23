@@ -2,25 +2,30 @@
   <div class="timer">
     <div class="timer__box">
       <div class="timer__digit">{{ displayDays }}</div>
-      <div class="timer__title">Дней</div>
+      <div class="timer__title">{{ t('home.hero.days') }}</div>
     </div>
     <div class="timer__box">
       <div class="timer__digit">{{ displayHours }}</div>
-      <div class="timer__title">Часов</div>
+      <div class="timer__title">{{ t('home.hero.hours') }}</div>
     </div>
     <div class="timer__box">
       <div class="timer__digit">{{ displayMinutes }}</div>
-      <div class="timer__title">Минут</div>
+      <div class="timer__title">{{ t('home.hero.minutes') }}</div>
     </div>
     <div class="timer__box">
       <div class="timer__digit">{{ displaySeconds }}</div>
-      <div class="timer__title">Секунд</div>
+      <div class="timer__title">{{ t('home.hero.seconds') }}</div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { computed, onMounted, ref, type Ref } from 'vue'
+// @ts-ignore
+
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n({ useScope: 'global' })
 
 const displayDays: Ref<string | number> = ref('')
 const displayHours: Ref<string | number> = ref('')

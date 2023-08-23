@@ -1,13 +1,19 @@
 <template>
   <div class="title">
     <div class="title__container">
-      Спикеры и модераторы
+      {{ t('speaker.title') }}
       <v-icon class="icon" style="font-size: 100px; margin-left: 0.2em">mdi-account-tie</v-icon>
     </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+// @ts-ignore
+
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n({ useScope: 'global' })
+</script>
 
 <style lang="scss" scoped>
 .title {
