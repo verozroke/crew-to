@@ -1,7 +1,7 @@
 <template>
   <div class="who">
     <div class="who__container">
-      <div class="who__title">Для кого форум?</div>
+      <div class="who__title">{{ t('home.for_who.title') }}</div>
       <div class="who__card-list">
         <WhoItem v-for="item in items" :key="item.id" :text="item.text" :icon="item.icon" />
       </div>

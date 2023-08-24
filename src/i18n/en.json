@@ -171,10 +171,11 @@
         "4": "Expansion of partnership connections and knowledge exchange."
       },
       "text": "We look forward to welcoming you on October 18 at \"The Ritz-Carlton Almaty\" hotel for the annual Central Asian forum \"Crew Central Asia\"!",
-      "become_partner": "Download program",
-      "download_program": "Become a partner"
+      "become_partner": "Become a partner",
+      "download_program": "Download program"
     },
     "for_who": {
+      "title": "Who is the forum intended for?",
       "1": "Developers",
       "2": "Real estate and objects-companies",
       "3": "Service companies",
