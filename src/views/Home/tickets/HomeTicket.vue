@@ -4,13 +4,8 @@
     <div class="ticket__container">
       <div class="ticket__title">{{ t('tickets.title') }}</div>
       <div class="ticket__row">
-        <TicketItem
-          v-for="ticket in tickets"
-          :key="ticket.id"
-          :name="ticket.name"
-          :price="ticket.price"
-          :services="ticket.services"
-        />
+        <TicketItem v-for="ticket in tickets" :key="ticket.id" :name="ticket.name" :price="ticket.price"
+          :services="ticket.services" />
       </div>
     </div>
   </div>
@@ -52,7 +47,7 @@ const tickets = computed(() => [
   {
     id: 3,
     name: t('tickets.ticket3.name'),
-    price: t('tickets.ticket2.price'),
+    price: t('tickets.ticket3.price'),
     services: [
       t('tickets.ticket3.services.1'),
       t('tickets.ticket3.services.2'),

@@ -204,7 +204,7 @@
     "title": "Tickets",
     "ticket1": {
       "name": "All inclusive",
-      "price": "650$",
+      "price": "650 $",
       "services": {
         "1": "Participation in the Central Asia Property Conference",
         "2": "Coffee break",
@@ -215,7 +215,7 @@
     },
     "ticket2": {
       "name": "Conference",
-      "price": "325$",
+      "price": "325 $",
       "services": {
         "1": "Coffee break",
         "2": "Networking",
@@ -224,7 +224,7 @@
     },
     "ticket3": {
       "name": "Gala Dinner Central Asia Property Awards",
-      "price": "541$",
+      "price": "541 $",
       "services": {
         "1": "Buffet",
         "2": "Concert part",

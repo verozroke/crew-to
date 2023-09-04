@@ -1,25 +1,17 @@
 <template>
   <div class="item">
     <div class="item__name">{{ name }}</div>
-    <div class="item__price">{{ price }} тенге</div>
+    <div class="item__price">{{ price }}</div>
     <div class="item__service-title">{{ t('tickets.packet_includes') }}</div>
     <ul class="item__services">
       <li class="item__service" v-for="service in services" :key="service">{{ service }}</li>
     </ul>
-    <v-btn
-      @click="ticketStore.dialog = true"
-      style="
+    <v-btn @click="ticketStore.dialog = true" style="
         margin-top: 20px;
         font-weight: 600;
         font-family: 'Montserrat', sans-serif;
         color: #1b1a17;
-      "
-      rounded="0"
-      color="#ffc14d"
-      size="large"
-      width="100%"
-      >{{ t('tickets.buy_ticket') }}</v-btn
-    >
+      " rounded="0" color="#ffc14d" size="large" width="100%">{{ t('tickets.buy_ticket') }}</v-btn>
   </div>
 </template>
 
