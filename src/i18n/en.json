@@ -192,7 +192,8 @@
     },
     "partners": {
       "official_partner": "Official partners",
-      "partner": "Partners"
+      "partner": "Partners",
+      "informational_partner": "Informational partners"
     }
   },
   "gallery": {

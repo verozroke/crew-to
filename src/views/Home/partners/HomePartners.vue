@@ -10,6 +10,7 @@
         <a href="" class="partner"><img src="/partners/official/tspm.png" alt="Event Partner" /></a>
         <a href="https://astanatower.kz/" class="partner"><img src="/partners/common/astana-tower.png"
             alt="Event Partner" /></a>
+        <a href="" class="partner"><img src="/partners/official/fiabci.png" alt="Event Partner" /></a>
       </div>
       <div class="partners__title">{{ t('home.partners.partner') }}</div>
       <div class="partners__list">
@@ -20,6 +21,15 @@
         <a href="" class="partner"><img src="/partners/common/pmg.png" alt="Event Partner" />
         </a>
         <a href="" class="partner"><img src="/partners/common/esentai-mall.png" alt="Event Partner" />
+        </a>
+      </div>
+      <div class="partners__title">{{ t('home.partners.informational_partner') }}</div>
+      <div class="partners__list">
+        <a href="" class="partner"><img src="/partners/informational/bizmedia.png" alt="Event Partner" />
+        </a>
+        <a href="" class="partner"><img src="/partners/informational/optimism.png" alt="Event Partner" />
+        </a>
+        <a href="" class="partner"><img src="/partners/informational/qazaqpress.png" alt="Event Partner" />
         </a>
       </div>
     </div>

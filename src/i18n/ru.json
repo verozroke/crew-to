@@ -192,7 +192,8 @@
     },
     "partners": {
       "official_partner": "Официальные партнёры форума",
-      "partner": "Партнёры форума"
+      "partner": "Партнёры форума",
+      "informational_partner": "Информационный партнёры форума"
     }
   },
   "gallery": {
