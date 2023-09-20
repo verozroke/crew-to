@@ -1,14 +1,7 @@
 <template>
   <div class="list">
-    <SpeakerCard
-      v-for="speaker in speakers"
-      :key="speaker.id"
-      :name="speaker.name"
-      :occupation="speaker.occupation"
-      :imgSrc="speaker.imgSrc"
-      :company="speaker.company"
-      :text="speaker.text"
-    />
+    <SpeakerCard v-for="speaker in speakers" :key="speaker.id" :name="speaker.name" :occupation="speaker.occupation"
+      :imgSrc="speaker.imgSrc" :company="speaker.company" :text="speaker.text" />
   </div>
 </template>
 
@@ -53,7 +46,55 @@ const speakers = computed(() => [
     company: 'Astana Tower',
     text: t('speaker.list.4.text'),
     imgSrc: '/speakers/speaker-4.jpg'
-  }
+  },
+  {
+    id: 5,
+    name: t('speaker.list.5.name'),
+    occupation: t('speaker.list.5.occupation'),
+    company: 'BI Group',
+    text: t('speaker.list.5.text'),
+    imgSrc: '/speakers/speaker-5.jpeg'
+  },
+  {
+    id: 6,
+    name: t('speaker.list.6.name'),
+    occupation: t('speaker.list.6.occupation'),
+    company: 'BAUBERG',
+    text: t('speaker.list.6.text'),
+    imgSrc: '/speakers/speaker-6.jpeg'
+  },
+  {
+    id: 7,
+    name: t('speaker.list.7.name'),
+    occupation: t('speaker.list.7.occupation'),
+    company: 'РОЮЛ',
+    text: t('speaker.list.7.text'),
+    imgSrc: '/speakers/speaker-7.webp'
+  },
+  {
+    id: 8,
+    name: t('speaker.list.8.name'),
+    occupation: t('speaker.list.8.occupation'),
+    company: 'Technopark Coworking',
+    text: t('speaker.list.8.text'),
+    imgSrc: '/speakers/speaker-8.jpeg'
+  },
+  {
+    id: 9,
+    name: t('speaker.list.9.name'),
+    occupation: t('speaker.list.9.occupation'),
+    company: 'Becar Asset Management',
+    text: t('speaker.list.9.text'),
+    imgSrc: '/speakers/speaker-9.jpg'
+  },
+  {
+    id: 10,
+    name: t('speaker.list.10.name'),
+    occupation: t('speaker.list.10.occupation'),
+    company: 'FIABCI',
+    text: t('speaker.list.10.text'),
+    imgSrc: '/speakers/speaker-10.jpg'
+  },
 ])
 </script>
 

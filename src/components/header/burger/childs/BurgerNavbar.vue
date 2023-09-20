@@ -13,22 +13,13 @@
           :variant="headerStore.isMobile ? 'tonal' : 'text'" size="large" class="text-capitalize">CREW Awards</v-btn>
       </RouterLink>
     </li>
-    <!-- <li>
-      <RouterLink :to="{ name: 'Speaker' }"
-        ><v-btn
-          @click="close"
-          width="100%"
-          prepend-icon="mdi-account-tie"
-          style="font-weight: 700"
-          :density="headerStore.isMobile ? 'default' : 'compact'"
-          size="large"
-          :color="headerStore.isCrewAwards ? '#ffc14d' : '#32cc98'"
-          :variant="headerStore.isMobile ? 'tonal' : 'text'"
-          class="text-capitalize"
-          >{{ t('header.speakers') }}</v-btn
-        >
+    <li>
+      <RouterLink :to="{ name: 'Speaker' }"><v-btn @click="close" width="100%" prepend-icon="mdi-account-tie"
+          style="font-weight: 700" :density="headerStore.isMobile ? 'default' : 'compact'" size="large"
+          :color="headerStore.isCrewAwards ? '#ffc14d' : '#32cc98'" :variant="headerStore.isMobile ? 'tonal' : 'text'"
+          class="text-capitalize">{{ t('header.speakers') }}</v-btn>
       </RouterLink>
-    </li> -->
+    </li>
     <li>
       <RouterLink :to="{ name: 'Gallery' }"><v-btn @click="close" width="100%" size="large" prepend-icon="mdi-image"
           style="font-weight: 700" :density="headerStore.isMobile ? 'default' : 'compact'" class="text-capitalize"

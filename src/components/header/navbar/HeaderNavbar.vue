@@ -11,17 +11,12 @@
           :density="headerStore.isMobile ? 'default' : 'compact'" :variant="headerStore.isMobile ? 'elevated' : 'text'"
           class="text-capitalize">CREW Awards</v-btn></RouterLink>
     </li>
-    <!-- <li>
-      <RouterLink :to="{ name: 'Speaker' }"
-        ><v-btn
-          prepend-icon="mdi-account-tie"
-          :density="headerStore.isMobile ? 'default' : 'compact'"
-          :variant="headerStore.isMobile ? 'elevated' : 'text'"
-          class="text-capitalize"
-          >{{ t('header.speakers') }}</v-btn
-        >
+    <li>
+      <RouterLink :to="{ name: 'Speaker' }"><v-btn prepend-icon="mdi-account-tie"
+          :density="headerStore.isMobile ? 'default' : 'compact'" :variant="headerStore.isMobile ? 'elevated' : 'text'"
+          class="text-capitalize">{{ t('header.speakers') }}</v-btn>
       </RouterLink>
-    </li> -->
+    </li>
     <li>
       <RouterLink :to="{ name: 'Gallery' }"><v-btn prepend-icon="mdi-image"
           :density="headerStore.isMobile ? 'default' : 'compact'" class="text-capitalize"
