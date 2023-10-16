@@ -27,7 +27,7 @@ const speakers = computed(() => [
     id: 2,
     name: t('speaker.list.2.name'),
     occupation: t('speaker.list.2.occupation'),
-    company: 'CPM IREM',
+    company: 'Lynks Property Management',
     text: t('speaker.list.2.text'),
     imgSrc: '/speakers/speaker-2.jpg'
   },
