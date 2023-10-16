@@ -95,6 +95,142 @@ const speakers = computed(() => [
     text: t('speaker.list.10.text'),
     imgSrc: '/speakers/speaker-10.jpg'
   },
+  {
+    id: 11,
+    name: t('speaker.list.11.name'),
+    occupation: t('speaker.list.11.occupation'),
+    company: 'ARCADA',
+    text: t('speaker.list.11.text'),
+    imgSrc: '/speakers/speaker-11.jpeg'
+  },
+  {
+    id: 12,
+    name: t('speaker.list.12.name'),
+    occupation: t('speaker.list.12.occupation'),
+    company: 'ARCADA',
+    text: t('speaker.list.12.text'),
+    imgSrc: '/speakers/speaker-12.jpg'
+  },
+  {
+    id: 13,
+    name: t('speaker.list.13.name'),
+    occupation: t('speaker.list.13.occupation'),
+    company: 'PropTech Solutions',
+    text: t('speaker.list.13.text'),
+    imgSrc: '/speakers/speaker-13.jpeg'
+  },
+  {
+    id: 14,
+    name: t('speaker.list.14.name'),
+    occupation: t('speaker.list.14.occupation'),
+    company: 'Bulldozer/Sun Group',
+    text: t('speaker.list.14.text'),
+    imgSrc: '/speakers/speaker-14.jpeg'
+  },
+  {
+    id: 15,
+    name: t('speaker.list.15.name'),
+    occupation: t('speaker.list.15.occupation'),
+    company: 'Smart Point',
+    text: t('speaker.list.15.text'),
+    imgSrc: '/speakers/speaker-15.jpeg'
+  },
+  {
+    id: 16,
+    name: t('speaker.list.16.name'),
+    occupation: t('speaker.list.16.occupation'),
+    company: 'TOP Service Group',
+    text: t('speaker.list.16.text'),
+    imgSrc: '/speakers/speaker-16.jpg'
+  },
+  {
+    id: 17,
+    name: t('speaker.list.17.name'),
+    occupation: t('speaker.list.17.occupation'),
+    company: 'Retail Space Global',
+    text: t('speaker.list.17.text'),
+    imgSrc: '/speakers/speaker-17.jpeg'
+  },
+  {
+    id: 18,
+    name: t('speaker.list.18.name'),
+    occupation: t('speaker.list.18.occupation'),
+    company: 'Grey Plaza Holding',
+    text: t('speaker.list.18.text'),
+    imgSrc: '/speakers/speaker-18.jpeg'
+  },
+  {
+    id: 19,
+    name: t('speaker.list.19.name'),
+    occupation: t('speaker.list.19.occupation'),
+    company: 'Комитет по делам строительства и жилищно-коммунального хозяйства',
+    text: t('speaker.list.19.text'),
+    imgSrc: '/speakers/speaker-19.jpeg'
+  },
+  {
+    id: 20,
+    name: t('speaker.list.20.name'),
+    occupation: t('speaker.list.20.occupation'),
+    company: 'Marden Property',
+    text: t('speaker.list.20.text'),
+    imgSrc: '/speakers/speaker-20.jpg'
+  },
+  {
+    id: 21,
+    name: t('speaker.list.21.name'),
+    occupation: t('speaker.list.21.occupation'),
+    company: 'ESTGroup',
+    text: t('speaker.list.21.text'),
+    imgSrc: '/speakers/speaker-21.jpeg'
+  },
+  {
+    id: 22,
+    name: t('speaker.list.22.name'),
+    occupation: t('speaker.list.22.occupation'),
+    company: 'Property Management Group',
+    text: t('speaker.list.22.text'),
+    imgSrc: '/speakers/speaker-22.jpeg'
+  },
+  {
+    id: 23,
+    name: t('speaker.list.23.name'),
+    occupation: t('speaker.list.23.occupation'),
+    company: 'Global Development',
+    text: t('speaker.list.23.text'),
+    imgSrc: '/speakers/speaker-23.jpeg'
+  },
+  {
+    id: 24,
+    name: t('speaker.list.24.name'),
+    occupation: t('speaker.list.24.occupation'),
+    company: 'Becar Asset Management',
+    text: t('speaker.list.24.text'),
+    imgSrc: '/speakers/speaker-24.jpeg'
+  },
+  {
+    id: 25,
+    name: t('speaker.list.25.name'),
+    occupation: t('speaker.list.25.occupation'),
+    company: 'SmartUP',
+    text: t('speaker.list.25.text'),
+    imgSrc: '/speakers/speaker-25.jpeg'
+  },
+  {
+    id: 26,
+    name: t('speaker.list.26.name'),
+    occupation: t('speaker.list.26.occupation'),
+    company: 'Essentai Tower',
+    text: t('speaker.list.26.text'),
+    imgSrc: '/speakers/speaker-26.jpeg'
+  },
+  {
+    id: 27,
+    name: t('speaker.list.27.name'),
+    occupation: t('speaker.list.27.occupation'),
+    company: 'Stirling Hospitality Advisors',
+    text: t('speaker.list.27.text'),
+    imgSrc: '/speakers/speaker-27.png'
+  },
 ])
 </script>
 

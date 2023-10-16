@@ -5,31 +5,41 @@
       <div class="partners__list">
         <a href="https://lynkspm.com/" class="partner"><img style="object-fit: cover !important;"
             src="/partners/official/lynks.jpg" alt="Event Partner" /></a>
-        <a href="" class="partner"><img src="/partners/common/grey-plaza.jpeg" alt="Event Partner" /></a>
-        <a href="" class="partner"><img src="/partners/official/mercury.png" alt="Event Partner" /></a>
-        <a href="" class="partner"><img src="/partners/official/tspm.png" alt="Event Partner" /></a>
+        <a href="https://greyplaza.kz/" class="partner"><img src="/partners/common/grey-plaza.jpeg"
+            alt="Event Partner" /></a>
+        <a href="https://mercury.kz/" class="partner"><img src="/partners/official/mercury.png" alt="Event Partner" /></a>
+        <a href="https://tspm.kz/" class="partner"><img src="/partners/official/tspm.png" alt="Event Partner" /></a>
         <a href="https://astanatower.kz/" class="partner"><img src="/partners/common/astana-tower.png"
             alt="Event Partner" /></a>
-        <a href="" class="partner"><img src="/partners/official/fiabci.png" alt="Event Partner" /></a>
+        <a href="https://fiabcica.com/" class="partner"><img src="/partners/official/fiabci.png"
+            alt="Event Partner" /></a>
       </div>
       <div class="partners__title">{{ t('home.partners.partner') }}</div>
       <div class="partners__list">
         <a href="https://marden.kz/" class="partner"><img src="/partners/common/marden.png" alt="Event Partner" />
         </a>
-        <a href="" class="partner"><img src="/partners/common/dm.png" alt="Event Partner" />
+        <a href="https://dmassociates.kz/" class="partner"><img src="/partners/common/dm.png" alt="Event Partner" />
         </a>
-        <a href="" class="partner"><img src="/partners/common/pmg.png" alt="Event Partner" />
+        <a href="https://www.property-group.kz/" class="partner"><img src="/partners/common/pmg.png"
+            alt="Event Partner" />
         </a>
-        <a href="" class="partner"><img src="/partners/common/esentai-mall.png" alt="Event Partner" />
+        <a href="https://esentai.com/" class="partner"><img src="/partners/common/esentai-mall.png" alt="Event Partner" />
+        </a>
+        <a href="https://est-group.pro/" class="partner"><img src="/partners/common/est.jpg" alt="Event Partner" />
+        </a>
+        <a href="https://topsg.kz/" class="partner"><img src="/partners/common/top-service.png" alt="Event Partner" />
         </a>
       </div>
       <div class="partners__title">{{ t('home.partners.informational_partner') }}</div>
       <div class="partners__list">
-        <a href="" class="partner"><img src="/partners/informational/bizmedia.png" alt="Event Partner" />
+        <a href="https://bizmedia.kz/" class="partner"><img src="/partners/informational/bizmedia.png"
+            alt="Event Partner" />
         </a>
-        <a href="" class="partner"><img src="/partners/informational/optimism.png" alt="Event Partner" />
+        <a href="https://optimism.kz/" class="partner"><img src="/partners/informational/optimism.png"
+            alt="Event Partner" />
         </a>
-        <a href="" class="partner"><img src="/partners/informational/qazaqpress.png" alt="Event Partner" />
+        <a href="https://qazaqpress.kz/" class="partner"><img src="/partners/informational/qazaqpress.png"
+            alt="Event Partner" />
         </a>
       </div>
     </div>
